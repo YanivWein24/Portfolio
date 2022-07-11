@@ -6,19 +6,58 @@
 .card {
     border-radius: 20px;
     transition: all .2s ease-in-out;
-    margin: 1rem auto;
+    margin: 1rem auto 3rem;
+    box-shadow: 3px 3px 10px #333,
+        -3px -3px 10px #333;
 }
 
 .card:hover {
-    transform: scale(1.07)
+    transform: scale(1.05)
+}
+
+.card-title {
+    border-bottom: 1.5px solid var(--color-primary);
+    color: var(--color-primary);
+    width: 70%;
+    margin: 0 auto 1rem;
+    font-size: 1.2rem;
 }
 
 .card-img-top {
     border-radius: 20px 20px 0 0;
 }
 
+.card-text {
+    font-weight: 700;
+}
+
+.tool {
+    background-color: var(--color-primary);
+    color: white;
+    display: inline-block;
+    margin: .2rem;
+    padding: .4rem;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.tool:hover {
+    transform: scale(1.07);
+}
+
+.list-group-item {
+    padding: 1rem .3rem;
+}
+
 .card button {
     border-radius: 10px;
+    font-size: 1rem;
     padding: 0.5rem;
     text-transform: capitalize;
+}
+
+@media screen and (max-width:940px) {
+    .card {
+        margin: 1rem auto 1.5rem;
+    }
 }

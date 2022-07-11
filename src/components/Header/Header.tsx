@@ -12,11 +12,11 @@ const Header: FC = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                         <Nav className="me-auto ">
-                            <Nav.Link><Link to="About" smooth={true} duration={750} offset={-500} className="link"><i className="fa-solid fa-address-card"></i> About</Link></Nav.Link>
-                            <Nav.Link><Link to="Skills" smooth={true} duration={750} offset={-70} className="link"><i className="fa-solid fa-bars-progress"></i> Skills</Link></Nav.Link>
-                            <Nav.Link><Link to="Projects" smooth={true} duration={500} className="link"><i className="fa-solid fa-code"></i> Projects</Link></Nav.Link>
-                            <Nav.Link><Link to="Skills" smooth={true} duration={500} className="link" href="#Contact-me"><i className="fa-solid fa-comments"></i> Contact me</Link></Nav.Link>
-                            <Nav.Link><a className="link" href="../../Resume Template.pdf" download><i className="fa-solid fa-file"></i> Resume</a></Nav.Link>
+                            <div className="linkContainer"><Link to="About" smooth={true} duration={750} offset={-500} className="link"><i className="fa-solid fa-address-card"></i> About</Link></div>
+                            <div className="linkContainer"><Link to="Skills" smooth={true} duration={750} offset={-70} className="link"><i className="fa-solid fa-bars-progress"></i> Skills</Link></div>
+                            <div className="linkContainer"><Link to="Projects" smooth={true} duration={500} offset={-20} className="link"><i className="fa-solid fa-code"></i> Projects</Link></div>
+                            <div className="linkContainer"><Link to="Skills" smooth={true} duration={500} className="link" href="#Contact-me"><i className="fa-solid fa-comments"></i> Contact me</Link></div>
+                            <div className="linkContainer"><a className="link" href="../../Resume Template.pdf" download><i className="fa-solid fa-file"></i> Resume</a></div>
                         </Nav>
                         <div className="socials">
                             <a href="https://github.com/YanivWein24/"><i className="fa-brands fa-github"></i></a>

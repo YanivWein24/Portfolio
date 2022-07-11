@@ -18,14 +18,15 @@
     padding: 0 1rem;
 }
 
-.nav-link {
-    font-size: .9rem;
+.linkContainer {
+    font-size: 1rem;
+    padding: .5rem;
     margin-right: .5rem;
     transition: all .2s ease-in-out;
     border-radius: 8px;
 }
 
-.nav-link:hover {
+.linkContainer:hover {
     background-color: var(--color-primary);
 }
 
@@ -36,6 +37,7 @@ a.link {
 a.link:hover {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .socials a {

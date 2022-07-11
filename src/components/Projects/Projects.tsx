@@ -11,7 +11,7 @@ const Projects: FC = () => {
             <Container>
                 <Row>
                     {myProjects.map(project => (
-                        <Col key={project.id} sm={12} md={6} lg={3}>
+                        <Col key={project.id} sm={12} md={12} lg={3}>
                             <Cards project={project} />
                         </Col>
                     ))}
