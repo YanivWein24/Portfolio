@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#About {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.intro {
+    font-family: 'Mali', cursive;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    color: #eee;
+}
+
+#About span {
+    color: rgb(31, 155, 207)
+}
+
+#About button {
+    margin-top: 2.5rem;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
+    transition: all 0.2s ease-in-out;
+}
+
+#About button:hover {
+    transform: scale(1.1)
+}
+
+#About button a {
+    color: #fff;
+}
+
+.col {
+    /* align-items: center */
+    text-align: center;
+}
+
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4rem;
+    background-color: rgb(31, 155, 207);
+}
+
+.about-me i {
+    margin: 2rem 5rem;
+    font-size: 3rem;
+    color: #eeeeee;
+}
+
+.about-me p {
+    padding: 0 .75rem;
+    color: #eee;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:940px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
