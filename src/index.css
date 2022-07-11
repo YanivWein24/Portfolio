@@ -1,10 +1,15 @@
 @import "./bootstrap.min.css";
 
 body {
-  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  width: 103%;
 }
 
 code {

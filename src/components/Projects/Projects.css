@@ -1,0 +1,28 @@
+.projects {
+    background-color: var(--color-primary);
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.projects h1 {
+    margin: 1rem auto 3rem;
+    padding-top: 3rem;
+    width: 30%;
+    color: var(--color-offWhite);
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-bottom: 3px solid;
+}
+
+@media screen and (max-width:940px) {
+    .projects {
+        padding: .6rem;
+        width: 100%;
+    }
+
+    .projects h1 {
+        width: 85%
+    }
+
+
+}

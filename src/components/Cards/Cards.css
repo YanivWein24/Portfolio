@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    margin: 1rem auto;
+}
+
+.card:hover {
+    transform: scale(1.07)
+}
+
+.card-img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+.card button {
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-transform: capitalize;
+}

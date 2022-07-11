@@ -11,12 +11,12 @@ const About: FC = () => {
                 <Button><a href="../../Resume Template.pdf" download>Download Resume</a></Button >
             </div>
             <Row lg={3} md={12} sm={12} className="about-me">
-                <Col className="solving-problems">
+                <Col md={12} className="solving-problems">
                     <i className="fa-solid fa-laptop-code"></i>
                     <h3>Solving Problems</h3>
                     <p>As a developer, I</p>
                 </Col>
-                <Col className="former-technician">
+                <Col md={6} className="former-technician">
                     <i className="fa-solid fa-wrench"></i>
                     <h3>Former Naval Technician</h3>
                     <p>As a former power and control systems technician in the israeli navy,
@@ -24,7 +24,7 @@ const About: FC = () => {
                         I am also experienced with Working in groups and meeting tight schedules.
                     </p>
                 </Col>
-                <Col className="always-learning">
+                <Col md={6} className="always-learning">
                     <i className="fa-solid fa-book"></i>
                     <h3>growth mindset</h3>
                     <p>
