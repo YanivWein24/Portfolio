@@ -6,9 +6,9 @@ const About: FC = () => {
     return (
         <div id="About">
             <div className="intro">
-                <h1>I'm Yaniv Weinshtein,</h1>
+                <h1><span>I'm Yaniv Weinshtein,</span></h1>
                 <h2>A <span>Full Stack</span> Web Developer.</h2>
-                <Button><a href="../../Resume Template.pdf" download>My Resume</a></Button >
+                <Button><a href="../../Resume Template.pdf" download>Download Resume</a></Button >
             </div>
             <Row lg={3} md={12} sm={12} className="about-me">
                 <Col className="solving-problems">

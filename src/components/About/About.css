@@ -14,16 +14,25 @@ h1 {
     font-size: 2.5rem;
 }
 
+.intro h1 {
+    transform: rotate(2deg)
+}
+
+h1 span {
+    background-color: var(--color-primary-light);
+}
+
 h2 {
+    margin-top: 2rem;
     font-size: 2.2rem;
 }
 
-h3 {
-    color: #eee;
+h2 span {
+    color: var(--color-primary);
 }
 
-#About span {
-    color: rgb(31, 155, 207)
+h3 {
+    color: var(--color-offWhite);
 }
 
 #About button {
@@ -42,25 +51,23 @@ h3 {
 }
 
 .col {
-    /* align-items: center */
     text-align: center;
 }
 
 .about-me {
-    font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
-    background-color: rgb(31, 155, 207);
+    background-color: var(--color-primary);
 }
 
 .about-me i {
     margin: 2rem 5rem;
     font-size: 3rem;
-    color: #eeeeee;
+    color: var(--color-offWhite);
 }
 
 .about-me p {
     padding: 0 .75rem;
-    color: #eee;
+    color: var(--color-offWhite);
     font-size: 1rem;
 }
 

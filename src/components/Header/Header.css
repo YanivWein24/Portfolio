@@ -5,7 +5,7 @@
     left: 0;
     z-index: 1;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .header .navbar {
@@ -18,9 +18,24 @@
     padding: 0 1rem;
 }
 
-.link {
-    font-size: 1rem;
+.nav-link {
+    font-size: .9rem;
     margin-right: .5rem;
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    background-color: var(--color-primary);
+}
+
+a.link {
+    color: #ccc;
+}
+
+a.link:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .socials a {
@@ -52,8 +67,12 @@
     }
 
     .link {
-        font-size: .75rem;
+        font-size: .7rem;
         margin: 0
+    }
+
+    .nav-link:hover {
+        background-color: transparent;
     }
 
     .socials {

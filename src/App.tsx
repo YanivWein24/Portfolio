@@ -1,13 +1,14 @@
-import React, { FC } from 'react';
-// import { Container } from 'react-bootstrap'
+import React, { FC } from 'react'
 import Header from './components/Header/Header'
 import About from './components/About/About'
+import Skills from './components/Skills/Skills'
 
 const App: FC = () => {
   return (
     <div className="App">
       <Header />
       <About />
+      <Skills />
     </div>
   );
 }
