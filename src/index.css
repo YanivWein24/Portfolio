@@ -1,4 +1,6 @@
 @import "./bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body {
   box-sizing: border-box;
@@ -41,6 +43,33 @@ code {
   border-radius: 10px;
   background: var(--color-primary);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade In Animation */
+
+.fade-in {
+  -webkit-animation: fade-in 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 

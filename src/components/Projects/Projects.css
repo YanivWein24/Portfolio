@@ -1,5 +1,5 @@
 .projects {
-    background-color: var(--color-primary);
+    background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 235) 100%);
     margin: 4rem auto;
     text-align: center;
     padding-bottom: 1rem;
@@ -11,7 +11,7 @@
     width: 30%;
     color: var(--color-offWhite);
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
     border-bottom: 3px solid;
 }
 
