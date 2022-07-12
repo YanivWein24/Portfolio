@@ -20,7 +20,7 @@ const myProducts: { id: number, name: string, description: string, image: string
         id: 2,
         name: "Portfolio",
         description: "Fully responsive portfolio website, built mostly using React and Bootstrap. Press the 'Live Project' button to learn about recursion!",
-        image: "https://user-images.githubusercontent.com/97472180/178359824-7ee68cce-b847-4e15-ade8-e4e12bffe2b6.png",
+        image: "https://user-images.githubusercontent.com/97472180/178595605-37b545cb-7a32-4519-a86e-0105def7fb38.PNG",
         tools: ["React", "Typescript", "Bootstrap", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Portfolio", "/"]
     }

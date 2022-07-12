@@ -46,6 +46,8 @@ const Contact: FC = () => {
             <h1>contact me:</h1>
             <Container>
                 <form onSubmit={sendEmail}>
+                    <p>If you came up all this way, you probably liked what you've seen.<br />
+                        <span>if so, tell me about it!</span></p>
                     <div className="fullName">
                         <input type="text" value={name} required={true} placeholder="Name" name="name" onChange={(e) => setName(e.target.value)}></input>
                     </div>

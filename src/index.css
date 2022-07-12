@@ -45,6 +45,10 @@ code {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+textarea::-webkit-scrollbar-thumb {
+  background: var(--color-offWhite);
+}
+
 /* Fade In Animation */
 
 .fade-in {
@@ -69,12 +73,5 @@ code {
 
   100% {
     opacity: 1;
-  }
-}
-
-
-@media screen and (max-width: 380px) {
-  html {
-    width: 104%;
   }
 }

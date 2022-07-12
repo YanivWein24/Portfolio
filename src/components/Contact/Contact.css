@@ -10,6 +10,19 @@ form {
     gap: 1.5rem;
 }
 
+form p {
+    color: white;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+form p span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 #Contact h1 {
     margin: 1rem auto 2.5rem;
     width: 30%;
@@ -67,20 +80,21 @@ textarea::placeholder {
     color: white;
     background-color: transparent;
     transition: all .2s ease-in-out;
-    box-shadow: 1px 1px 7px #444,
-        -1px -1px 7px #444;
+    box-shadow: rgb(38, 57, 77) 0px 18px 12px -10px;
+
 }
 
 #Contact button:hover,
 #Contact button:active {
-    transform: scale(1.07);
+    transform: scale(0.95);
     background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 235) 100%);
     color: white;
     border: 2px solid white;
+    box-shadow: 0 0 0 0;
 }
 
 #Contact button:active {
-    transform: scale(1.15);
+    transform: scale(1);
 }
 
 #Contact button i {
@@ -103,6 +117,10 @@ textarea::placeholder {
 @media screen and (max-width:940px) {
     form {
         gap: 1.2rem;
+    }
+
+    form p {
+        width: 100%;
     }
 
     #Contact h1 {

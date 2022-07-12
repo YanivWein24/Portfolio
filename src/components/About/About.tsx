@@ -14,23 +14,25 @@ const About: FC = () => {
                 <Col md={12} className="solving-problems">
                     <i className="fa-solid fa-laptop-code"></i>
                     <h3>Solving Problems</h3>
-                    <p>I enjoy developing web applications.<br />
-                        And solving problems is a major part of developing new and innovative software.
+                    <p>
+                        Solving problems is a major part of developing new and innovative technology.
+                        I look at problems as a way to gain knowledge and experience, and improve my skills to solve more complicated problems in the future.
                     </p>
                 </Col>
                 <Col md={6} className="former-technician">
                     <i className="fa-solid fa-wrench"></i>
                     <h3>Former Naval Technician</h3>
                     <p>As a former power and control systems technician in the israeli navy,
-                        I've gained experience on locating and solving complex problems on large scale systems. <br />
+                        I've gained experience on locating and solving complex problems in large scale systems. <br />
                         I'm also experienced with Working in a team and meeting tight schedules.
                     </p>
                 </Col>
                 <Col md={6} className="always-learning">
                     <i className="fa-solid fa-book"></i>
-                    <h3>growth mindset</h3>
+                    <h3>Always Learning</h3>
                     <p>
-                        As technology evolves, developers are constantly
+                        A part of being a software developer is to be able to keep up with the latest technology.<br />
+                        and as technology evolves, I find myself constantly learning something new and growing my skills and knowledge.
                     </p>
                 </Col>
             </Row>
