@@ -25,6 +25,7 @@
 
 .card-img-top {
     border-radius: 20px 20px 0 0;
+    height: 15rem;
 }
 
 .card-text {

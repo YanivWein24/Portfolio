@@ -12,17 +12,17 @@ const myProducts: { id: number, name: string, description: string, image: string
         id: 1,
         name: "Chat App",
         description: "A live chat application built with 'Socket-IO'. Users can create and enter live rooms and chat with other users online.",
-        image: "https://user-images.githubusercontent.com/97472180/175826891-93e84b82-8e03-41a6-ab40-94ed4fe289a3.png",
+        image: "https://user-images.githubusercontent.com/97472180/178359829-1ebb4ac7-f63f-4a4b-805b-86d4f2e8b3f0.png",
         tools: ["React", "Javascript-ES6", "Node.js", "Socket-io", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Chat-App-Socket-IO", "https://socket-io-messenger.herokuapp.com/"]
     },
     {
         id: 2,
         name: "Portfolio",
-        description: "Fully responsive portfolio website, built mostly using React and Bootstrap. Press the 'Live Project' button to learn about recursion.",
-        image: "https://user-images.githubusercontent.com/97472180/175826891-93e84b82-8e03-41a6-ab40-94ed4fe289a3.png",
+        description: "Fully responsive portfolio website, built mostly using React and Bootstrap. Press the 'Live Project' button to learn about recursion!",
+        image: "https://user-images.githubusercontent.com/97472180/178359824-7ee68cce-b847-4e15-ade8-e4e12bffe2b6.png",
         tools: ["React", "Typescript", "Bootstrap", "HTML5", "CSS3"],
-        links: ["https://github.com/YanivWein24/Chat-App-Socket-IO", "/"]
+        links: ["https://github.com/YanivWein24/Portfolio", "/"]
     }
 ]
 

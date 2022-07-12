@@ -1,0 +1,23 @@
+.name {
+    width: 40%;
+}
+
+.firstName {
+    position: absolute;
+    right: 3%;
+}
+
+.lastName {
+    position: absolute;
+    left: 3%;
+}
+
+.email {
+    display: block;
+}
+
+@media screen and (max-width:940px) {
+    .name {
+        width: 80%;
+    }
+}
