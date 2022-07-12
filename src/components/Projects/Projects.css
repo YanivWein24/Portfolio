@@ -2,6 +2,7 @@
     background-color: var(--color-primary);
     margin: 4rem auto;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .projects h1 {
@@ -16,7 +17,7 @@
 
 @media screen and (max-width:940px) {
     .projects {
-        padding: .6rem;
+        padding: 0 .3rem 3rem;
         width: 100%;
     }
 

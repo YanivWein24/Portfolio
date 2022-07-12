@@ -1,23 +1,88 @@
-.name {
-    width: 40%;
+form {
+    /* background-color: var(--color-primary-light);
+     */
+    background: linear-gradient(180deg, rgb(19, 145, 207) 0%, rgb(0, 179, 255) 100%);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.firstName {
-    position: absolute;
-    right: 3%;
+#Contact h1 {
+    margin: 1rem auto 2.5rem;
+    width: 30%;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-bottom: 3px solid;
+    text-align: center;
 }
 
-.lastName {
-    position: absolute;
-    left: 3%;
+input,
+textarea {
+    width: 25rem;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .4);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 1px 1px 7px #444,
+        -1px -1px 7px #444;
 }
 
-.email {
-    display: block;
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+.message {
+    resize: none;
+}
+
+#Contact button {
+    padding: .7rem 3.5rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+    box-shadow: 1px 1px 7px #444,
+        -1px -1px 7px #444;
+}
+
+#Contact button:hover {
+    transform: scale(1.07);
+    background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
+    color: white;
+    border: 2px solid white;
+}
+
+#Contact button i {
+    margin-left: .2rem;
 }
 
 @media screen and (max-width:940px) {
-    .name {
-        width: 80%;
+    form {
+        gap: 1.2rem;
+    }
+
+    #Contact h1 {
+        width: 85%;
+        font-size: 2rem;
+    }
+
+    input,
+    textarea {
+        width: 17rem;
     }
 }
