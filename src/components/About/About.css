@@ -44,6 +44,10 @@ h3 {
     transform: scale(1.1)
 }
 
+#About button:active {
+    transform: scale(1.22)
+}
+
 #About button a {
     color: #fff;
 }

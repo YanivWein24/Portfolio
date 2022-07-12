@@ -12,7 +12,7 @@ const myProducts: { id: number, name: string, description: string, image: string
         id: 1,
         name: "Chat App",
         description: "A live chat application built with 'Socket-IO'. Users can create and enter live rooms and chat with other users online.",
-        image: "https://user-images.githubusercontent.com/97472180/178359829-1ebb4ac7-f63f-4a4b-805b-86d4f2e8b3f0.png",
+        image: "https://user-images.githubusercontent.com/97472180/178511493-91d1e17a-3203-4f45-b74c-eb87b28b019b.PNG",
         tools: ["React", "Javascript-ES6", "Node.js", "Socket-io", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Chat-App-Socket-IO", "https://socket-io-messenger.herokuapp.com/"]
     },

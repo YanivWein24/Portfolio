@@ -14,6 +14,11 @@
     margin: 0 2rem;
     color: var(--color-offWhite);
     font-size: 1.7rem;
+    transition: all .1s ease-in-out;
+}
+
+.footer i:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 940px) {

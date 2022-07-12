@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+
+:root {
+  --color-primary: rgb(31, 155, 207);
+  --color-primary-light: rgba(31, 155, 207, .3);
+  --color-offWhite: rgb(246, 246, 246)
+}
+
 body {
   box-sizing: border-box;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 }
 
 html {
@@ -18,13 +25,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-:root {
-  --color-primary: rgb(31, 155, 207);
-  --color-primary-light: rgba(31, 155, 207, .3);
-  --color-offWhite: rgb(238, 238, 238)
-}
-
 
 /* Custom Scrollbar */
 
