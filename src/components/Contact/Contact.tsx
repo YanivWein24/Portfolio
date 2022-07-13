@@ -1,5 +1,5 @@
 import React, { useState, FC, FormEvent } from 'react'
-import { Row, Col, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import emailjs from '@emailjs/browser'
 import "./Contact.css"
 
@@ -57,7 +57,7 @@ const Contact: FC = () => {
                     <div className="message">
                         <textarea rows={5} placeholder="Your Message Here" value={message} required={true} name="message" onChange={(e) => setMessage(e.target.value)}></textarea>
                     </div>
-                    <button type="submit">Send <i className="fa-solid fa-paper-plane"></i></button>
+                    <button type="submit">Submit <i className="fa-solid fa-paper-plane"></i></button>
                     {messageSent && <h3 className="messageSent fade-in">Thank you for your response!</h3>}
                     {error && <h3 className="error fade-in">Failed to send message...</h3>}
                 </form>

@@ -59,10 +59,11 @@ h3 {
 .about-me {
     margin-top: 4rem;
     background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
+    padding: 1rem;
 }
 
 .about-me i {
-    margin: 3rem 5rem 2rem;
+    margin: 2.5rem 5rem 2rem;
     font-size: 5rem;
     color: var(--color-offWhite);
 }
