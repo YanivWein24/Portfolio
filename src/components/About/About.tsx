@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { Button, Row, Col } from "react-bootstrap"
+import { Link } from 'react-scroll'
 import "./About.css"
 
 const About: FC = () => {
@@ -9,6 +10,7 @@ const About: FC = () => {
                 <h1><span>I'm Yaniv Weinshtein,</span></h1>
                 <h2>A <span>Full Stack</span> Web Developer.</h2>
                 <Button><a download href="../../Resume-Template.pdf">Download Resume</a></Button >
+                <Button><Link to="Contact" smooth={true} duration={1000} offset={-60} className="link">Contact Me</Link></Button >
             </div>
             <Row lg={3} md={12} sm={12} className="about-me">
                 <Col md={12} className="solving-problems">
@@ -31,8 +33,8 @@ const About: FC = () => {
                     <i className="fa-solid fa-book"></i>
                     <h3>Always Learning</h3>
                     <p>
-                        A part of being a software developer is to be able to keep up with the latest technology.<br />
-                        and as technology evolves, I find myself constantly learning something new and growing my skills and knowledge.
+                        A part of being a software developer is to be able to keep up with the latest technologies.<br />
+                        and as technology evolves, I find myself constantly learning new things and growing my skills and knowledge.
                     </p>
                 </Col>
             </Row>

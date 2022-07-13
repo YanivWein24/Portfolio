@@ -23,6 +23,7 @@ const Skills: FC = () => {
                 <Col>
                     <a href="https://nodejs.org/en/"> <img src="https://miro.medium.com/max/800/1*bc9pmTiyKR0WNPka2w3e0Q.png" alt="html5" /></a>
                     <a href="https://expressjs.com/"> <img src="https://www.guayerd.com/wp-content/uploads//2021/04/expressjs-logo.svg" alt="html5" /></a>
+                    <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"> <img src="https://uxwing.com/wp-content/themes/uxwing/download/07-web-app-development/rest-api.png" alt="MongoDB" /></a>
                     <a href="https://www.mongodb.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /></a>
                     <a href="https://www.passportjs.org/"> <img src="https://cdn.glitch.me/project-avatar/0d184ee3-fd8d-4b94-acf4-b4e686e57375.png" alt="Passport.js" /></a>
                     <a href="https://oauth.net/"> <img src="https://net.cloudinfrastructureservices.co.uk/wp-content/uploads/2021/12/OAuth-2.png" alt="Oauth2.0" /></a>
