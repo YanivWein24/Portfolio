@@ -3,7 +3,7 @@ const myProducts: { id: number, name: string, description: string, image: string
     {
         id: 0,
         name: "Get Jokes",
-        description: "A MERN stack application that provides custom jokes from joke-api. Users can register (also with their Google and Facebook accounts) and create a private collection of jokes.",
+        description: "A MERN stack application that provides custom jokes from Joke-API. Users can register (also with their Google and Facebook accounts) and create a private collection of jokes.",
         image: "https://user-images.githubusercontent.com/97472180/175826891-93e84b82-8e03-41a6-ab40-94ed4fe289a3.png",
         tools: ["React", "Javascript-ES6", "Express", "Node.js", "MongoDB", "Axios", "Context-API", "Passport.js", "OAuth2.0", "Bcrypt", "Bootstrap", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Get-Jokes", "https://get-jokes-gen.herokuapp.com/"]

@@ -38,18 +38,15 @@ h3 {
     border-radius: 30px;
     background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
     transition: all 0.2s ease-in-out;
-}
-
-#About button:hover {
-    transform: scale(1.1);
-}
-
-#About button:active {
-    transform: scale(1.22)
+    text-transform: capitalize;
 }
 
 #About button a {
     color: #fff;
+}
+
+#About button a:hover {
+    text-decoration: none;
 }
 
 .col {

@@ -1,16 +1,39 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import { Button, Row, Col } from "react-bootstrap"
 import { Link } from 'react-scroll'
 import "./About.css"
 
 const About: FC = () => {
+
+    const [firtstButtonHovering, setFirstHovering] = useState(false);
+    const [secondButtonHovering, setSecondeHovering] = useState(false);
+
+    const handleFirstMouseOver = () => {
+        setFirstHovering(true);
+    };
+
+    const handleFirstMouseOut = () => {
+        setFirstHovering(false);
+    };
+
+    const handleSecondMouseOver = () => {
+        setSecondeHovering(true);
+    };
+
+    const handleSecondMouseOut = () => {
+        setSecondeHovering(false);
+    };
+
+
     return (
         <div id="About">
             <div className="intro">
                 <h1><span>I'm Yaniv Weinshtein,</span></h1>
                 <h2>A <span>Full Stack</span> Web Developer.</h2>
-                <Button><a download href="../../Resume-Template.pdf">Download Resume</a></Button >
-                <Button><Link to="Contact" smooth={true} duration={1000} offset={-60} className="link">Contact Me</Link></Button >
+                <Button onMouseOver={handleFirstMouseOver} onMouseOut={handleFirstMouseOut} className={firtstButtonHovering ? "shake-bottom" : ""}>
+                    <a download href="../../Resume-Template.pdf"><i className="fa-solid fa-download"></i> &nbsp;Download Resume</a></Button >
+                <Button onMouseOver={handleSecondMouseOver} onMouseOut={handleSecondMouseOut} className={secondButtonHovering ? "shake-bottom" : ""}>
+                    <Link to="Contact" smooth={true} duration={1000} offset={-60} className="link"><i className="fa-solid fa-envelope"></i> &nbsp;Contact Me</Link></Button >
             </div>
             <Row lg={3} md={12} sm={12} className="about-me">
                 <Col md={12} className="solving-problems">
@@ -24,16 +47,15 @@ const About: FC = () => {
                 <Col md={6} className="former-technician">
                     <i className="fa-solid fa-wrench"></i>
                     <h3>Former Naval Technician</h3>
-                    <p>As a former power and control systems technician in the israeli navy,
-                        I've gained experience on locating and solving complex problems in large scale systems. <br />
-                        I'm also experienced with Working in a team and meeting tight schedules.
+                    <p>As a former power and control systems technician in the Israeli navy, I've gained experience in locating and solving complex problems in large scale systems.
+                        I'm also experienced with working in a team and meeting tight schedules.
                     </p>
                 </Col>
                 <Col md={6} className="always-learning">
                     <i className="fa-solid fa-book"></i>
                     <h3>Always Learning</h3>
                     <p>
-                        A part of being a software developer is to be able to keep up with the latest technologies.<br />
+                        A part of being a software developer is being able to keep up with the latest technologies.
                         and as technology evolves, I find myself constantly learning new things and growing my skills and knowledge.
                     </p>
                 </Col>
