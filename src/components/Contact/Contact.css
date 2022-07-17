@@ -46,6 +46,7 @@ textarea {
     border: none;
     box-shadow: rgb(38, 57, 77) 0px 18px 12px -10px;
     transition: all .2s ease-in-out;
+    resize: none;
 }
 
 input:hover,
@@ -58,6 +59,7 @@ textarea:hover {
 input:focus,
 textarea:focus {
     background-color: rgba(100, 100, 100, .4);
+    transform: scale(0.95);
 }
 
 input::placeholder,

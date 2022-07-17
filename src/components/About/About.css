@@ -39,6 +39,7 @@ h3 {
     background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
     transition: all 0.2s ease-in-out;
     text-transform: capitalize;
+    box-shadow: rgb(38, 57, 77) 0px 15px 12px -10px;
 }
 
 #About button a {

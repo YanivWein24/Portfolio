@@ -1,4 +1,3 @@
-
 const myProducts: { id: number, name: string, description: string, image: string, tools: string[], links: string[] }[] = [
     {
         id: 0,
