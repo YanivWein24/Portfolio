@@ -42,13 +42,14 @@
 
 .footer i {
     margin: 0 2rem;
-    color: var(--color-offWhite);
+    color: #ddd;
     font-size: 2rem;
     transition: all .1s ease-in-out;
 }
 
 .footer i:hover {
     transform: scale(1.2);
+    color: white;
 }
 
 @media screen and (max-width: 940px) {
@@ -59,5 +60,9 @@
 
     .footer {
         width: 85%;
+    }
+
+    .footer i {
+        color: white;
     }
 }

@@ -11,7 +11,7 @@ const Projects: FC = () => {
             <Container>
                 <Row>
                     {myProjects.map(project => (
-                        <Col data-aos="slide-up" data-aos-once="true" key={project.id} sm={12} md={12} lg={3}>
+                        <Col data-aos="slide-up" data-aos-once="true" key={project.id} sm={12} md={project.mediumSize ? 12 : 6} lg={3}>
                             <Cards project={project} />
                         </Col>
                     ))}
