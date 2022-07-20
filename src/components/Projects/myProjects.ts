@@ -2,7 +2,7 @@ const myProducts: { id: number, name: string, description: string, image: string
     {
         id: 0,
         name: "Get Jokes",
-        description: "A MERN stack application that provides custom jokes from Joke-API. Users can register (also with their Google and Facebook accounts) and create a private collection of jokes. also features a custom dark theme, and the theme preference gets saved in the user's local storage for the next time they visit.",
+        description: "A MERN stack application that provides custom jokes from Joke-API. Users can register (also with their Google and Facebook accounts) and create a private collection of jokes. Also features a custom dark theme! And the theme preference gets saved in the user's local storage for the next time they visit.",
         image: "https://user-images.githubusercontent.com/97472180/175826891-93e84b82-8e03-41a6-ab40-94ed4fe289a3.png",
         tools: ["React", "Javascript-ES6", "Express", "Node.js", "MongoDB", "Axios", "Context-API", "Passport.js", "OAuth2.0", "Bcrypt", "Bootstrap", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Get-Jokes", "https://get-jokes-gen.herokuapp.com/"],
@@ -11,7 +11,7 @@ const myProducts: { id: number, name: string, description: string, image: string
     {
         id: 1,
         name: "Chat App",
-        description: "Cross-platform chat Application. users can join or create live rooms, and chat with their friends online! It supports the classic emojis, auto notifies when users join/leave the room and contain a dedicated screen that presents the current users in the room.",
+        description: "Cross-platform chat Application. Users can join or create live rooms, and chat with their friends online! It supports the classic emojis, auto notifies when users join/leave the room and contain a dedicated screen that presents the current users in the room.",
         image: "https://user-images.githubusercontent.com/97472180/178511493-91d1e17a-3203-4f45-b74c-eb87b28b019b.PNG",
         tools: ["React", "Javascript-ES6", "Node.js", "Socket-io", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Chat-App-Socket-IO", "https://socket-io-messenger.herokuapp.com/"]

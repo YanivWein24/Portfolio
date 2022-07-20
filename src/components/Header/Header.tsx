@@ -24,7 +24,7 @@ const Header: FC = () => {
                             <div className="linkContainer">
                                 <Link to="Contact" smooth={true} duration={750} offset={-60} className="link" href="#Contact-me">
                                     <i className="fa-solid fa-envelope"></i> Contact me</Link></div>
-                            <div className="linkContainer"><a className="link" href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> Resume</a></div>
+                            <div className="linkContainer resume"><a className="link" href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> Resume</a></div>
                         </Nav>
                         <div className="socials">
                             <a href="https://github.com/YanivWein24/"><i className="fa-brands fa-github"></i></a>
