@@ -31,6 +31,12 @@
     background-color: var(--color-primary);
 }
 
+.linkContainer:hover a.link {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .resume {
     background-color: var(--color-primary);
 }
@@ -41,12 +47,6 @@ a.link {
 
 .resume a.link {
     color: #fff;
-}
-
-a.link:hover {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .socials a {

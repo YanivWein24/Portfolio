@@ -6,17 +6,14 @@ import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
-const App: FC = () => {
-  return (
-    <div className="App">
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-  );
-}
+const App: FC = () =>
+  <div className="App">
+    <Header />
+    <About />
+    <Skills />
+    <Projects />
+    <Contact />
+    <Footer />
+  </div>
 
 export default App;

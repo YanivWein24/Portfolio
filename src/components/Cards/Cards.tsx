@@ -4,7 +4,7 @@ import "./Cards.css"
 
 const smallScreen: boolean = window.innerWidth < 940
 
-interface props {
+interface CardProps {
     project: {
         name: string;
         description: string;
@@ -15,27 +15,24 @@ interface props {
     }
 }
 
-const Cards: FC<props> = ({ project }) => {
-    return (
-        <Card style={{ width: smallScreen ? '19rem' : '22rem' }}>
-            <Card.Img variant="top" src={project.image} />
-            <Card.Body>
-                <Card.Title>{project.name}</Card.Title>
-                <Card.Text>
-                    {project.description}
-                </Card.Text>
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-                <ListGroup.Item>{project.tools.map(tool => (
-                    <div key={project.tools.indexOf(tool)} className="tool">{tool}</div>
-                ))}</ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-                <Card.Link href={project.links[0]}><Button variant="outline-info">Code</Button></Card.Link>
-                <Card.Link href={project.links[1]}><Button variant="outline-info">Live Project</Button></Card.Link>
-            </Card.Body>
-        </Card>
-    )
-}
+const Cards: FC<CardProps> = ({ project }) =>
+    <Card style={{ width: smallScreen ? '19rem' : '22rem' }}>
+        <Card.Img variant="top" src={project.image} />
+        <Card.Body>
+            <Card.Title>{project.name}</Card.Title>
+            <Card.Text>
+                {project.description}
+            </Card.Text>
+        </Card.Body>
+        <ListGroup className="list-group-flush">
+            <ListGroup.Item>{project.tools.map(tool => (
+                <div key={project.tools.indexOf(tool)} className="tool">{tool}</div>
+            ))}</ListGroup.Item>
+        </ListGroup>
+        <Card.Body>
+            <Card.Link href={project.links[0]}><Button variant="outline-info">Code</Button></Card.Link>
+            <Card.Link href={project.links[1]}><Button variant="outline-info">Live Project</Button></Card.Link>
+        </Card.Body>
+    </Card>
 
 export default Cards
