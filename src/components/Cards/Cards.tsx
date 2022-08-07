@@ -23,6 +23,11 @@ const Cards: FC<CardProps> = ({ project }) =>
             <Card.Text>
                 {project.description}
             </Card.Text>
+            {project.name === 'Get Jokes' &&
+                <Card.Text>
+                    * Includes Unit Tests
+                </Card.Text>
+            }
         </Card.Body>
         <ListGroup className="list-group-flush">
             <ListGroup.Item>{project.tools.map(tool => (

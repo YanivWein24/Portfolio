@@ -13,7 +13,7 @@ h1 {
 }
 
 .intro h1 {
-    transform: rotate(2deg)
+    transform: rotate(2deg);
 }
 
 h1 span {
