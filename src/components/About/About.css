@@ -47,6 +47,15 @@
     fill: rgb(0, 179, 255);
 }
 
+.Typewriter {
+    display: inline-block;
+}
+
+.Typewriter__wrapper {
+    font-weight: 600;
+    color: var(--color-primary)
+}
+
 .intro {
     font-family: 'Mali', cursive;
     padding-bottom: 7rem;
@@ -64,15 +73,12 @@ h1 {
 
 h1 span {
     background-color: var(--color-primary-light);
+    line-height: 1.4;
 }
 
 h2 {
     margin-top: 2rem;
     font-size: 2.2rem;
-}
-
-h2 span {
-    color: var(--color-primary);
 }
 
 h3 {
@@ -126,14 +132,13 @@ h3 {
         font-size: 1.6rem;
     }
 
-    .wave svg {
-        width: calc(180% + 1.3px);
+    .wave svg,
+    .bottom-wave svg {
         height: 50px;
     }
 
-    .bottom-wave svg {
-        width: calc(180% + 1.3px);
-        height: 50px;
+    .Typewriter {
+        display: block;
     }
 
 }

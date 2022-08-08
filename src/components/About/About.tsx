@@ -2,8 +2,10 @@ import React, { FC, useState } from 'react'
 import { Button, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import './About.css'
+import Typewriter from 'typewriter-effect'
 
 const About: FC = () => {
+
 
     const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
     const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
@@ -30,7 +32,14 @@ const About: FC = () => {
         <div id="About">
             <div className="intro" data-aos="slide-right" data-aos-once="true">
                 <h1><span>I'm Yaniv Weinshtein,</span></h1>
-                <h2>A <span>Full Stack</span> Web Developer.</h2>
+
+                <h2>A <Typewriter
+                    options={{
+                        strings: ['FULL STACK', 'FRONT END', 'BACK END'],
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />Web Developer.</h2>
                 <Button onMouseOver={handleFirstMouseOver} onMouseOut={handleFirstMouseOut} className={firstButtonHovering ? "shake-bottom" : ""}>
                     <a href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> &nbsp;Download Resume</a></Button >
                 <Button onMouseOver={handleSecondMouseOver} onMouseOut={handleSecondMouseOut} className={secondButtonHovering ? "shake-bottom" : ""}>

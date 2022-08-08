@@ -41,6 +41,10 @@
     background-color: var(--color-primary);
 }
 
+.resume:hover {
+    background-color: rgba(31, 154, 207, 0.8);
+}
+
 a.link {
     color: #ccc;
 }
