@@ -32,14 +32,13 @@ const About: FC = () => {
         <div id="About">
             <div className="intro" data-aos="slide-right" data-aos-once="true">
                 <h1><span>I'm Yaniv Weinshtein,</span></h1>
-
-                <h2>A <Typewriter
+                <h2><span>A <Typewriter
                     options={{
                         strings: ['FULL STACK', 'FRONT END', 'BACK END'],
                         autoStart: true,
                         loop: true,
                     }}
-                />Web Developer.</h2>
+                /></span>Web Developer.</h2>
                 <Button onMouseOver={handleFirstMouseOver} onMouseOut={handleFirstMouseOut} className={firstButtonHovering ? "shake-bottom" : ""}>
                     <a href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> &nbsp;Download Resume</a></Button >
                 <Button onMouseOver={handleSecondMouseOver} onMouseOut={handleSecondMouseOut} className={secondButtonHovering ? "shake-bottom" : ""}>

@@ -23,7 +23,7 @@
 }
 
 .wave .shape-fill {
-    fill: #1F9BD9;
+    fill: rgb(27, 147, 207);
 }
 
 .bottom-wave {
@@ -53,6 +53,10 @@
 
 .Typewriter__wrapper {
     font-weight: 600;
+    color: var(--color-primary)
+}
+
+.Typewriter__cursor {
     color: var(--color-primary)
 }
 
@@ -88,7 +92,7 @@ h3 {
 #About button {
     margin: 2.5rem .5rem 0;
     border-radius: 30px;
-    background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
+    background: linear-gradient(180deg, rgb(27, 147, 207) 0%, rgb(0, 179, 255) 100%);
     transition: all 0.2s ease-in-out;
     text-transform: capitalize;
     box-shadow: rgb(38, 57, 77) 0px 15px 12px -10px;
@@ -107,7 +111,7 @@ h3 {
 }
 
 .about-me {
-    background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
+    background: linear-gradient(180deg, rgb(27, 147, 207) 0%, rgb(0, 179, 255) 100%);
     padding: 1rem;
 }
 
@@ -132,13 +136,18 @@ h3 {
         font-size: 1.6rem;
     }
 
+    h2 span {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+    }
+
     .wave svg,
     .bottom-wave svg {
         height: 50px;
     }
 
     .Typewriter {
-        display: block;
+        display: flex;
     }
-
 }
