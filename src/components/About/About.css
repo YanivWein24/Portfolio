@@ -2,10 +2,56 @@
     margin-top: 10rem;
     padding: .4rem;
     text-align: center;
+    width: 100%;
+}
+
+/* from https://www.shapedivider.app/ */
+.wave {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 80px;
+}
+
+.wave .shape-fill {
+    fill: #1F9BD9;
+}
+
+.bottom-wave {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 80px;
+}
+
+.bottom-wave .shape-fill {
+    fill: rgb(0, 179, 255);
 }
 
 .intro {
     font-family: 'Mali', cursive;
+    padding-bottom: 7rem;
+    width: 101%;
+    overflow: hidden;
 }
 
 h1 {
@@ -55,7 +101,6 @@ h3 {
 }
 
 .about-me {
-    margin-top: 4rem;
     background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
     padding: 1rem;
 }
@@ -80,4 +125,15 @@ h3 {
     h2 {
         font-size: 1.6rem;
     }
+
+    .wave svg {
+        width: calc(180% + 1.3px);
+        height: 50px;
+    }
+
+    .bottom-wave svg {
+        width: calc(180% + 1.3px);
+        height: 50px;
+    }
+
 }

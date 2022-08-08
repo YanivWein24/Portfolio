@@ -1,18 +1,60 @@
 .projects {
     background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 235) 100%);
-    margin: 4rem auto;
+    margin: 0 auto;
     text-align: center;
     padding-bottom: 1rem;
 }
 
 .projects h1 {
-    margin: 1rem auto 4rem;
+    margin: 0 auto 4rem;
     padding-top: 4rem;
     width: 30%;
     color: var(--color-offWhite);
     font-size: 2.5rem;
     font-weight: 600;
     border-bottom: 3px solid;
+}
+
+/* from https://www.shapedivider.app/ */
+.topAngle-svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.topAngle-svg svg {
+    position: relative;
+    display: block;
+    width: calc(222% + 1.3px);
+    height: 38px;
+}
+
+.topAngle-svg .shape-fill {
+    fill: rgb(31, 155, 217);
+}
+
+.bottomAngle-svg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottomAngle-svg svg {
+    position: relative;
+    display: block;
+    width: calc(222% + 1.3px);
+    height: 38px;
+}
+
+.bottomAngle-svg .shape-fill {
+    fill: rgb(0, 179, 235);
 }
 
 @media screen and (max-width:940px) {
@@ -23,5 +65,11 @@
 
     .projects h1 {
         width: 85%
+    }
+
+    .topAngle-svg svg,
+    .bottomAngle-svg svg {
+        /* width: calc(120% + 1.3px); */
+        height: 20px;
     }
 }
