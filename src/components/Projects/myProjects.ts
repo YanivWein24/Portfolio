@@ -13,7 +13,7 @@ const myProducts: { id: number, name: string, description: string, image: string
         name: "Chat App",
         description: "Cross-platform chat Application. Users can join or create live rooms, and chat with their friends online! It supports the classic emojis, auto notifies when users join/leave the room and contain a dedicated screen that presents the current users in the room.",
         image: "https://user-images.githubusercontent.com/97472180/178511493-91d1e17a-3203-4f45-b74c-eb87b28b019b.PNG",
-        tools: ["React", "Javascript-ES6", "Node.js", "Socket-io", "HTML5", "CSS3"],
+        tools: ["React", "Javascript-ES6", "Node.js", "Socket-IO", "HTML5", "CSS3"],
         links: ["https://github.com/YanivWein24/Chat-App-Socket-IO", "https://socket-io-messenger.herokuapp.com/"]
     },
     {

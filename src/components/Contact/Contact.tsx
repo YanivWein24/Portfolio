@@ -26,7 +26,6 @@ const Contact: FC = () => {
 
         emailjs.sendForm(serviceId, templateId, e.currentTarget, publicKey)
             .then((result) => {
-                console.log(result.text)
                 setMessageSent(true)
                 resetForm()
                 setTimeout(() => {
@@ -46,8 +45,10 @@ const Contact: FC = () => {
             <h1>contact me:</h1>
             <Container>
                 <form onSubmit={sendEmail}>
-                    <p data-aos="fade-down" data-aos-once="true">If you came up all this way, you probably liked what you've seen.<br />
-                        <span>if so, tell me about it!</span></p>
+                    <p data-aos="fade-down" data-aos-once="true">
+                        If you came all this way, you probably liked what you've seen.<br />
+                        <span>if so, tell me about it!</span>
+                    </p>
                     <div data-aos="fade-down" data-aos-once="true" className="fullName">
                         <input type="text" value={name} required={true} placeholder="Name" name="name" onChange={(e) => setName(e.target.value)}></input>
                     </div>

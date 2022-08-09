@@ -36,10 +36,10 @@ const Skills: FC = () =>
             <h2>Misc:</h2>
             <Row >
                 <Col>
-                    <a href="https://www.python.org/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Python" /></a>
                     <a href="https://jestjs.io/"> <img src="https://iconape.com/wp-content/png_logo_vector/jest-logo.png" alt="Jest" /></a>
-                    <a href="https://git-scm.com/"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" /></a>
                     <a href="https://www.postman.com/"> <img src="https://iconape.com/wp-content/png_logo_vector/postman.png" alt="Postman" /></a>
+                    <a href="https://git-scm.com/"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" /></a>
+                    <a href="https://www.python.org/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Python" /></a>
                 </Col>
             </Row>
         </div >
