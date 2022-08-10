@@ -98,6 +98,19 @@ h3 {
     box-shadow: rgb(38, 57, 77) 0px 15px 12px -10px;
 }
 
+#About button:hover {
+    background: linear-gradient(180deg, rgb(25, 133, 200) 0%, rgb(0, 159, 235)100%);
+
+}
+
+#About .downloadButton {
+    background: #444;
+}
+
+#About .downloadButton:hover {
+    background: #222;
+}
+
 #About button a {
     color: #fff;
 }
@@ -129,7 +142,7 @@ h3 {
 
 @media screen and (max-width:940px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     h2 {
