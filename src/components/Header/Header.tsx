@@ -26,8 +26,8 @@ const Header: FC = () =>
                         <div className="linkContainer resume"><a className="link" href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> Resume</a></div>
                     </Nav>
                     <div className="socials">
-                        <a href="https://github.com/YanivWein24/"><i className="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/yaniv-weinshtein/"><i className="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/YanivWein24/"><i className="fa-brands fa-github"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yaniv-weinshtein/"><i className="fa-brands fa-linkedin"></i></a>
                         <a href="mailto:yanivwein22@gmail.com"><i className="fa-solid fa-envelope"></i></a>
                     </div>
                 </Navbar.Collapse>

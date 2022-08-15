@@ -36,8 +36,8 @@ const Cards: FC<CardProps> = ({ project }) =>
             ))}</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-            <Card.Link href={project.links[0]}><Button variant="outline-secondary">Code</Button></Card.Link>
-            <Card.Link href={project.links[1]}><Button variant="outline-info">Live Project</Button></Card.Link>
+            <Card.Link href={project.links[0]} target="_blank" rel="noopener noreferrer"><Button variant="outline-secondary">Code</Button></Card.Link>
+            <Card.Link href={project.links[1]} target={project.links[1] === "/" ? "" : "_blank"} rel="noopener noreferrer"><Button variant="outline-info">Live Project</Button></Card.Link>
         </Card.Body>
     </Card>
 
