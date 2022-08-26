@@ -61,7 +61,7 @@ const About: FC = () => {
                 <Col md={6} data-aos={smallScreen ? "fade-right" : "zoom-in-up"} data-aos-once="true" className="former-technician">
                     <i className="fa-solid fa-wrench"></i>
                     <h3>Former Naval Technician</h3>
-                    <p>As a former power and control systems technician in the Israeli navy, I've gained experience in locating and solving complex problems in large scale systems.
+                    <p>As a former "Monitor And Control Systems" Technician in the Israeli navy, I've gained experience in locating and solving complex problems in large-scale systems.
                         I'm also experienced with working in a team and meeting tight schedules.
                     </p>
                 </Col>

@@ -164,3 +164,9 @@ h3 {
         display: flex;
     }
 }
+
+@media screen and (min-width:1600px) {
+    .about-me {
+        padding: 1rem 7rem;
+    }
+}

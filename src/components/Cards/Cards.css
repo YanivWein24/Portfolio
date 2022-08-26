@@ -32,7 +32,7 @@
 }
 
 .topCardBody {
-    min-height: 15rem;
+    min-height: 16rem;
 }
 
 .card-text {
@@ -77,5 +77,11 @@
 @media screen and (max-width:940px) {
     .card {
         margin: 1rem auto 1.5rem;
+    }
+
+    .card:hover {
+        transform: none;
+        box-shadow: 6px 6px 13px #333,
+            -6px -6px 13px #333;
     }
 }
