@@ -11,6 +11,12 @@ const Contact: FC = () => {
     const [messageSent, setMessageSent] = useState<boolean>(false)
     const [error, setError] = useState<boolean>(false)
 
+    const resetForm = (): void => {
+        setName("")
+        setEmail("")
+        setMessage("")
+    }
+
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
@@ -18,14 +24,8 @@ const Contact: FC = () => {
         const templateId: string = process.env.REACT_APP_TEMPLATE_ID ? process.env.REACT_APP_TEMPLATE_ID : "error"
         const serviceId: string = process.env.REACT_APP_SERVICE_ID ? process.env.REACT_APP_SERVICE_ID : "error"
 
-        const resetForm = (): void => {
-            setName("")
-            setEmail("")
-            setMessage("")
-        }
-
         emailjs.sendForm(serviceId, templateId, e.currentTarget, publicKey)
-            .then((result) => {
+            .then(() => {
                 setMessageSent(true)
                 resetForm()
                 setTimeout(() => {
@@ -58,6 +58,7 @@ const Contact: FC = () => {
                     <div data-aos="fade-down" data-aos-once="true" className="message">
                         <textarea rows={5} placeholder="Your Message Here" value={message} required={true} name="message" onChange={(e) => setMessage(e.target.value)}></textarea>
                     </div>
+                    <button data-aos="fade-down" data-aos-once="true" className="reset" onClick={resetForm} type="reset">Reset <i className="fa-solid fa-eraser"></i></button>
                     <button data-aos="fade-down" data-aos-once="true" type="submit">Submit <i className="fa-solid fa-paper-plane"></i></button>
                     {messageSent && <h3 className="messageSent fade-in">Thank you for your response!</h3>}
                     {error && <h3 className="error fade-in">Failed to send message...</h3>}

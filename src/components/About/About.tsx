@@ -4,27 +4,11 @@ import { Link } from 'react-scroll'
 import './About.css'
 import Typewriter from 'typewriter-effect'
 
-const About: FC = () => {
 
+const About: FC = () => {
 
     const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
     const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
-
-    const handleFirstMouseOver = () => {
-        setFirstHovering(true);
-    };
-
-    const handleFirstMouseOut = () => {
-        setFirstHovering(false);
-    };
-
-    const handleSecondMouseOver = () => {
-        setSecondeHovering(true);
-    };
-
-    const handleSecondMouseOut = () => {
-        setSecondeHovering(false);
-    };
 
     const smallScreen: boolean = window.innerWidth < 940
 
@@ -39,9 +23,9 @@ const About: FC = () => {
                         loop: true,
                     }}
                 /></span>Web Developer.</h2>
-                <Button onMouseOver={handleFirstMouseOver} onMouseOut={handleFirstMouseOut} className={firstButtonHovering ? "shake-bottom downloadButton" : "downloadButton"}>
+                <Button onMouseOver={() => setFirstHovering(true)} onMouseOut={() => setFirstHovering(false)} className={firstButtonHovering ? "shake-bottom downloadButton" : "downloadButton"}>
                     <a href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> &nbsp;Download Resume</a></Button >
-                <Button onMouseOver={handleSecondMouseOver} onMouseOut={handleSecondMouseOut} className={secondButtonHovering ? "shake-bottom" : ""}>
+                <Button onMouseOver={() => setSecondeHovering(true)} onMouseOut={() => setSecondeHovering(false)} className={secondButtonHovering ? "shake-bottom" : ""}>
                     <Link to="Contact" smooth={true} duration={1000} offset={-60} className="link"><i className="fa-solid fa-envelope"></i> &nbsp;Contact Me</Link></Button >
             </div >
             <div className="wave">
