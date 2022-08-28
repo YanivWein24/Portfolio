@@ -20,6 +20,10 @@
     color: white;
 }
 
+.backToTop:active {
+    background-color: var(--color-primary-light);
+}
+
 .backToTop:hover a.link {
     color: white;
     text-decoration: none;
@@ -37,7 +41,7 @@
     padding: .6rem;
     width: 25%;
     border-radius: 30px;
-    background: linear-gradient(180deg, rgb(31, 155, 217) 0%, rgb(0, 179, 255) 100%);
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     gap: 1rem;
 }
 

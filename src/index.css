@@ -4,8 +4,8 @@
 
 
 :root {
-  --color-primary: rgb(31, 155, 207);
-  --color-primary-light: rgba(31, 155, 207, .3);
+  --color-primary: rgb(28, 114, 220);
+  --color-primary-light: rgb(44, 139, 255);
   --color-offWhite: rgb(246, 246, 246)
 }
 
@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
+  background-color: var(--color-offWhite);
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   overflow-x: hidden;
 }

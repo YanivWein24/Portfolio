@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Card, ListGroup, Button } from "react-bootstrap"
+import { Card, ListGroup } from "react-bootstrap"
 import "./Cards.css"
 
 const tabletScreen: boolean = window.innerWidth > 768 && window.innerWidth < 1000
@@ -36,8 +36,8 @@ const Cards: FC<CardProps> = ({ project }) =>
             ))}</ListGroup.Item>
         </ListGroup>
         <Card.Body>
-            <Card.Link href={project.links[0]} target="_blank" rel="noopener noreferrer"><Button variant="outline-secondary">Code</Button></Card.Link>
-            <Card.Link href={project.links[1]} target={project.links[1] === "/" ? "" : "_blank"} rel="noopener noreferrer"><Button variant="outline-info">Live Project</Button></Card.Link>
+            <Card.Link href={project.links[0]} target="_blank" rel="noopener noreferrer"><button className="greyButton">Code</button></Card.Link>
+            <Card.Link href={project.links[1]} target={project.links[1] === "/" ? "" : "_blank"} rel="noopener noreferrer"><button>Live Project</button></Card.Link>
         </Card.Body>
     </Card>
 

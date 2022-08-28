@@ -14,15 +14,18 @@ const About: FC = () => {
 
     return (
         <div id="About">
-            <div className="intro" data-aos="slide-right" data-aos-once="true">
+            <div className="intro fade-in">
+                <video autoPlay muted loop id="myVideo">
+                    <source src={require("../../mixkit-ink-swirling-in-blue-tones-underwater-229.mp4")} type="video/mp4" />
+                </video>
                 <h1><span>I'm Yaniv Weinshtein,</span></h1>
-                <h2><span>A <Typewriter
+                <h2><span>A <strong><Typewriter
                     options={{
                         strings: ['FULL STACK', 'FRONT END', 'BACK END'],
                         autoStart: true,
                         loop: true,
                     }}
-                /></span>Web Developer.</h2>
+                /></strong></span>Web Developer.</h2>
                 <Button onMouseOver={() => setFirstHovering(true)} onMouseOut={() => setFirstHovering(false)} className={firstButtonHovering ? "shake-bottom downloadButton" : "downloadButton"}>
                     <a href={require("../../Yaniv-Resume.pdf")} download="Yaniv-Resume.pdf"><i className="fa-solid fa-download"></i> &nbsp;Download Resume</a></Button >
                 <Button onMouseOver={() => setSecondeHovering(true)} onMouseOut={() => setSecondeHovering(false)} className={secondButtonHovering ? "shake-bottom" : ""}>

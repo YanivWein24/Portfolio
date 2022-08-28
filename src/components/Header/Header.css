@@ -31,6 +31,10 @@
     background-color: var(--color-primary);
 }
 
+.linkContainer:active {
+    background-color: var(--color-primary-light);
+}
+
 .linkContainer:hover a.link {
     color: #fff;
     cursor: pointer;
@@ -42,7 +46,7 @@
 }
 
 .resume:hover {
-    background-color: rgba(31, 154, 207, 0.8);
+    background-color: var(--color-primary-light);
 }
 
 a.link {

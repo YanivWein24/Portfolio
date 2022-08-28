@@ -7,6 +7,7 @@ const Skills: FC = () =>
         <h1>Skills:</h1>
         <div data-aos="fade-left" data-aos-once="true">
             <h2>Front-End:</h2>
+            <hr />
             <Row >
                 <Col>
                     <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" /></a>
@@ -21,6 +22,7 @@ const Skills: FC = () =>
         </div>
         <div data-aos="fade-right" data-aos-once="true">
             <h2>Back-End:</h2>
+            <hr />
             <Row >
                 <Col>
                     <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en/"> <img src="https://miro.medium.com/max/800/1*bc9pmTiyKR0WNPka2w3e0Q.png" alt="Node.js" /></a>
@@ -34,6 +36,7 @@ const Skills: FC = () =>
         </div>
         <div data-aos="fade-left" data-aos-once="true">
             <h2>Misc:</h2>
+            <hr />
             <Row >
                 <Col>
                     <a target="_blank" rel="noopener noreferrer" href="https://jestjs.io/"> <img src="https://iconape.com/wp-content/png_logo_vector/jest-logo.png" alt="Jest" /></a>
