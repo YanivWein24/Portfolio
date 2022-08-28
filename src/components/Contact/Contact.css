@@ -1,5 +1,5 @@
 form {
-    background: linear-gradient(0deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    background: linear-gradient(0deg, rgb(14, 101, 207) 0%, rgb(65, 149, 252) 100%);
     padding: 3.5rem 2rem 2rem;
     margin-bottom: 3rem;
     border-radius: 40px;
@@ -25,11 +25,11 @@ form p span {
 
 #Contact h1 {
     margin: 2.5rem auto;
-    width: 30%;
-    color: var(--color-primary);
+    width: 22%;
+    color: var(--color-primary-light);
     font-size: 2.5rem;
     font-weight: 600;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
     text-align: center;
 }
 

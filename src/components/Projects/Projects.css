@@ -1,5 +1,5 @@
 .projects {
-    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-light) 100%);
+    background: linear-gradient(180deg, rgb(14, 101, 207), rgb(65, 149, 252) 100%);
     margin: 0 auto;
     text-align: center;
     padding-bottom: 1rem;
@@ -8,11 +8,11 @@
 .projects h1 {
     margin: 0 auto 4rem;
     padding-top: 4rem;
-    width: 30%;
+    width: 20%;
     color: var(--color-offWhite);
     font-size: 2.5rem;
     font-weight: 600;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
 }
 
 /* from https://www.shapedivider.app/ */
@@ -33,7 +33,7 @@
 }
 
 .topAngle-svg .shape-fill {
-    fill: var(--color-primary);
+    fill: rgb(14, 101, 207);
 }
 
 .bottomAngle-svg {
@@ -54,7 +54,7 @@
 }
 
 .bottomAngle-svg .shape-fill {
-    fill: var(--color-primary-light);
+    fill: rgb(65, 149, 252);
 }
 
 @media screen and (max-width:940px) {

@@ -16,7 +16,7 @@ const About: FC = () => {
         <div id="About">
             <div className="intro fade-in">
                 <video autoPlay muted loop id="myVideo">
-                    <source src={require("../../mixkit-ink-swirling-in-blue-tones-underwater-229.mp4")} type="video/mp4" />
+                    <source src={require("../../background-compressed.mp4")} type="video/mp4" />
                 </video>
                 <h1><span>I'm Yaniv Weinshtein,</span></h1>
                 <h2><span>A <strong><Typewriter
@@ -45,14 +45,14 @@ const About: FC = () => {
                         I look at problems as a way to gain knowledge and experience, and improve my skills to solve more complicated problems in the future.
                     </p>
                 </Col>
-                <Col md={6} data-aos={smallScreen ? "fade-right" : "zoom-in-up"} data-aos-once="true" className="former-technician">
+                <Col md={6} data-aos={smallScreen ? "fade-left" : "zoom-in-up"} data-aos-once="true" className="former-technician">
                     <i className="fa-solid fa-wrench"></i>
                     <h3>Former Naval Technician</h3>
                     <p>As a former "Monitor And Control Systems" Technician in the Israeli navy, I've gained experience in locating and solving complex problems in large-scale systems.
                         I'm also experienced with working in a team and meeting tight schedules.
                     </p>
                 </Col>
-                <Col md={6} data-aos={smallScreen ? "fade-left" : "zoom-in-down"} data-aos-once="true" className="always-learning">
+                <Col md={6} data-aos={smallScreen ? "fade-right" : "zoom-in-down"} data-aos-once="true" className="always-learning">
                     <i className="fa-solid fa-book"></i>
                     <h3>Always Learning</h3>
                     <p>

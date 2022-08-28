@@ -20,7 +20,7 @@
 .card-title {
     border-bottom: 1.5px solid var(--color-primary-light);
     color: var(--color-primary-light);
-    width: 70%;
+    width: 60%;
     margin: 0 auto 1rem;
     font-size: 1.2rem;
     font-weight: 700;
