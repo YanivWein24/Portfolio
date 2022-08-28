@@ -68,6 +68,10 @@
     color: rgb(26, 106, 204);
 }
 
+.bottomContainer {
+    position: relative;
+}
+
 .intro {
     font-family: 'Mali', cursive;
     padding-bottom: 7rem;
@@ -152,7 +156,6 @@ h3 {
     font-size: 1rem;
 }
 
-
 @media screen and (max-width:940px) {
 
     h1,
@@ -161,7 +164,7 @@ h3 {
     }
 
     .intro {
-        padding-bottom: 3rem;
+        padding-bottom: 1.5rem;
     }
 
     .intro h1 {
@@ -195,6 +198,6 @@ h3 {
     }
 
     .intro {
-        padding-bottom: 21rem;
+        padding-bottom: 15rem;
     }
 }
