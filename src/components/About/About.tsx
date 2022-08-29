@@ -18,10 +18,11 @@ const About: FC = () => {
                 <video autoPlay muted loop id="myVideo">
                     <source src={require("../../background-compressed.mp4")} type="video/mp4" />
                 </video>
-                <h1><span>I'm Yaniv Weinshtein,</span></h1>
-                <h2><span>A <strong><Typewriter
+                <h2 className="welcomeMessage"><em>Hi! my name is</em></h2>
+                <h1><span>Yaniv Weinshtein</span></h1>
+                <h2><span>I'm A <strong><Typewriter
                     options={{
-                        strings: ['FULL STACK', 'FRONT END', 'BACK END'],
+                        strings: ['FULL-STACK', 'FRONT-END'],
                         autoStart: true,
                         loop: true,
                     }}
