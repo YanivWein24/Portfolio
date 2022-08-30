@@ -97,6 +97,11 @@
     .card {
         width: 100%;
     }
+
+    .topCardBody {
+        min-height: 0;
+    }
+
 }
 
 @media screen and (max-width:940px) {

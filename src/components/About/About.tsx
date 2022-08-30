@@ -39,7 +39,7 @@ const About: FC = () => {
                     </svg>
                 </div>
                 <Row lg={3} md={12} sm={12} className="about-me no-gutters" >
-                    <Col md={12} data-aos={smallScreen ? "fade-left" : "zoom-in-down"} data-aos-once="true" className="solving-problems">
+                    <Col md={12} data-aos="fade-left" data-aos-once="true" className="solving-problems">
                         <i className="fa-solid fa-laptop-code"></i>
                         <h3>Solving Problems</h3>
                         <p>
@@ -54,7 +54,7 @@ const About: FC = () => {
                             I'm also experienced with working in a team and meeting tight schedules.
                         </p>
                     </Col>
-                    <Col md={6} data-aos={smallScreen ? "fade-left" : "zoom-in-down"} data-aos-once="true" className="always-learning">
+                    <Col md={6} data-aos={smallScreen ? "fade-left" : "fade-right"} data-aos-once="true" className="always-learning">
                         <i className="fa-solid fa-book"></i>
                         <h3>Always Learning</h3>
                         <p>

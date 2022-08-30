@@ -83,13 +83,13 @@
 
 @media screen and (max-width: 480px) {
     .backToTop {
-        width: 60%;
+        width: 40%;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .backToTop {
-        width: 40%;
+        width: 30%;
     }
 }
 

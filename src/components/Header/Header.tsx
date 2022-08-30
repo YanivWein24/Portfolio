@@ -7,10 +7,12 @@ const Header: FC = () =>
     <div className="header">
         <Navbar variant="dark" expand="lg" className="py-2 navbar" collapseOnSelect>
             <Container>
-                {/* <Navbar.Brand href="/">Yaniv Weinshtein</Navbar.Brand> */}
+                <Link to="About" smooth={true} duration={1000} offset={-500}>
+                    <Navbar.Brand >Yaniv <span>Weinshtein</span></Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-                    <Nav className="me-auto ">
+                    <Nav className="me-auto ">  {/*me-auto - to center */}
                         <div className="linkContainer">
                             <Link to="About" smooth={true} duration={1000} offset={-500} className="link">
                                 <i className="fa-solid fa-address-card"></i> About</Link></div>
