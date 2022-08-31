@@ -21,16 +21,27 @@
     width: 15%;
 }
 
+.skills .skill {
+    display: inline-block;
+    font-weight: bold;
+    font-size: .8rem;
+    margin: 0 .3rem;
+    transition: all .2s ease-in-out;
+}
+
+.skills .skill:hover {
+    transform: scale(1.15);
+}
+
+.skills p {
+    margin-bottom: 0;
+}
+
 .skills img {
     width: 70px;
     height: 70px;
     border-radius: 10px;
     margin: .5rem;
-    transition: all .2s ease-in-out;
-}
-
-.skills img:hover {
-    transform: scale(1.2);
 }
 
 .skills hr {
@@ -43,6 +54,10 @@
 @media screen and (max-width:940px) {
     .skills {
         padding: .7rem;
+    }
+
+    .skills .skill {
+        margin: 0 .3rem 1rem;
     }
 
     .skills h1 {
