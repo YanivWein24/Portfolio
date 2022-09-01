@@ -73,7 +73,9 @@ a.link {
 }
 
 .socials {
-    margin-left: .5rem;
+    margin-left: .7rem;
+    padding-left: .2rem;
+    border-left: 1.5px solid rgba(255, 255, 255, .3);
 }
 
 .socials a {
@@ -119,8 +121,10 @@ a.link {
 
     .socials {
         margin: 0;
+        padding: 0;
         display: flex;
         justify-content: center;
+        border: none;
     }
 
     .socials a {
