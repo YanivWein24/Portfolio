@@ -6,7 +6,7 @@ const Footer: FC = () => {
     const year = new Date().getFullYear()
     return (
         <div>
-            <button className="backToTop"><Link to="About" smooth={true} duration={1000} offset={-500} className="link">Back To Top <i className="fa-solid fa-up-long"></i></Link></button>
+            <button className="backToTop"><Link to="About" smooth={true} duration={1000} offset={-500} className="link">Back To Top</Link></button>
             <div className="footer">
                 <p className="contactInfo">Contact Info</p>
                 <p className="phone"><a href="tel:+972-544-718-317">+972-544-718-317</a></p>
