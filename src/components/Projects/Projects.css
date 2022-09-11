@@ -1,70 +1,74 @@
 .projects {
-    background: linear-gradient(180deg, rgb(14, 101, 207), rgb(65, 149, 252) 100%);
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgb(14, 101, 207),
+    rgb(65, 149, 252) 100%
+  );
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .projects h1 {
-    margin: 0 auto 4rem;
-    padding-top: 4rem;
-    width: 20%;
-    color: var(--color-offWhite);
-    font-size: 2.5rem;
-    font-weight: 600;
-    border-bottom: 2px solid;
+  margin: 0 auto 4rem;
+  padding-top: 4rem;
+  width: 20%;
+  color: var(--color-offWhite);
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid;
 }
 
 /* from https://www.shapedivider.app/ */
 .topAngle-svg {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .topAngle-svg svg {
-    position: relative;
-    display: block;
-    width: calc(222% + 1.3px);
-    height: 38px;
+  position: relative;
+  display: block;
+  width: calc(222% + 1.3px);
+  height: 38px;
 }
 
 .topAngle-svg .shape-fill {
-    fill: rgb(14, 101, 207);
+  fill: rgb(14, 101, 207);
 }
 
 .bottomAngle-svg {
-    bottom: 0;
-    transform: rotate(180deg);
+  bottom: 0;
+  transform: rotate(180deg);
 }
 
 .bottomAngle-svg svg {
-    position: relative;
-    display: block;
-    width: calc(222% + 1.3px);
-    height: 38px;
+  position: relative;
+  display: block;
+  width: calc(222% + 1.3px);
+  height: 38px;
 }
 
 .bottomAngle-svg .shape-fill {
-    fill: rgb(65, 149, 252);
+  fill: rgb(65, 149, 252);
 }
 
-@media screen and (max-width:940px) {
-    .projects {
-        padding: 0 .3rem 3rem;
-        width: 100%;
-    }
+@media screen and (max-width: 940px) {
+  .projects {
+    padding: 0 0.3rem 3rem;
+    width: 100%;
+  }
 
-    .projects h1 {
-        width: 85%
-    }
+  .projects h1 {
+    width: 85%;
+  }
 
-    .topAngle-svg svg,
-    .bottomAngle-svg svg {
-        /* width: calc(120% + 1.3px); */
-        height: 20px;
-    }
+  .topAngle-svg svg,
+  .bottomAngle-svg svg {
+    /* width: calc(120% + 1.3px); */
+    height: 20px;
+  }
 }

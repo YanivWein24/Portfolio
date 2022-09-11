@@ -1,18 +1,18 @@
 @import "./bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mali&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap");
 
 :root {
   --color-primary: rgb(28, 114, 220);
   --color-primary-light: rgb(44, 139, 255);
-  --color-offWhite: rgb(246, 246, 246)
+  --color-offWhite: rgb(246, 246, 246);
 }
 
 body {
   box-sizing: border-box;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--color-offWhite);
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   overflow-x: hidden;
@@ -23,15 +23,15 @@ html {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* Animation From Animista */
 
 .fade-in {
-  -webkit-animation: fade-in 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in {
@@ -55,12 +55,12 @@ code {
 }
 
 .shake-bottom {
-  -webkit-animation: shake-bottom 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  animation: shake-bottom 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  -webkit-animation: shake-bottom 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+  animation: shake-bottom 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes shake-bottom {
-
   0%,
   100% {
     -webkit-transform: rotate(0deg);
@@ -100,7 +100,6 @@ code {
 }
 
 @keyframes shake-bottom {
-
   0%,
   100% {
     -webkit-transform: rotate(0deg);

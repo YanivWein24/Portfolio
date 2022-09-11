@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
-import Header from './components/Header/Header'
-import About from './components/About/About'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
+import React, { FC } from "react";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
-const App: FC = () =>
+const App: FC = () => (
   <div className="App">
     <Header />
     <About />
@@ -15,5 +15,6 @@ const App: FC = () =>
     <Contact />
     <Footer />
   </div>
+);
 
 export default App;

@@ -1,220 +1,230 @@
 #About {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 #myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: -10;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -10;
 }
 
 /* from https://www.shapedivider.app/ */
 .wave {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .wave svg {
-    position: relative;
-    display: block;
-    width: calc(160% + 1.3px);
-    height: 80px;
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 80px;
 }
 
 .wave .shape-fill {
-    fill: var(--color-primary-light);
+  fill: var(--color-primary-light);
 }
 
 .bottom-wave {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .bottom-wave svg {
-    position: relative;
-    display: block;
-    width: calc(160% + 1.3px);
-    height: 80px;
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 80px;
 }
 
 .bottom-wave .shape-fill {
-    fill: var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .Typewriter {
-    display: inline-block;
+  display: inline-block;
 }
 
 .Typewriter__wrapper {
-    font-weight: 600;
-    color: var(--color-primary);
-    background-color: rgba(255, 255, 255, .4);
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .Typewriter__cursor {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .bottomContainer {
-    position: relative;
+  position: relative;
 }
 
 .intro {
-    font-family: 'Mali', cursive;
-    padding-bottom: 7rem;
-    overflow: hidden;
+  font-family: "Mali", cursive;
+  padding-bottom: 7rem;
+  overflow: hidden;
 }
 
 h1,
 h1 span {
-    font-size: 3.3rem;
-    color: var(--color-offWhite);
+  font-size: 3.3rem;
+  color: var(--color-offWhite);
 }
 
 .intro h1 {
-    transform: rotate(2deg);
-    display: inline-block;
-    transition: all .3s ease;
+  transform: rotate(2deg);
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .intro h1:hover {
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .intro .welcomeMessage {
-    margin: 13rem auto 2rem;
-    font-weight: 500;
-    text-transform: capitalize;
+  margin: 13rem auto 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 h1 span {
-    line-height: 1.4;
-    background-color: rgba(255, 255, 255, .3);
+  line-height: 1.4;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 h2 {
-    margin-top: 2rem;
-    font-size: 2rem;
-    color: var(--color-offWhite);
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--color-offWhite);
 }
 
 h3 {
-    color: var(--color-offWhite);
-    font-size: 1.2rem;
-    font-weight: 700;
+  color: var(--color-offWhite);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 #About button {
-    margin: 6rem .5rem 0;
-    border-radius: 30px;
-    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-    transition: all 0.2s ease-in-out;
-    text-transform: capitalize;
-    box-shadow: rgb(38, 57, 77) 0px 15px 12px -10px;
+  margin: 6rem 0.5rem 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
+  );
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  box-shadow: rgb(38, 57, 77) 0px 15px 12px -10px;
 }
 
 #About button:hover {
-    background: linear-gradient(180deg, rgb(10, 92, 193) 0%, rgb(44, 139, 255)100%);
-
+  background: linear-gradient(
+    180deg,
+    rgb(10, 92, 193) 0%,
+    rgb(44, 139, 255) 100%
+  );
 }
 
 #About .downloadButton {
-    background: #444;
+  background: #444;
 }
 
 #About .downloadButton:hover {
-    background: #222;
+  background: #222;
 }
 
 #About button a {
-    color: #fff;
+  color: #fff;
 }
 
 #About button a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .col {
-    text-align: center;
+  text-align: center;
 }
 
 .about-me {
-    background: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
-    padding: 1rem;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary-light) 0%,
+    var(--color-primary) 100%
+  );
+  padding: 1rem;
 }
 
 .about-me i {
-    margin: 2.5rem 5rem 2rem;
-    font-size: 5.5rem;
-    color: var(--color-offWhite);
-    text-shadow: 10px 10px 10px rgba(70, 70, 70, 0.4);
+  margin: 2.5rem 5rem 2rem;
+  font-size: 5.5rem;
+  color: var(--color-offWhite);
+  text-shadow: 10px 10px 10px rgba(70, 70, 70, 0.4);
 }
 
 .about-me p {
-    padding: 0 .75rem;
-    color: var(--color-offWhite);
-    font-size: 1rem;
+  padding: 0 0.75rem;
+  color: var(--color-offWhite);
+  font-size: 1rem;
 }
 
-@media screen and (max-width:940px) {
+@media screen and (max-width: 940px) {
+  h1,
+  h1 span {
+    font-size: 2.6rem;
+  }
 
-    h1,
-    h1 span {
-        font-size: 2.6rem;
-    }
+  .intro {
+    padding-bottom: 1.5rem;
+  }
 
-    .intro {
-        padding-bottom: 1.5rem;
-    }
+  .intro .welcomeMessage {
+    margin-top: 8rem;
+  }
 
-    .intro .welcomeMessage {
-        margin-top: 8rem;
-    }
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 5rem;
+  }
 
-    h2 {
-        font-size: 1.6rem;
-        margin-top: 5rem;
-    }
+  h2 span {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
 
-    h2 span {
-        display: flex;
-        justify-content: center;
-        gap: 7px;
-    }
+  #About button {
+    margin: 5rem 0.5rem 2rem;
+  }
 
-    #About button {
-        margin: 5rem 0.5rem 2rem;
-    }
+  .wave svg,
+  .bottom-wave svg {
+    height: 50px;
+  }
 
-    .wave svg,
-    .bottom-wave svg {
-        height: 50px;
-    }
-
-    .Typewriter {
-        display: flex;
-    }
+  .Typewriter {
+    display: flex;
+  }
 }
 
-@media screen and (min-width:1600px) {
-    .about-me {
-        padding: 1rem 7rem;
-    }
+@media screen and (min-width: 1600px) {
+  .about-me {
+    padding: 1rem 7rem;
+  }
 
-    .intro {
-        padding-bottom: 15rem;
-    }
+  .intro {
+    padding-bottom: 15rem;
+  }
 }

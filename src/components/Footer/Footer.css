@@ -1,17 +1,17 @@
 .backToTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem auto 2.5rem;
-    padding: .4rem;
-    width: 10%;
-    background-color: transparent;
-    border: 2px solid var(--color-primary);
-    border-radius: 30px;
-    gap: .5rem;
-    font-size: .85rem;
-    font-weight: 700;
-    transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto 2.5rem;
+  padding: 0.4rem;
+  width: 10%;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 30px;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
 }
 
 .backToTop:hover,
@@ -20,81 +20,85 @@
 .footer a,
 .footer i,
 .footer .copyright {
-    color: white;
+  color: white;
 }
 
 .backToTop:hover {
-    border: 2px solid white;
-    background-color: var(--color-primary);
+  border: 2px solid white;
+  background-color: var(--color-primary);
 }
 
 .backToTop:active {
-    background-color: var(--color-primary-light);
+  background-color: var(--color-primary-light);
 }
 
 .backToTop:hover a.link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .backToTop a.link {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .footer {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: .6rem;
-    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-    gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  background: linear-gradient(
+    180deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
+  );
+  gap: 1rem;
 }
 
 .footer .contactInfo {
-    font-weight: 600;
-    margin-top: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 .footer .phone {
-    margin: 0.5rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
 .footer .email {
-    margin: 0 0 1.5rem;
+  margin: 0 0 1.5rem;
 }
 
 .footer p {
-    margin: 0.2rem 0 0;
+  margin: 0.2rem 0 0;
 }
 
 .footer i {
-    margin: 0 1rem 1rem;
-    font-size: 2rem;
-    transition: all .1s ease-in-out;
+  margin: 0 1rem 1rem;
+  font-size: 2rem;
+  transition: all 0.1s ease-in-out;
 }
 
 .footer i:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .footer .copyright {
-    font-size: 10px;
-    font-family: 'Mali', cursive;
+  font-size: 10px;
+  font-family: "Mali", cursive;
 }
 
 @media screen and (max-width: 480px) {
-    .backToTop {
-        width: 40%;
-    }
+  .backToTop {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    .backToTop {
-        width: 30%;
-    }
+  .backToTop {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .backToTop {
-        width: 30%;
-    }
+  .backToTop {
+    width: 30%;
+  }
 }
