@@ -1,0 +1,26 @@
+{
+  "short_name": "Portfolio",
+  "name": "Yaniv Portfolio",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "64x64 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://yaniv-weinshtein.netlify.app",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
