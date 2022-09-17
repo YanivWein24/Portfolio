@@ -219,16 +219,16 @@ const Skills: FC = () => (
             </a>
           </div>
           <div className="skill">
-            <p style={{ color: "#ff6c37" }}>Postman</p>
+            <p style={{ color: "#343434" }}>CircleCI</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.postman.com/"
+              href="https://jestjs.io/"
             >
               {" "}
               <img
-                src="https://iconape.com/wp-content/png_logo_vector/postman.png"
-                alt="Postman"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Circleci-icon-logo.svg/1200px-Circleci-icon-logo.svg.png"
+                alt="CircleCI"
               />
             </a>
           </div>
@@ -243,6 +243,20 @@ const Skills: FC = () => (
               <img
                 src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
                 alt="Git"
+              />
+            </a>
+          </div>
+          <div className="skill">
+            <p style={{ color: "#ff6c37" }}>Postman</p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.postman.com/"
+            >
+              {" "}
+              <img
+                src="https://iconape.com/wp-content/png_logo_vector/postman.png"
+                alt="Postman"
               />
             </a>
           </div>
