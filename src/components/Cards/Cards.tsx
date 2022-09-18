@@ -28,7 +28,7 @@ const Cards: FC<CardProps> = ({ project }) => (
           : "22rem",
     }}
   >
-    <Card.Img variant="top" src={project.image} />
+    <Card.Img variant="top" src={project.image} alt={project.name} />
     <Card.Body className="topCardBody">
       <Card.Title>{project.name}</Card.Title>
       <Card.Text>{project.description}</Card.Text>

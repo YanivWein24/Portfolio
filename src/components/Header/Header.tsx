@@ -67,6 +67,7 @@ const Header: FC = () => {
               >
                 <Link
                   to="About"
+                  href="About"
                   smooth={true}
                   duration={1000}
                   offset={-500}
@@ -97,6 +98,7 @@ const Header: FC = () => {
               >
                 <Link
                   to="Skills"
+                  href="Skills"
                   smooth={true}
                   duration={750}
                   offset={-70}
@@ -127,6 +129,7 @@ const Header: FC = () => {
               >
                 <Link
                   to="Projects"
+                  href="Projects"
                   smooth={true}
                   duration={750}
                   offset={-20}
@@ -157,11 +160,11 @@ const Header: FC = () => {
               >
                 <Link
                   to="Contact"
+                  href="Contact"
                   smooth={true}
                   duration={750}
                   offset={-60}
                   className="link"
-                  href="#Contact-me"
                   style={{
                     color:
                       smallScreen || hoverContact
@@ -174,7 +177,16 @@ const Header: FC = () => {
                   <i className="fa-solid fa-envelope"></i> Contact me
                 </Link>
               </div>
-              <div className="linkContainer resume">
+              <div
+                className="linkContainer resume"
+                style={{
+                  borderRadius: smallScreen
+                    ? "10px"
+                    : scroll
+                    ? "10px"
+                    : "0 0 10px 10px",
+                }}
+              >
                 <a
                   className="link"
                   href={require("../../Yaniv-Resume.pdf")}
@@ -189,6 +201,7 @@ const Header: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/YanivWein24/"
+                aria-label="My Github"
               >
                 <i className="fa-brands fa-github"></i>
               </a>
@@ -196,10 +209,11 @@ const Header: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/yaniv-weinshtein/"
+                aria-label="My Linkedin"
               >
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              <a href="mailto:yanivwein22@gmail.com">
+              <a href="mailto:yanivwein22@gmail.com" aria-label="Email Me">
                 <i className="fa-solid fa-envelope"></i>
               </a>
             </div>

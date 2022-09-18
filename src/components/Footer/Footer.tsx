@@ -30,6 +30,7 @@ const Footer: FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/YanivWein24/"
+            aria-label="My Github"
           >
             <i className="fa-brands fa-github"></i>
           </a>
@@ -37,10 +38,11 @@ const Footer: FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/yaniv-weinshtein/"
+            aria-label="My Linkedin"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="mailto:yanivwein22@gmail.com">
+          <a href="mailto:yanivwein22@gmail.com" aria-label="Email Me">
             <i className="fa-solid fa-envelope"></i>
           </a>
         </>
