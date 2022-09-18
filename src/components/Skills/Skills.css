@@ -8,14 +8,13 @@
   width: 20%;
   color: var(--color-primary-light);
   font-size: 2.5rem;
-  font-weight: 600;
   border-bottom: 2px solid;
 }
 
 .skills h2 {
   color: var(--color-primary-light);
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
   margin: 2rem auto 0;
   width: 15%;

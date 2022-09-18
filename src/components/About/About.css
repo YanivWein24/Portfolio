@@ -78,8 +78,8 @@
   overflow: hidden;
 }
 
-h1,
-h1 span {
+.intro h1,
+.intro h1 span {
   font-size: 3.3rem;
   color: var(--color-offWhite);
 }
@@ -88,6 +88,7 @@ h1 span {
   transform: rotate(2deg);
   display: inline-block;
   transition: all 0.3s ease;
+  font-weight: 600;
 }
 
 .intro h1:hover {
@@ -164,7 +165,7 @@ h3 {
     var(--color-primary-light) 0%,
     var(--color-primary) 100%
   );
-  padding: 1rem;
+  padding: 0 3rem;
 }
 
 .about-me i {
@@ -173,7 +174,6 @@ h3 {
   color: var(--color-offWhite);
   text-shadow: 10px 10px 10px rgba(70, 70, 70, 0.4);
 }
-
 .about-me p {
   padding: 0 0.75rem;
   color: var(--color-offWhite);
@@ -181,8 +181,8 @@ h3 {
 }
 
 @media screen and (max-width: 940px) {
-  h1,
-  h1 span {
+  .intro h1,
+  .intro h1 span {
     font-size: 2.6rem;
   }
 
@@ -203,6 +203,14 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 7px;
+  }
+
+  .about-me {
+    padding: 1rem;
+  }
+
+  .about-me p {
+    font-size: 14px;
   }
 
   #About button {

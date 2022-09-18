@@ -20,8 +20,9 @@
   color: var(--color-primary-light);
   width: 60%;
   margin: 0 auto 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  font-family: "mali", sans-serif;
 }
 
 .card-img-top {
@@ -88,6 +89,10 @@
 .card .greyButton:hover,
 .card .greyButton:active {
   background-color: #777;
+}
+
+.includesGetJokes {
+  color: var(--color-primary-light);
 }
 
 @media screen and (max-width: 768px) {

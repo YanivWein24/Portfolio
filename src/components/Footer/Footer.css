@@ -51,6 +51,7 @@
     var(--color-primary-light) 100%
   );
   gap: 1rem;
+  font-family: "Mali", cursive;
 }
 
 .footer .contactInfo {

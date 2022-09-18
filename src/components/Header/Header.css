@@ -92,7 +92,7 @@ a.link {
 }
 
 .socials i:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 940px) {

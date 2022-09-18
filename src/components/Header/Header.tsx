@@ -35,9 +35,10 @@ const Header: FC = () => {
           : scroll
           ? "5px solid #1c72ff"
           : "transparent",
+        padding: smallScreen || scroll ? "8px" : "0",
       }}
     >
-      <Navbar variant="dark" expand="lg" className="py-2 navbar">
+      <Navbar variant="dark" expand="lg" className="navbar">
         <Container>
           <Link to="About" smooth={true} duration={1000} offset={-500}>
             <Navbar.Brand>

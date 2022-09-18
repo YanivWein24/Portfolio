@@ -32,7 +32,6 @@ form p span {
   width: 22%;
   color: var(--color-primary-light);
   font-size: 2.5rem;
-  font-weight: 600;
   border-bottom: 2px solid;
   text-align: center;
 }

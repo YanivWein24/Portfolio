@@ -34,7 +34,9 @@ const Cards: FC<CardProps> = ({ project }) => (
       <Card.Text>{project.description}</Card.Text>
       {project.name === "Get Jokes" && (
         <Card.Text>
-          <strong>* Includes Unit Tests And CI/CD *</strong>
+          <strong className="includesGetJokes">
+            Includes Unit Tests And CI/CD
+          </strong>
         </Card.Text>
       )}
     </Card.Body>
