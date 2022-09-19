@@ -92,7 +92,19 @@ a.link {
 }
 
 .socials i:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
+.fa-github:hover {
+  color: #555;
+}
+
+.fa-envelope:hover {
+  color: rgb(229, 220, 56);
 }
 
 @media screen and (max-width: 940px) {
