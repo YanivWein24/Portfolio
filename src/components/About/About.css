@@ -96,7 +96,7 @@
 }
 
 .intro .welcomeMessage {
-  margin: 13rem auto 2rem;
+  margin: 11rem auto 2rem;
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -122,7 +122,7 @@ h3 {
   margin: 6rem 0.5rem 0;
   border-radius: 30px;
   background: linear-gradient(
-    180deg,
+    0deg,
     var(--color-primary) 0%,
     var(--color-primary-light) 100%
   );
@@ -133,7 +133,7 @@ h3 {
 
 #About button:hover {
   background: linear-gradient(
-    180deg,
+    0deg,
     rgb(10, 92, 193) 0%,
     rgb(44, 139, 255) 100%
   );
@@ -234,5 +234,9 @@ h3 {
 
   .intro {
     padding-bottom: 15rem;
+  }
+
+  .intro .welcomeMessage {
+    margin: 16rem auto 2rem;
   }
 }

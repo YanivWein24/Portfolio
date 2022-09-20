@@ -60,11 +60,7 @@
 }
 
 .resume:hover {
-  background: linear-gradient(
-    0deg,
-    var(--color-primary) 0%,
-    var(--color-primary-light) 100%
-  );
+  background: linear-gradient(0deg, rgb(3, 70, 152) 0%, rgb(60, 147, 254) 100%);
 }
 
 a.link {

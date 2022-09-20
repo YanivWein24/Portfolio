@@ -3,8 +3,10 @@ import "./Skills.css";
 import { Row, Col } from "react-bootstrap";
 
 const Skills: FC = () => (
-  <div data-aos="fade-down" data-aos-once="true" className="skills" id="Skills">
-    <h1>Skills:</h1>
+  <div className="skills" id="Skills">
+    <h1 data-aos="fade-right" data-aos-once="true">
+      Skills:
+    </h1>
     <div data-aos="fade-left" data-aos-once="true">
       <h2>Front-End:</h2>
       <hr />
