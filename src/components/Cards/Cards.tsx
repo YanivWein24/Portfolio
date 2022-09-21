@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import "./Cards.css";
 
@@ -11,24 +11,30 @@ interface CardProps {
     name: string;
     description: string;
     id: number;
-    image: string;
+    image: string[];
     tools: string[];
     links: string[];
   };
 }
 
-const Cards: FC<CardProps> = ({ project }) => (
+const Cards: FC<CardProps> = ({ project }) => {
+
+  const [hover,setHover] = useState<boolean>(false)
+
+  return (
   <Card
     style={{
       width:
         tabletScreen && project.id === 0
           ? "25rem"
           : smallScreen || tabletScreen
-          ? "19rem"
+          ? "95%"
           : "22rem",
     }}
+  onMouseOver={() => setHover(true)}
+  onMouseOut={() => setHover(false)}
   >
-    <Card.Img variant="top" src={project.image} alt={project.name} />
+    <Card.Img variant="top" src={(hover && project.image[1]) ? project.image[1] : project.image[0]} alt={project.name} />
     <Card.Body className="topCardBody">
       <Card.Title>{project.name}</Card.Title>
       <Card.Text>{project.description}</Card.Text>
@@ -66,6 +72,6 @@ const Cards: FC<CardProps> = ({ project }) => (
       </Card.Link>
     </Card.Body>
   </Card>
-);
+)};
 
 export default Cards;
