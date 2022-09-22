@@ -55,12 +55,12 @@
   fill: rgb(65, 149, 252);
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 767px) {
   .projects {
     padding: 0 0.3rem 3rem;
     width: 100%;
   }
-
+  
   .projects h1 {
     width: 85%;
   }
@@ -69,5 +69,11 @@
   .bottomAngle-svg svg {
     /* width: calc(120% + 1.3px); */
     height: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 940px) {
+  .projects h1 {
+    width: 40%;
   }
 }

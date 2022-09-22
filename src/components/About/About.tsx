@@ -8,7 +8,9 @@ const About: FC = () => {
   const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
   const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
 
-  const smallScreen: boolean = window.innerWidth < 940;
+  const tabletScreen: boolean =
+  window.innerWidth > 768 && window.innerWidth < 1000;
+const smallScreen: boolean = window.innerWidth < 768;
 
   return (
     <div id="About">
@@ -89,7 +91,7 @@ const About: FC = () => {
         <Row lg={3} md={12} sm={12} className="about-me no-gutters">
           <Col
             md={12}
-            data-aos="fade-left"
+            data-aos={tabletScreen ? "fade-down" :"fade-left"}
             data-aos-once="true"
             className="solving-problems"
           >
@@ -104,7 +106,7 @@ const About: FC = () => {
           </Col>
           <Col
             md={6}
-            data-aos={smallScreen ? "fade-right" : "zoom-in-up"}
+            data-aos={smallScreen || tabletScreen ? "fade-right" : "zoom-in-up"}
             data-aos-once="true"
             className="former-technician"
           >
@@ -119,7 +121,7 @@ const About: FC = () => {
           </Col>
           <Col
             md={6}
-            data-aos={smallScreen ? "fade-left" : "fade-right"}
+            data-aos={smallScreen || tabletScreen ? "fade-left" : "fade-right"}
             data-aos-once="true"
             className="always-learning"
           >

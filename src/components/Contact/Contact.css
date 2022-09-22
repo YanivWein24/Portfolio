@@ -128,7 +128,7 @@ textarea::placeholder {
   margin: 1rem 0 0;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 767px) {
   form {
     gap: 1.2rem;
   }
@@ -145,5 +145,11 @@ textarea::placeholder {
   input,
   textarea {
     width: 17rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 940px) {
+  #Contact h1 {
+    width: 40%;
   }
 }
