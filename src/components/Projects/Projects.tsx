@@ -20,7 +20,7 @@ const Projects: FC = () => (
       </svg>
     </div>
     <div className="projects" id="Projects">
-      <h1>Projects:</h1>
+      <h1>Top Projects:</h1>
       <Container>
         <Row className="no-gutters">
           {myProjects.map((project) => (

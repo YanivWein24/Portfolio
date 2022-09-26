@@ -30,7 +30,6 @@ const smallScreen: boolean = window.innerWidth < 768;
         <h2>
           <span>
             I'm A{" "}
-            <strong>
               <Typewriter
                 options={{
                   strings: ["FULL-STACK", "FRONT-END"],
@@ -38,7 +37,6 @@ const smallScreen: boolean = window.innerWidth < 768;
                   loop: true,
                 }}
               />
-            </strong>
           </span>
           Web Developer.
         </h2>
