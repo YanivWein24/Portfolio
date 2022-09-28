@@ -9,8 +9,8 @@ const About: FC = () => {
   const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
 
   const tabletScreen: boolean =
-  window.innerWidth > 768 && window.innerWidth < 1000;
-const smallScreen: boolean = window.innerWidth < 768;
+    window.innerWidth > 768 && window.innerWidth < 1000;
+  const smallScreen: boolean = window.innerWidth < 768;
 
   return (
     <div id="About">
@@ -30,13 +30,13 @@ const smallScreen: boolean = window.innerWidth < 768;
         <h2>
           <span>
             I'm A{" "}
-              <Typewriter
-                options={{
-                  strings: ["FULL-STACK", "FRONT-END"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+            <Typewriter
+              options={{
+                strings: ["FULL-STACK", "FRONT-END"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </span>
           Web Developer.
         </h2>
@@ -89,7 +89,7 @@ const smallScreen: boolean = window.innerWidth < 768;
         <Row lg={3} md={12} sm={12} className="about-me no-gutters">
           <Col
             md={12}
-            data-aos={tabletScreen ? "fade-down" :"fade-left"}
+            data-aos={tabletScreen ? "fade-down" : "fade-left"}
             data-aos-once="true"
             className="solving-problems"
           >

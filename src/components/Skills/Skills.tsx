@@ -12,20 +12,26 @@ const Skills: FC = () => (
       <hr />
       <Row>
         <Col>
-          <div className="skill">
-            <p style={{ color: "#f0db4f" }}>Javascript</p>
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #ffe600" }}
+          >
+            <p style={{ color: "#ffe600" }}>Javascript</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             >
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
                 alt="JavaScript"
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #2d79c7" }}
+          >
             <p style={{ color: "#2d79c7" }}>Typescript</p>
             <a
               target="_blank"
@@ -38,7 +44,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #53d2fa" }}
+          >
             <p style={{ color: "#53d2fa" }}>React</p>
             <a
               target="_blank"
@@ -51,7 +60,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #764abc" }}
+          >
             <p style={{ color: "#764abc" }}>Redux</p>
             <a
               target="_blank"
@@ -64,7 +76,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #6e10f4" }}
+          >
             <p style={{ color: "#6e10f4" }}>Bootstrap</p>
             <a
               target="_blank"
@@ -78,7 +93,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #f37844" }}
+          >
             <p style={{ color: "#f37844" }}>HTML5</p>
             <a
               target="_blank"
@@ -92,7 +110,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #33a9dc" }}
+          >
             <p style={{ color: "#33a9dc" }}>CSS3</p>
             <a
               target="_blank"
@@ -114,7 +135,10 @@ const Skills: FC = () => (
       <hr />
       <Row>
         <Col>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #8bc500" }}
+          >
             <p style={{ color: "#8bc500" }}>Node.js</p>
             <a
               target="_blank"
@@ -128,7 +152,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #494949" }}
+          >
             <p style={{ color: "#494949" }}>Express</p>
             <a
               target="_blank"
@@ -142,7 +169,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #68a95d" }}
+          >
             <p style={{ color: "#68a95d" }}>MongoDB</p>
             <a
               target="_blank"
@@ -156,7 +186,7 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div className="skill" style={{ boxShadow: "1px 1px 10px 2px #000" }}>
             <p style={{ color: "#000" }}>Socket.IO</p>
             <a
               target="_blank"
@@ -170,7 +200,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #34e27a" }}
+          >
             <p style={{ color: "#34e27a" }}>passport.js</p>
             <a
               target="_blank"
@@ -184,7 +217,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #3d3d3d" }}
+          >
             <p style={{ color: "#3d3d3d" }}>OAuth2.0</p>
             <a
               target="_blank"
@@ -206,7 +242,10 @@ const Skills: FC = () => (
       <hr />
       <Row>
         <Col>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #c63d14" }}
+          >
             <p style={{ color: "#c63d14" }}>Jest</p>
             <a
               target="_blank"
@@ -220,7 +259,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #343434" }}
+          >
             <p style={{ color: "#343434" }}>CircleCI</p>
             <a
               target="_blank"
@@ -234,7 +276,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #f03c2e" }}
+          >
             <p style={{ color: "#f03c2e" }}>Git</p>
             <a
               target="_blank"
@@ -248,7 +293,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #ff6c37" }}
+          >
             <p style={{ color: "#ff6c37" }}>Postman</p>
             <a
               target="_blank"
@@ -262,7 +310,10 @@ const Skills: FC = () => (
               />
             </a>
           </div>
-          <div className="skill">
+          <div
+            className="skill"
+            style={{ boxShadow: "1px 1px 10px 2px #4182b3" }}
+          >
             <p style={{ color: "#4182b3" }}>Python</p>
             <a
               target="_blank"
