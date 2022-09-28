@@ -103,6 +103,11 @@ a.link {
   color: rgb(229, 220, 56);
 }
 
+/* The envelope icon in "Contact Me" link should stay the same color */
+.linkContainer a .fa-envelope:hover {
+  color: #fff;
+}
+
 @media screen and (max-width: 940px) {
   .header {
     border-bottom: 3px solid var(--color-primary-light);
