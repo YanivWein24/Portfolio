@@ -20,6 +20,7 @@
   color: var(--color-primary-light);
   width: 60%;
   margin: 0 auto 1rem;
+  padding-bottom:.1rem;
   font-size: 1.4rem;
   font-weight: 700;
   font-family: "mali", sans-serif;
@@ -102,6 +103,10 @@
 
   .topCardBody {
     min-height: 0;
+  }
+
+  .card-title {
+    width: 65%;
   }
 }
 

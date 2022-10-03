@@ -7,10 +7,10 @@ const Skills: FC = () => {
 
   return (
     <div className="skills" id="Skills">
-      <h1 data-aos="fade-right" data-aos-once="true">
+      <h1 data-aos="fade-right" data-aos-once={smallScreen && "true"}>
         Skills:
       </h1>
-      <div data-aos="fade-left" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-once={smallScreen && "true"}>
         <h2>Front-End:</h2>
         <hr />
         <Row>
@@ -133,7 +133,7 @@ const Skills: FC = () => {
           </Col>
         </Row>
       </div>
-      <div data-aos="fade-right" data-aos-once="true">
+      <div data-aos="fade-right" data-aos-once={smallScreen && "true"}>
         <h2>Back-End:</h2>
         <hr />
         <Row>
@@ -243,7 +243,7 @@ const Skills: FC = () => {
           </Col>
         </Row>
       </div>
-      <div data-aos="fade-left" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-once={smallScreen && "true"}>
         <h2>Misc:</h2>
         <hr />
         <Row>
@@ -336,7 +336,7 @@ const Skills: FC = () => {
           </Col>
         </Row>
       </div>
-      <div data-aos="fade-down" data-aos-once="true">
+      <div data-aos="fade-down" data-aos-once={smallScreen && "true"}>
         <h2 className="familiarHeader">
           Also familiar with the following CS concepts:
         </h2>

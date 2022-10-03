@@ -47,17 +47,19 @@ const Contact: FC = () => {
     );
   };
 
+const smallScreen: Boolean = window.innerWidth < 940;
+
   return (
-    <div data-aos="fade-down" data-aos-once="true" id="Contact">
+    <div data-aos="fade-down" data-aos-once={smallScreen && "true"} id="Contact">
       <h1>contact me:</h1>
       <Container>
         <form onSubmit={sendEmail}>
-          <p data-aos="fade-down" data-aos-once="true">
+          <p data-aos="fade-down" data-aos-once={smallScreen && "true"}>
             If you came all this way, you probably liked what you've seen.
             <br />
             <span>if so, tell me about it!</span>
           </p>
-          <div data-aos="fade-down" data-aos-once="true" className="fullName">
+          <div data-aos="fade-down" data-aos-once={smallScreen && "true"} className="fullName">
             <input
               type="text"
               value={name}
@@ -67,7 +69,7 @@ const Contact: FC = () => {
               onChange={(e) => setName(e.target.value)}
             ></input>
           </div>
-          <div data-aos="fade-down" data-aos-once="true" className="email">
+          <div data-aos="fade-down" data-aos-once={smallScreen && "true"} className="email">
             <input
               type="email"
               value={email}
@@ -77,7 +79,7 @@ const Contact: FC = () => {
               onChange={(e) => setEmail(e.target.value)}
             ></input>
           </div>
-          <div data-aos="fade-down" data-aos-once="true" className="message">
+          <div data-aos="fade-down" data-aos-once={smallScreen && "true"} className="message">
             <textarea
               rows={5}
               placeholder="Your Message Here"
@@ -89,14 +91,14 @@ const Contact: FC = () => {
           </div>
           <button
             data-aos="fade-down"
-            data-aos-once="true"
+            data-aos-once={smallScreen && "true"}
             className="reset"
             onClick={resetForm}
             type="reset"
           >
             Reset <i className="fa-solid fa-eraser"></i>
           </button>
-          <button data-aos="fade-down" data-aos-once="true" type="submit">
+          <button data-aos="fade-down" data-aos-once={smallScreen && "true"} type="submit">
             Submit <i className="fa-solid fa-paper-plane"></i>
           </button>
           {messageSent && (

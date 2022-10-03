@@ -4,8 +4,10 @@ import Cards from "../Cards/Cards";
 import myProjects from "./myProjects";
 import "./Projects.css";
 
+const smallScreen: Boolean = window.innerWidth < 940;
+
 const Projects: FC = () => (
-  <div data-aos="slide-up" data-aos-once="true">
+  <div data-aos="slide-up" data-aos-once={smallScreen && "true"}>
     <div className="topAngle-svg">
       <svg
         data-name="Layer 1"
@@ -26,7 +28,7 @@ const Projects: FC = () => (
           {myProjects.map((project) => (
             <Col
               data-aos="slide-up"
-              data-aos-once="true"
+              data-aos-once={smallScreen && "true"}
               key={project.id}
               sm={12}
               md={project.id === 0 ? 12 : 6}

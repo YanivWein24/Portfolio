@@ -90,7 +90,7 @@ const About: FC = () => {
           <Col
             md={12}
             data-aos={tabletScreen ? "fade-down" : "fade-left"}
-            data-aos-once="true"
+            data-aos-once={smallScreen && "true"}
             className="solving-problems"
           >
             <i className="fa-solid fa-laptop-code"></i>
@@ -105,7 +105,7 @@ const About: FC = () => {
           <Col
             md={6}
             data-aos={smallScreen || tabletScreen ? "fade-right" : "zoom-in-up"}
-            data-aos-once="true"
+            data-aos-once={smallScreen && "true"}
             className="former-technician"
           >
             <i className="fa-solid fa-wrench"></i>
@@ -120,7 +120,7 @@ const About: FC = () => {
           <Col
             md={6}
             data-aos={smallScreen || tabletScreen ? "fade-left" : "fade-right"}
-            data-aos-once="true"
+            data-aos-once={smallScreen && "true"}
             className="always-learning"
           >
             <i className="fa-solid fa-book"></i>
