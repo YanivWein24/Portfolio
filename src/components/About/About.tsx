@@ -16,16 +16,13 @@ const About: FC = () => {
     <div id="About">
       <div className="intro fade-in">
         <video autoPlay muted loop id="myVideo">
-          <source
-            src={require("../../background-compressed.mp4")}
-            type="video/mp4"
-          />
+          <source src={require("../../Graphic.mp4")} type="video/mp4" />
         </video>
         <h2 className="welcomeMessage">
           <em>Hi! my name is</em>
         </h2>
         <h1>
-          <span>Yaniv Weinshtein</span>
+          <span>{"< Yaniv Weinshtein />"}</span>
         </h1>
         <h2>
           <span>

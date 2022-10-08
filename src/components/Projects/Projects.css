@@ -1,8 +1,8 @@
 .projects {
   background: linear-gradient(
     180deg,
-    rgb(14, 101, 207),
-    rgb(65, 149, 252) 100%
+    var(--color-primary-dark),
+    var(--color-primary-light) 100%
   );
   margin: 0 auto;
   text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .topAngle-svg .shape-fill {
-  fill: rgb(14, 101, 207);
+  fill: var(--color-primary-dark);
 }
 
 .bottomAngle-svg {
@@ -52,7 +52,7 @@
 }
 
 .bottomAngle-svg .shape-fill {
-  fill: rgb(65, 149, 252);
+  fill: var(--color-primary-light);
 }
 
 @media screen and (max-width: 767px) {

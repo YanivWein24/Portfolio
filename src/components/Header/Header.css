@@ -41,11 +41,11 @@
 }
 
 .linkContainer:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
 }
 
 .linkContainer:active {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-primary);
 }
 
 .linkContainer:hover a.link {

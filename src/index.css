@@ -3,9 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap");
 
 :root {
-  --color-primary: rgb(28, 114, 220);
+  --color-primary: rgb(29, 107, 202);
+  --color-primary-dark: rgb(14, 81, 163);
   --color-primary-light: rgb(44, 139, 255);
-  --color-offWhite: rgb(246, 246, 246);
+  --color-offWhite: rgb(235, 235, 235);
 }
 
 body {

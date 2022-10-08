@@ -1,8 +1,8 @@
 form {
   background: linear-gradient(
     0deg,
-    rgb(14, 101, 207) 0%,
-    rgb(65, 149, 252) 100%
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
   );
   padding: 3.5rem 2rem 2rem;
   margin-bottom: 3rem;

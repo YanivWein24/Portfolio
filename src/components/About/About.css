@@ -30,7 +30,7 @@
 }
 
 .wave .shape-fill {
-  fill: var(--color-primary-light);
+  fill: #01254c;
 }
 
 .bottom-wave {
@@ -60,12 +60,12 @@
 
 .Typewriter__wrapper {
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 .Typewriter__cursor {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 .bottomContainer {
@@ -85,14 +85,9 @@
 }
 
 .intro h1 {
-  transform: rotate(2deg);
   display: inline-block;
   transition: all 0.3s ease;
   font-weight: 600;
-}
-
-.intro h1:hover {
-  transform: rotate(0deg);
 }
 
 .intro .welcomeMessage {
@@ -104,6 +99,7 @@
 h1 span {
   line-height: 1.4;
   background-color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -119,7 +115,7 @@ h3 {
 }
 
 #About button {
-  margin: 6rem 0.5rem 0;
+  margin: 6rem 0.5rem 2rem;
   border-radius: 30px;
   background: linear-gradient(
     0deg,
@@ -128,7 +124,6 @@ h3 {
   );
   transition: all 0.2s ease-in-out;
   text-transform: capitalize;
-  box-shadow: rgb(38, 57, 77) 0px 15px 12px -10px;
 }
 
 #About button:hover {
@@ -160,11 +155,7 @@ h3 {
 }
 
 .about-me {
-  background: linear-gradient(
-    180deg,
-    var(--color-primary-light) 0%,
-    var(--color-primary) 100%
-  );
+  background: linear-gradient(180deg, #01254c 0%, var(--color-primary) 100%);
   padding: 0 5rem;
 }
 
@@ -183,7 +174,8 @@ h3 {
 @media screen and (max-width: 940px) {
   .intro h1,
   .intro h1 span {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
+    letter-spacing: 0;
   }
 
   .intro {
