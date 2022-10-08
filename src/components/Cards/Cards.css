@@ -20,7 +20,7 @@
   color: var(--color-primary-light);
   width: 60%;
   margin: 0 auto 1rem;
-  padding-bottom:.1rem;
+  padding-bottom: 0.1rem;
   font-size: 1.4rem;
   font-weight: 700;
   font-family: "mali", sans-serif;
@@ -37,7 +37,7 @@
 
 .card-text {
   font-weight: 600;
-  line-height:1.3;
+  line-height: 1.3;
 }
 
 .tool {

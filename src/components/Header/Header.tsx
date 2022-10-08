@@ -40,7 +40,13 @@ const Header: FC = () => {
     >
       <Navbar variant="dark" expand="lg" className="navbar">
         <Container>
-          <Link to="About" smooth={true} duration={1000} offset={-500}>
+          <Link
+            to="About"
+            smooth={true}
+            duration={1000}
+            offset={-500}
+            aria-label="Move To Page Top"
+          >
             <Navbar.Brand>
               Yaniv <span>Weinshtein</span>
             </Navbar.Brand>

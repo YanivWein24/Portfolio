@@ -109,7 +109,7 @@ textarea::placeholder {
 }
 
 #Contact button.reset {
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 0.7rem 3.5rem;
   margin-top: 0.5rem;
   padding: 0.5rem 2.5rem;
@@ -135,7 +135,7 @@ textarea::placeholder {
 
   form p {
     width: 100%;
-  font-size: 1rem;
+    font-size: 1rem;
   }
 
   form p span {
@@ -145,13 +145,13 @@ textarea::placeholder {
 
   #Contact h1 {
     width: 85%;
-  font-size:30px;
+    font-size: 30px;
   }
 
   input,
   textarea {
     width: 17rem;
-    font-size:12px;
+    font-size: 12px;
   }
 }
 

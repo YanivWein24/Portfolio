@@ -67,6 +67,7 @@ const About: FC = () => {
             duration={1000}
             offset={-60}
             className="link"
+            aria-label="To 'Contact-Me' Section"
           >
             <i className="fa-solid fa-envelope"></i> &nbsp;Contact Me
           </Link>

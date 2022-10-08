@@ -13,6 +13,7 @@ const Footer: FC = () => {
           duration={1000}
           offset={-500}
           className="link"
+          aria-label="Back To Top"
         >
           Back To Top
         </Link>
