@@ -78,7 +78,7 @@ textarea::placeholder {
 #Contact button {
   padding: 0.7rem 3.5rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 15px;
   border: 2px solid white;
   color: white;
@@ -109,7 +109,7 @@ textarea::placeholder {
 }
 
 #Contact button.reset {
-  font-size: 1rem;
+  font-size: .8rem;
   padding: 0.7rem 3.5rem;
   margin-top: 0.5rem;
   padding: 0.5rem 2.5rem;
@@ -130,20 +130,28 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   form {
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   form p {
     width: 100%;
+  font-size: 1rem;
+  }
+
+  form p span {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   #Contact h1 {
     width: 85%;
+  font-size:30px;
   }
 
   input,
   textarea {
     width: 17rem;
+    font-size:12px;
   }
 }
 

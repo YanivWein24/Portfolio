@@ -43,7 +43,7 @@ const Cards: FC<CardProps> = ({ project }) => {
       <Card.Body className="topCardBody">
         <Card.Title>{project.name}</Card.Title>
         <Card.Text>{project.description}</Card.Text>
-        {project.name === "Get Jokes" && (
+        {project.id === 0 && (
           <Card.Text>
             <strong className="includesGetJokes">
               Includes Unit Tests And CI/CD

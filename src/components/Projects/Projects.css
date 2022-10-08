@@ -12,7 +12,7 @@
 .projects h1 {
   margin: 0 auto 4rem;
   padding-top: 4rem;
-  width: 20%;
+  width: 30%;
   color: var(--color-offWhite);
   font-size: 2.5rem;
   border-bottom: 2px solid;
@@ -63,11 +63,11 @@
 
   .projects h1 {
     width: 85%;
+  font-size:30px;
   }
 
   .topAngle-svg svg,
   .bottomAngle-svg svg {
-    /* width: calc(120% + 1.3px); */
     height: 20px;
   }
 }

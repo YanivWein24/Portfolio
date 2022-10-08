@@ -165,7 +165,7 @@ h3 {
     var(--color-primary-light) 0%,
     var(--color-primary) 100%
   );
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 .about-me i {
