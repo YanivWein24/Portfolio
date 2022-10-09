@@ -12,48 +12,6 @@
   z-index: -10;
 }
 
-/* from https://www.shapedivider.app/ */
-.wave {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(160% + 1.3px);
-  height: 80px;
-}
-
-.wave .shape-fill {
-  fill: #01254c;
-}
-
-.bottom-wave {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.bottom-wave svg {
-  position: relative;
-  display: block;
-  width: calc(160% + 1.3px);
-  height: 80px;
-}
-
-.bottom-wave .shape-fill {
-  fill: var(--color-primary);
-}
-
 .Typewriter {
   display: inline-block;
 }
@@ -150,6 +108,48 @@ h3 {
   text-decoration: none;
 }
 
+/* from https://www.shapedivider.app/ */
+.wave {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 80px;
+}
+
+.wave .shape-fill {
+  fill: #01254c;
+}
+
+.bottom-wave {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.bottom-wave svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 80px;
+}
+
+.bottom-wave .shape-fill {
+  fill: var(--color-primary);
+}
+
 .col {
   text-align: center;
 }
@@ -207,6 +207,8 @@ h3 {
 
   #About button {
     margin: 5rem 0.5rem 2rem;
+    font-size: 11px;
+    padding: 0.7rem 1.3rem;
   }
 
   .wave svg,
