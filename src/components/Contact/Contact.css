@@ -12,6 +12,7 @@ form {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.3) !important;
 }
 
 form p {
@@ -36,8 +37,8 @@ form p span {
   text-align: center;
 }
 
-input,
-textarea {
+input.form-control,
+textarea.form-control {
   width: 25rem;
   margin: 0 0.5rem;
   padding: 1rem;
@@ -65,9 +66,15 @@ textarea:focus {
   transform: scale(0.95);
 }
 
-input::placeholder,
-textarea::placeholder {
+input.form-control::placeholder,
+textarea.form-control::placeholder {
   color: white;
+  font-weight: 600;
+}
+
+.invalid-feedback {
+  font-size: 11px;
+  margin: 0.5rem 0 0 1rem;
   font-weight: 600;
 }
 
@@ -148,8 +155,8 @@ textarea::placeholder {
     font-size: 30px;
   }
 
-  input,
-  textarea {
+  input.form-control,
+  textarea.form-control {
     width: 17rem;
     font-size: 12px;
   }

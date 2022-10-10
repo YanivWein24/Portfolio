@@ -1,5 +1,5 @@
 import React, { useState, FC, FormEvent } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Form, FormGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
@@ -10,15 +10,16 @@ const Contact: FC = () => {
   const [messageSent, setMessageSent] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
 
+  const form = document.querySelector("form");
+
   const resetForm = (): void => {
     setName("");
     setEmail("");
     setMessage("");
+    form && form.classList.remove("was-validated");
   };
 
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
     const publicKey: string = process.env.REACT_APP_PUBLIC_KEY
       ? process.env.REACT_APP_PUBLIC_KEY
       : "error";
@@ -29,7 +30,7 @@ const Contact: FC = () => {
       ? process.env.REACT_APP_SERVICE_ID
       : "error";
 
-    emailjs.sendForm(serviceId, templateId, e.currentTarget, publicKey).then(
+    emailjs.sendForm(serviceId, templateId, form || "error", publicKey).then(
       () => {
         setMessageSent(true);
         window.navigator.vibrate(250); // only on devices with supported hardware
@@ -58,13 +59,13 @@ const Contact: FC = () => {
     >
       <h1>contact me:</h1>
       <Container>
-        <form onSubmit={sendEmail}>
+        <Form>
           <p data-aos="fade-down" data-aos-once={smallScreen && "true"}>
             If you came all this way, you probably liked what you've seen.
             <br />
             <span>if so, tell me about it!</span>
           </p>
-          <div
+          <FormGroup
             data-aos="fade-down"
             data-aos-once={smallScreen && "true"}
             className="fullName"
@@ -72,13 +73,15 @@ const Contact: FC = () => {
             <input
               type="text"
               value={name}
-              required={true}
+              className="form-control"
+              required
               placeholder="Name"
               name="name"
               onChange={(e) => setName(e.target.value)}
             ></input>
-          </div>
-          <div
+            <div className="invalid-feedback">Required Field</div>
+          </FormGroup>
+          <FormGroup
             data-aos="fade-down"
             data-aos-once={smallScreen && "true"}
             className="email"
@@ -86,13 +89,17 @@ const Contact: FC = () => {
             <input
               type="email"
               value={email}
-              required={true}
+              className="form-control"
+              required
               placeholder="Email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
             ></input>
-          </div>
-          <div
+            <div className="invalid-feedback">
+              {email.length === 0 ? "Required Field" : "Invalid Email"}
+            </div>
+          </FormGroup>
+          <FormGroup
             data-aos="fade-down"
             data-aos-once={smallScreen && "true"}
             className="message"
@@ -101,11 +108,13 @@ const Contact: FC = () => {
               rows={5}
               placeholder="Your Message Here"
               value={message}
-              required={true}
+              className="form-control"
+              required
               name="message"
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-          </div>
+            <div className="invalid-feedback">Required Field</div>
+          </FormGroup>
           <button
             data-aos="fade-down"
             data-aos-once={smallScreen && "true"}
@@ -119,6 +128,10 @@ const Contact: FC = () => {
             data-aos="fade-down"
             data-aos-once={smallScreen && "true"}
             type="submit"
+            onClick={(event) => {
+              event.preventDefault();
+              form && form.checkValidity() ? sendEmail() : form && form.classList.add("was-validated");
+            }}
           >
             Submit <i className="fa-solid fa-paper-plane"></i>
           </button>
@@ -130,7 +143,7 @@ const Contact: FC = () => {
           {error && (
             <h3 className="error fade-in">Failed to send message...</h3>
           )}
-        </form>
+        </Form>
       </Container>
     </div>
   );
