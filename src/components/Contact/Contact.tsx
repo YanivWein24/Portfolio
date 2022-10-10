@@ -32,6 +32,7 @@ const Contact: FC = () => {
     emailjs.sendForm(serviceId, templateId, e.currentTarget, publicKey).then(
       () => {
         setMessageSent(true);
+        window.navigator.vibrate(250); // only on devices with supported hardware
         resetForm();
         setTimeout(() => {
           setMessageSent(false);

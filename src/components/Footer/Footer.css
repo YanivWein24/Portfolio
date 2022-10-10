@@ -4,7 +4,7 @@
   align-items: center;
   margin: 5rem auto 2.5rem;
   padding: 0.4rem;
-  width: 10%;
+  width: 10rem;
   background-color: transparent;
   border: 2px solid var(--color-primary);
   border-radius: 30px;
@@ -81,25 +81,13 @@
   transform: scale(1.15);
 }
 
+.footer hr {
+  width: 5rem;
+  margin: 0 auto 0.7rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
 .footer .copyright {
   font-size: 10px;
   font-family: "Mali", cursive;
-}
-
-@media screen and (max-width: 480px) {
-  .backToTop {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .backToTop {
-    width: 30%;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .backToTop {
-    width: 30%;
-  }
 }

@@ -50,7 +50,7 @@
 .skills .skill:hover,
 .skills .familiarSkill:hover {
   transform: translateY(-10px);
-  background-color: rgba(220, 220, 220, 1);
+  background-color: rgba(235, 235, 235, 0.7);
 }
 
 .skills p {
