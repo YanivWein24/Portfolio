@@ -2,7 +2,7 @@ const myProducts: { id: number, name: string, description: string, image: string
   {
     id: 0,
     name: "Get Jokes 😂",
-    description: "A MERN stack application that provides custom jokes from Joke-API. Users can register (also with their Google and Facebook accounts) and create a private collection of jokes. Also features a custom dark theme! The theme preference gets saved in the user's local storage for the next time they visit.",
+    description: "A MERN stack application that provides custom jokes from Joke-API, according to the User's preferences. Users can register (also with their Google and Facebook accounts) and create a private collection of jokes. There's also an option to sign in with a 'guest' user! Also features a custom dark theme",
     image: ["https://user-images.githubusercontent.com/97472180/190004399-e3a20011-8b87-42f6-9620-aa857e623f27.png", "https://user-images.githubusercontent.com/97472180/191485163-4e68f614-d672-444d-ad17-d2603cdab483.gif"],
     tools: ["React", "Javascript-ES6", "Node.js", "Express", "MongoDB", "Redux", "Router", "Axios", "Passport.js", "OAuth2.0", "Bcrypt", "Bootstrap", "HTML5", "CSS3"],
     links: ["https://github.com/YanivWein24/Get-Jokes", "https://get-jokes.onrender.com/"]
@@ -17,12 +17,12 @@ const myProducts: { id: number, name: string, description: string, image: string
   },
   {
     id: 2,
-    name: "Portfolio 👨🏻‍💻",
-    description: "Fully responsive portfolio website, built using React-Typescript and Bootstrap. Using modern and user-friendly design. Press the 'Live Project' button to learn about recursion!",
-    image: ["https://user-images.githubusercontent.com/97472180/194753848-154c5853-c190-4201-bae2-4560e97c0d84.PNG","https://user-images.githubusercontent.com/97472180/194753796-148c3e8a-6fe4-450a-9777-760785a85a3f.gif"],
-    tools: ["React", "Typescript", "Bootstrap", "AOS", "EmailJS", "HTML5", "CSS3"],
-    links: ["https://github.com/YanivWein24/Portfolio", "/"]
-  }
+    name: "Git Finderr  🔍",
+    description: "A search engine for GitHub users! Type in a valid username and find all the info about that user. All data is coming from GitHub's REST-API. Responsive and well-suited for mobile, tablets, and desktop screens. Also features light/dark themes - using localStorage to save the user's theme for the next visit!",
+    image: ["https://user-images.githubusercontent.com/97472180/195613865-a0cd5e6a-b926-4209-bbe3-7590346bf153.PNG","https://user-images.githubusercontent.com/97472180/195611602-a94385e0-3004-4acc-b40e-ce28f9c20037.gif"],
+    tools: ["React", "Typescript", "Context", "Fetch-API" , "HTML5", "CSS3"],
+    links: ["https://github.com/YanivWein24/Git-Finder", "https://git-finderr.netlify.app/"]
+  },
 ]
 
 export default myProducts

@@ -39,6 +39,15 @@ const Projects: FC = () => (
           ))}
         </Row>
       </Container>
+      <a
+        href="https://github.com/YanivWein24/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="githubLink"
+        aria-label="my github"
+      >
+        Check out more projects!
+      </a>
     </div>
     <div className="bottomAngle-svg">
       <svg

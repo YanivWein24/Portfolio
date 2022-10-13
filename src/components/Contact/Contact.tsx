@@ -130,7 +130,9 @@ const Contact: FC = () => {
             type="submit"
             onClick={(event) => {
               event.preventDefault();
-              form && form.checkValidity() ? sendEmail() : form && form.classList.add("was-validated");
+              form && form.checkValidity()
+                ? sendEmail()
+                : form && form.classList.add("was-validated");
             }}
           >
             Submit <i className="fa-solid fa-paper-plane"></i>

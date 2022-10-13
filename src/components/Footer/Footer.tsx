@@ -47,7 +47,6 @@ const Footer: FC = () => {
             <i className="fa-solid fa-envelope"></i>
           </a>
         </>
-        <hr />
         <p className="copyright">Ⓒ {year} Yaniv Weinshtein</p>
       </div>
     </div>

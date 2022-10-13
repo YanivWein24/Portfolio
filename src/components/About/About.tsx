@@ -91,7 +91,10 @@ const About: FC = () => {
             data-aos-once={smallScreen && "true"}
             className="solving-problems"
           >
-            <i className="fa-solid fa-laptop-code"></i>
+            <div className="imageContainer">
+              {/* <i className="fa-solid fa-laptop-code"></i> */}
+              <i className="fa-solid fa-bug"></i>
+            </div>
             <h3>Solving Problems</h3>
             <p>
               Solving problems is a major part of developing new and innovative
