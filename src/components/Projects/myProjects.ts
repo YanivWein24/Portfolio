@@ -19,7 +19,7 @@ const myProducts: { id: number, name: string, description: string, image: string
     id: 2,
     name: "Git Finderr  🔍",
     description: "A search engine for GitHub users! Type in a valid username and find all the info about that user. All data is coming from GitHub's REST-API. Responsive and well-suited for mobile, tablets, and desktop screens. Also features light/dark themes - using localStorage to save the user's theme for the next visit!",
-    image: ["https://user-images.githubusercontent.com/97472180/195613865-a0cd5e6a-b926-4209-bbe3-7590346bf153.PNG","https://user-images.githubusercontent.com/97472180/195611602-a94385e0-3004-4acc-b40e-ce28f9c20037.gif"],
+    image: ["https://user-images.githubusercontent.com/97472180/195613865-a0cd5e6a-b926-4209-bbe3-7590346bf153.PNG","https://user-images.githubusercontent.com/97472180/195998154-d0aa6a65-1035-48e1-89f4-e9707b1cea64.gif"],
     tools: ["React", "Typescript", "Context", "Fetch-API" , "HTML5", "CSS3"],
     links: ["https://github.com/YanivWein24/Git-Finder", "https://git-finderr.netlify.app/"]
   },

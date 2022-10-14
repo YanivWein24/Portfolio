@@ -178,7 +178,8 @@ h3 {
 .about-me p {
   padding: 0 0.75rem;
   color: var(--color-offWhite);
-  font-size: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
 }
 
 @media screen and (max-width: 940px) {

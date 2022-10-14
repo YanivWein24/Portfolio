@@ -1,4 +1,4 @@
-import React, { useState, FC, FormEvent } from "react";
+import React, { useState, FC } from "react";
 import { Container, Form, FormGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
