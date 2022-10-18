@@ -24,13 +24,14 @@ const Cards: FC<CardProps> = ({ project }) => {
     <Card
       style={{
         width:
-          tabletScreen && project.id === 0
-            ? "60%"
+          (!smallScreen && project.id === 0) ||
+          (!smallScreen && project.id === 1)
+            ? "80%"
             : smallScreen
             ? "95%"
             : tabletScreen
             ? "90%"
-            : "22rem",
+            : "21rem",
       }}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}

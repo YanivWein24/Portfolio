@@ -31,8 +31,8 @@ const Projects: FC = () => (
               data-aos-once={smallScreen && "true"}
               key={project.id}
               sm={12}
-              md={project.id === 0 ? 12 : 6}
-              lg={3}
+              md={project.id === 0 || project.id === 1 ? 6 : 4}
+              lg={project.id === 0 || project.id === 1 ? 6 : 4}
             >
               <Cards project={project} />
             </Col>
