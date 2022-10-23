@@ -31,6 +31,9 @@
 .backToTop:active {
   background-color: var(--color-primary-light);
 }
+.backToTop:focus {
+  outline: none;
+}
 
 .backToTop:hover a.link {
   text-decoration: none;

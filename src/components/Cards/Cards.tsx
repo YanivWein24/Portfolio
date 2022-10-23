@@ -30,7 +30,7 @@ const Cards: FC<CardProps> = ({ project }) => {
             : smallScreen
             ? "95%"
             : tabletScreen
-            ? "90%"
+            ? "95%"
             : "21rem",
       }}
       onMouseOver={() => setHover(true)}

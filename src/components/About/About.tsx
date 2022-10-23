@@ -93,19 +93,37 @@ const About: FC = () => {
           >
             <div className="imageContainer">
               {/* <i className="fa-solid fa-laptop-code"></i> */}
-              <i className="fa-solid fa-bug"></i>
+              <i className="fa-solid fa-user"></i>
             </div>
-            <h3>Solving Problems</h3>
+            <h3>About Me</h3>
             <p>
-              Solving problems is a major part of developing new and innovative
-              technology. I look at problems as a way to gain knowledge and
-              experience, and improve my skills to solve more complicated
-              problems in the future.
+              My name is Yaniv Weinshtein. I'm a Practical Engineer in
+              Electronics and a Full stack developer specializing in the "MERN"
+              stack. I got exposed to coding in some of my practical engineering
+              courses, and immediately I fell in love with the idea of creating
+              solutions to day-to-day problems using only lines of code! I
+              continued to code for fun for a while, and now I'm doing it
+              professionally as my main career path!
             </p>
           </Col>
           <Col
             md={6}
             data-aos={smallScreen || tabletScreen ? "fade-right" : "zoom-in-up"}
+            data-aos-once={smallScreen && "true"}
+            className="always-learning"
+          >
+            <i className="fa-solid fa-book"></i>
+            <h3>Always Learning</h3>
+            <p>
+              A part of being a software developer is being able to keep up with
+              the latest technologies. and as technology evolves, I constantly
+              find myself learning new things, exposing myself to new tools and
+              technologies, and growing my skills and knowledge.
+            </p>
+          </Col>
+          <Col
+            md={6}
+            data-aos={smallScreen || tabletScreen ? "fade-left" : "fade-right"}
             data-aos-once={smallScreen && "true"}
             className="former-technician"
           >
@@ -116,21 +134,6 @@ const About: FC = () => {
               Israeli navy, I've gained experience in locating and solving
               complex problems in large-scale systems. I'm also experienced with
               working in a team and meeting tight schedules.
-            </p>
-          </Col>
-          <Col
-            md={6}
-            data-aos={smallScreen || tabletScreen ? "fade-left" : "fade-right"}
-            data-aos-once={smallScreen && "true"}
-            className="always-learning"
-          >
-            <i className="fa-solid fa-book"></i>
-            <h3>Always Learning</h3>
-            <p>
-              A part of being a software developer is being able to keep up with
-              the latest technologies. and as technology evolves, I find myself
-              constantly learning new things and growing my skills and
-              knowledge.
             </p>
           </Col>
         </Row>
