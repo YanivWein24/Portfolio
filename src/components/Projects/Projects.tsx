@@ -45,6 +45,8 @@ const Projects: FC = () => (
         rel="noopener noreferrer"
         className="githubLink"
         aria-label="my github"
+        data-aos="slide-up"
+        data-aos-once={smallScreen && "true"}
       >
         Check out more projects!
       </a>
