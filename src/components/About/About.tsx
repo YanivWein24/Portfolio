@@ -113,7 +113,7 @@ const About: FC = () => {
             className="always-learning"
           >
             <i className="fa-solid fa-book"></i>
-            <h3>Always Learning</h3>
+            <h3>Always Discovering</h3>
             <p>
               A part of being a software developer is being able to keep up with
               the latest technologies. and as technology evolves, I constantly
