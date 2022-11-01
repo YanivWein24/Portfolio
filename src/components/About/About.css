@@ -156,7 +156,7 @@ h3 {
 
 .about-me {
   background: linear-gradient(180deg, #01254c 0%, var(--color-primary) 100%);
-  padding: 0 5rem;
+  padding: 0 10rem;
 }
 
 .about-me i {
@@ -178,7 +178,7 @@ h3 {
 .about-me p {
   padding: 0 0.75rem;
   color: var(--color-offWhite);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.8px;
 }
 
@@ -190,7 +190,7 @@ h3 {
   }
 
   .intro h1 {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 
   .intro {
@@ -238,7 +238,7 @@ h3 {
 
 @media screen and (min-width: 1600px) {
   .about-me {
-    padding: 1rem 7rem;
+    padding: 1rem 17rem;
   }
 
   .intro {

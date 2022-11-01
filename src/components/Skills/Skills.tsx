@@ -235,7 +235,7 @@ const Skills: FC = () => {
               >
                 {" "}
                 <img
-                  src="https://net.cloudinfrastructureservices.co.uk/wp-content/uploads/2021/12/OAuth-2.png"
+                  src="https://cdn.freebiesupply.com/logos/large/2x/oauth-logo-png-transparent.png"
                   alt="Oauth2.0"
                 />
               </a>
