@@ -1,4 +1,13 @@
-const myProducts: { id: number, name: string, description: string, image: string[], tools: string[], links: string[] }[] = [
+interface product {
+  id: number,
+  name: string,
+  description: string,
+  image: string[],
+  tools: string[],
+  links: string[]
+}
+
+const myProducts: product[] = [
   {
     id: 0,
     name: "Get Jokes 😂",

@@ -30,12 +30,11 @@
   border: 2px solid white;
   color: white;
   background-color: transparent;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: rgb(38, 57, 77) 0px 7px 12px -5px;
 }
 
 .projects .githubLink:hover {
-  transform: scale(0.97);
   background: linear-gradient(
     180deg,
     var(--color-primary) 0%,
