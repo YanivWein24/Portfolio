@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 1;
@@ -40,10 +40,7 @@
   transition: all 0.4s ease;
 }
 
-.linkContainer:hover {
-  background-color: var(--color-primary);
-}
-
+.linkContainer:hover,
 .linkContainer:active {
   background-color: var(--color-primary);
 }
@@ -113,8 +110,12 @@ a.link {
     border-bottom: 3px solid var(--color-primary-light);
   }
 
-  .collapsed {
+  button.navbar-toggler {
     border-radius: 5px;
+  }
+
+  button.navbar-toggler:focus {
+    outline: none;
   }
 
   .linkContainer.resume {

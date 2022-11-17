@@ -1,16 +1,79 @@
-import React, { FC, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Header.css";
 
-const Header: FC = () => {
-  const smallScreen: boolean = window.innerWidth < 420;
+interface LinkProps {
+  name: string;
+  icon: string;
+  duration?: number;
+  offset: number;
+  smallScreen?: boolean;
+  scroll?: boolean;
+}
 
+const links: LinkProps[] = [
+  {
+    name: "About",
+    icon: "fa-solid fa-address-card",
+    offset: -500,
+    duration: 1000,
+  },
+  {
+    name: "Skills",
+    icon: "fa-solid fa-bars-progress",
+    offset: -70,
+  },
+  {
+    name: "Projects",
+    icon: "fa-solid fa-code",
+    offset: -20,
+  },
+  {
+    name: "Contact",
+    icon: "fa-solid fa-envelope",
+    offset: -60,
+  },
+];
+
+const AbstractLink = ({
+  name,
+  icon,
+  duration,
+  offset,
+  smallScreen,
+  scroll,
+}: LinkProps) => {
+  const [hoverLink, setHoverLink] = useState<boolean>(false);
+
+  return (
+    <div
+      className="linkContainer"
+      style={{
+        borderRadius: smallScreen || scroll ? "10px" : "0 0 10px 10px",
+      }}
+      onMouseOver={() => setHoverLink(true)}
+      onMouseOut={() => setHoverLink(false)}
+    >
+      <Link
+        to={name}
+        smooth={true}
+        duration={duration}
+        offset={offset}
+        className="link"
+        style={{
+          color: smallScreen || hoverLink ? "#fff" : scroll ? "#ccc" : "#fff",
+        }}
+      >
+        <i className={icon}></i> {name}
+      </Link>
+    </div>
+  );
+};
+
+const Header = () => {
   const [scroll, setScroll] = useState<boolean>(false);
-  const [hoverAbout, setHoverAbout] = useState<boolean>(false);
-  const [hoverSkills, setHoverSkills] = useState<boolean>(false);
-  const [hoverProjects, setHoverProjects] = useState<boolean>(false);
-  const [hoverContact, setHoverContact] = useState<boolean>(false);
+  const smallScreen: boolean = window.innerWidth < 480;
 
   const changeBackground = () => {
     window.scrollY >= 66 ? setScroll(true) : setScroll(false);
@@ -19,7 +82,7 @@ const Header: FC = () => {
   useEffect(() => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
-  });
+  }, []);
 
   return (
     <div
@@ -57,132 +120,17 @@ const Header: FC = () => {
             className="justify-content-center"
           >
             <Nav className="me-auto ">
-              {" "}
-              {/*me-auto - to center */}
-              <div
-                className="linkContainer"
-                style={{
-                  borderRadius: smallScreen
-                    ? "10px"
-                    : scroll
-                    ? "10px"
-                    : "0 0 10px 10px",
-                }}
-                onMouseOver={() => setHoverAbout(true)}
-                onMouseOut={() => setHoverAbout(false)}
-              >
-                <Link
-                  to="About"
-                  href="About"
-                  smooth={true}
-                  duration={1000}
-                  offset={-500}
-                  className="link"
-                  style={{
-                    color:
-                      smallScreen || hoverAbout
-                        ? "#fff"
-                        : scroll
-                        ? "#ccc"
-                        : "#fff",
-                  }}
-                >
-                  <i className="fa-solid fa-address-card"></i> About
-                </Link>
-              </div>
-              <div
-                className="linkContainer"
-                style={{
-                  borderRadius: smallScreen
-                    ? "10px"
-                    : scroll
-                    ? "10px"
-                    : "0 0 10px 10px",
-                }}
-                onMouseOver={() => setHoverSkills(true)}
-                onMouseOut={() => setHoverSkills(false)}
-              >
-                <Link
-                  to="Skills"
-                  href="Skills"
-                  smooth={true}
-                  duration={750}
-                  offset={-70}
-                  className="link"
-                  style={{
-                    color:
-                      smallScreen || hoverSkills
-                        ? "#fff"
-                        : scroll
-                        ? "#ccc"
-                        : "#fff",
-                  }}
-                >
-                  <i className="fa-solid fa-bars-progress"></i> Skills
-                </Link>
-              </div>
-              <div
-                className="linkContainer"
-                style={{
-                  borderRadius: smallScreen
-                    ? "10px"
-                    : scroll
-                    ? "10px"
-                    : "0 0 10px 10px",
-                }}
-                onMouseOver={() => setHoverProjects(true)}
-                onMouseOut={() => setHoverProjects(false)}
-              >
-                <Link
-                  to="Projects"
-                  href="Projects"
-                  smooth={true}
-                  duration={750}
-                  offset={-20}
-                  className="link"
-                  style={{
-                    color:
-                      smallScreen || hoverProjects
-                        ? "#fff"
-                        : scroll
-                        ? "#ccc"
-                        : "#fff",
-                  }}
-                >
-                  <i className="fa-solid fa-code"></i> Projects
-                </Link>
-              </div>
-              <div
-                className="linkContainer"
-                style={{
-                  borderRadius: smallScreen
-                    ? "10px"
-                    : scroll
-                    ? "10px"
-                    : "0 0 10px 10px",
-                }}
-                onMouseOver={() => setHoverContact(true)}
-                onMouseOut={() => setHoverContact(false)}
-              >
-                <Link
-                  to="Contact"
-                  href="Contact"
-                  smooth={true}
-                  duration={750}
-                  offset={-60}
-                  className="link"
-                  style={{
-                    color:
-                      smallScreen || hoverContact
-                        ? "#fff"
-                        : scroll
-                        ? "#ccc"
-                        : "#fff",
-                  }}
-                >
-                  <i className="fa-solid fa-envelope"></i> Contact me
-                </Link>
-              </div>
+              {links.map((link, index) => (
+                <AbstractLink
+                  key={index}
+                  name={link.name}
+                  icon={link.icon}
+                  offset={link.offset}
+                  duration={link.duration || 750}
+                  smallScreen={smallScreen}
+                  scroll={scroll}
+                />
+              ))}
               <div
                 className="linkContainer resume"
                 style={{
