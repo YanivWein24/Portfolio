@@ -20,15 +20,9 @@ const Contact: FC = () => {
   };
 
   const sendEmail = () => {
-    const publicKey: string = process.env.REACT_APP_PUBLIC_KEY
-      ? process.env.REACT_APP_PUBLIC_KEY
-      : "error";
-    const templateId: string = process.env.REACT_APP_TEMPLATE_ID
-      ? process.env.REACT_APP_TEMPLATE_ID
-      : "error";
-    const serviceId: string = process.env.REACT_APP_SERVICE_ID
-      ? process.env.REACT_APP_SERVICE_ID
-      : "error";
+    const publicKey: string = process.env.REACT_APP_PUBLIC_KEY || "error";
+    const templateId: string = process.env.REACT_APP_TEMPLATE_ID || "error";
+    const serviceId: string = process.env.REACT_APP_SERVICE_ID || "error";
 
     emailjs.sendForm(serviceId, templateId, form || "error", publicKey).then(
       () => {
