@@ -59,13 +59,20 @@ const Skills = () => {
         <Row>
           <Col>
             {SkillsList.frontend.map((skill, index) => (
-              <Skill
-                key={index}
-                name={skill.name}
-                color={skill.color}
-                link={skill.link}
-                img={skill.img}
-              />
+              <>
+                <Skill
+                  key={index}
+                  name={skill.name}
+                  color={skill.color}
+                  link={skill.link}
+                  img={skill.img}
+                />
+                {window.innerWidth > 1200 && index === 4 && (
+                  <>
+                    <br /> <br />
+                  </>
+                )}
+              </>
             ))}
           </Col>
         </Row>
@@ -76,13 +83,20 @@ const Skills = () => {
         <Row>
           <Col>
             {SkillsList.backend.map((skill, index) => (
-              <Skill
-                key={index}
-                name={skill.name}
-                color={skill.color}
-                link={skill.link}
-                img={skill.img}
-              />
+              <>
+                <Skill
+                  key={index}
+                  name={skill.name}
+                  color={skill.color}
+                  link={skill.link}
+                  img={skill.img}
+                />
+                {window.innerWidth > 1200 && index === 3 && (
+                  <>
+                    <br /> <br />
+                  </>
+                )}
+              </>
             ))}
           </Col>
         </Row>
