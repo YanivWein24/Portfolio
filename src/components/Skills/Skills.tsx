@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Skills.css";
 import { Row, Col } from "react-bootstrap";
 import { SkillsList, FamiliarSkillsList } from "./SkillsList";
@@ -16,14 +17,26 @@ interface FamiliarSkillProps {
   smallScreen?: Boolean;
 }
 
-const Skill = ({ name, color, link, img }: SkillProps) => (
-  <div className="skill" style={{ boxShadow: `1px 1px 10px 2px ${color}` }}>
-    <p style={{ color: `${color}` }}>{name}</p>
-    <a target="_blank" rel="noopener noreferrer" href={link}>
-      <img src={img} alt={name} />
-    </a>
-  </div>
-);
+const Skill = ({ name, color, link, img }: SkillProps) => {
+  const [isHovering, setIsHovering] = useState<boolean>(false);
+  return (
+    <div
+      className="skill"
+      style={{
+        boxShadow: isHovering
+          ? `1px 1px 10px 4px ${color}`
+          : `1px 1px 10px 2px ${color}`,
+      }}
+      onMouseOver={() => setIsHovering(true)}
+      onMouseOut={() => setIsHovering(false)}
+    >
+      <p style={{ color: `${color}` }}>{name}</p>
+      <a target="_blank" rel="noopener noreferrer" href={link}>
+        <img src={img} alt={name} />
+      </a>
+    </div>
+  );
+};
 
 const FamiliarSkill = ({
   name,

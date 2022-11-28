@@ -20,6 +20,18 @@
   width: 15%;
 }
 
+.skills h2:hover + hr {
+  width: 2%;
+}
+
+.skills hr {
+  background-color: var(--color-primary-light);
+  width: 3%;
+  height: 1px;
+  margin: 0.5rem auto 2rem;
+  transition: 0.25s ease;
+}
+
 .skills .skill {
   display: inline-block;
   font-weight: bold;
@@ -64,13 +76,6 @@
   height: 60px;
   border-radius: 10px;
   margin: 0.4rem;
-}
-
-.skills hr {
-  background-color: var(--color-primary-light);
-  width: 3%;
-  height: 1px;
-  margin: 0.5rem auto 2rem;
 }
 
 @media screen and (max-width: 940px) {
