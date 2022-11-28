@@ -25,9 +25,9 @@ const About: FC = () => {
               type="video/mp4"
             />
           </video>
-          <h2 className="welcomeMessage">
+          <h4 className="welcomeMessage">
             <em>Hi! my name is</em>
-          </h2>
+          </h4>
           <h1>
             <span>{"< Yaniv Weinshtein />"}</span>
           </h1>

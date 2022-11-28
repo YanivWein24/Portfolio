@@ -3,6 +3,57 @@
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-offWhite);
+}
+
+h1 span {
+  line-height: 1.4;
+  background-color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+  font-size: 3.3rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.intro {
+  font-family: "Mali", cursive;
+  padding-bottom: 7rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 8rem;
+}
+
+.intro h1 {
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.intro .welcomeMessage {
+  margin: 3rem auto 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 #myVideo {
   position: absolute;
   right: 0;
@@ -45,53 +96,6 @@
 
 .bottomContainer {
   position: relative;
-}
-
-.intro {
-  font-family: "Mali", cursive;
-  padding-bottom: 7rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  gap: 10rem;
-  margin-top: 8rem;
-}
-
-.intro h1,
-.intro h1 span {
-  font-size: 3.3rem;
-  color: var(--color-offWhite);
-}
-
-.intro h1 {
-  display: inline-block;
-  transition: all 0.3s ease;
-  font-weight: 600;
-}
-
-.intro .welcomeMessage {
-  margin: 3rem auto 2rem;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-h1 span {
-  line-height: 1.4;
-  background-color: rgba(255, 255, 255, 0.3);
-  letter-spacing: 1px;
-}
-
-h2 {
-  margin-top: 2rem;
-  font-size: 1.7rem;
-  color: var(--color-offWhite);
-}
-
-h3 {
-  color: var(--color-offWhite);
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 #About button {
@@ -205,6 +209,13 @@ h3 {
 }
 
 @media screen and (max-width: 940px) {
+  .intro {
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 6rem;
+  }
+
   .intro h1,
   .intro h1 span {
     font-size: 2.2rem;
@@ -215,11 +226,19 @@ h3 {
     padding: 0 0.5rem;
   }
 
-  .intro {
-    padding-bottom: 1.5rem;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 6rem;
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  h2 span {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 
   #About img {
@@ -231,18 +250,6 @@ h3 {
 
   .intro .welcomeMessage {
     margin: 1rem auto 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-    margin-top: 2rem;
-  }
-
-  h2 span {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-    font-size: 1.5rem;
   }
 
   .about-me {
