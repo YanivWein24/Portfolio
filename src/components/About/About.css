@@ -12,6 +12,23 @@
   z-index: -10;
 }
 
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#About img {
+  width: 20rem;
+  height: 20rem;
+  filter: grayscale(90%);
+  transition: 0.3s ease-in-out;
+}
+
+#About img:hover {
+  filter: grayscale(0);
+}
+
 .Typewriter {
   display: inline-block;
 }
@@ -34,6 +51,11 @@
   font-family: "Mali", cursive;
   padding-bottom: 7rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 8rem;
 }
 
 .intro h1,
@@ -49,7 +71,7 @@
 }
 
 .intro .welcomeMessage {
-  margin: 11rem auto 2rem;
+  margin: 3rem auto 2rem;
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -62,7 +84,7 @@ h1 span {
 
 h2 {
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--color-offWhite);
 }
 
@@ -185,7 +207,7 @@ h3 {
 @media screen and (max-width: 940px) {
   .intro h1,
   .intro h1 span {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     letter-spacing: 0;
   }
 
@@ -195,21 +217,32 @@ h3 {
 
   .intro {
     padding-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 6rem;
+  }
+
+  #About img {
+    width: 10rem;
+    height: 10rem;
+    filter: grayscale(0%);
+    transition: 0.3s ease-in-out;
   }
 
   .intro .welcomeMessage {
-    margin-top: 8rem;
+    margin: 1rem auto 1.5rem;
   }
 
   h2 {
-    font-size: 1.6rem;
-    margin-top: 5rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
   }
 
   h2 span {
     display: flex;
     justify-content: center;
     gap: 7px;
+    font-size: 1.5rem;
   }
 
   .about-me {
@@ -221,9 +254,9 @@ h3 {
   }
 
   #About button {
-    margin: 5rem 0.5rem 2rem;
-    font-size: 11px;
-    padding: 0.7rem 1.3rem;
+    margin: 3rem 0.5rem 0.5rem;
+    font-size: 10px;
+    padding: 0.6rem 1.2rem;
   }
 
   .wave svg,
@@ -242,10 +275,7 @@ h3 {
   }
 
   .intro {
+    margin-top: 13rem;
     padding-bottom: 15rem;
-  }
-
-  .intro .welcomeMessage {
-    margin: 16rem auto 2rem;
   }
 }

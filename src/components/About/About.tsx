@@ -15,60 +15,68 @@ const About: FC = () => {
   return (
     <div id="About">
       <div className="intro fade-in">
-        <video autoPlay muted loop id="myVideo">
-          <source src={require("../../Graphic.mp4")} type="video/mp4" />
-        </video>
-        <h2 className="welcomeMessage">
-          <em>Hi! my name is</em>
-        </h2>
-        <h1>
-          <span>{"< Yaniv Weinshtein />"}</span>
-        </h1>
-        <h2>
-          <span>
-            I'm A{" "}
-            <Typewriter
-              options={{
-                strings: ["FULL-STACK", "FRONT-END"],
-                autoStart: true,
-                loop: true,
-              }}
+        <div className="imageContainer">
+          <img src={require("../../assets/profile.png")} alt="profile" />
+        </div>
+        <div className="topContainer">
+          <video autoPlay muted loop id="myVideo">
+            <source
+              src={require("../../assets/Graphic.mp4")}
+              type="video/mp4"
             />
-          </span>
-          Web Developer.
-        </h2>
-        <Button
-          onMouseOver={() => setFirstHovering(true)}
-          onMouseOut={() => setFirstHovering(false)}
-          className={
-            firstButtonHovering
-              ? "shake-bottom downloadButton"
-              : "downloadButton"
-          }
-        >
-          <a
-            href={require("../../Yaniv-Resume.pdf")}
-            download="Yaniv-Resume.pdf"
+          </video>
+          <h2 className="welcomeMessage">
+            <em>Hi! my name is</em>
+          </h2>
+          <h1>
+            <span>{"< Yaniv Weinshtein />"}</span>
+          </h1>
+          <h2>
+            <span>
+              I'm A{" "}
+              <Typewriter
+                options={{
+                  strings: ["FULL-STACK", "FRONT-END"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+            Web Developer.
+          </h2>
+          <Button
+            onMouseOver={() => setFirstHovering(true)}
+            onMouseOut={() => setFirstHovering(false)}
+            className={
+              firstButtonHovering
+                ? "shake-bottom downloadButton"
+                : "downloadButton"
+            }
           >
-            <i className="fa-solid fa-download"></i> &nbsp;Download Resume
-          </a>
-        </Button>
-        <Button
-          onMouseOver={() => setSecondeHovering(true)}
-          onMouseOut={() => setSecondeHovering(false)}
-          className={secondButtonHovering ? "shake-bottom" : ""}
-        >
-          <Link
-            to="Contact"
-            smooth={true}
-            duration={1000}
-            offset={-60}
-            className="link"
-            aria-label="To 'Contact-Me' Section"
+            <a
+              href={require("../../assets/Yaniv-Resume.pdf")}
+              download="Yaniv-Resume.pdf"
+            >
+              <i className="fa-solid fa-download"></i> &nbsp;Download Resume
+            </a>
+          </Button>
+          <Button
+            onMouseOver={() => setSecondeHovering(true)}
+            onMouseOut={() => setSecondeHovering(false)}
+            className={secondButtonHovering ? "shake-bottom" : ""}
           >
-            <i className="fa-solid fa-envelope"></i> &nbsp;Contact Me
-          </Link>
-        </Button>
+            <Link
+              to="Contact"
+              smooth={true}
+              duration={1000}
+              offset={-60}
+              className="link"
+              aria-label="To 'Contact-Me' Section"
+            >
+              <i className="fa-solid fa-envelope"></i> &nbsp;Contact Me
+            </Link>
+          </Button>
+        </div>
       </div>
       <div className="bottomContainer">
         <div className="wave">

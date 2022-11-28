@@ -143,7 +143,7 @@ const Header = () => {
               >
                 <a
                   className="link"
-                  href={require("../../Yaniv-Resume.pdf")}
+                  href={require("../../assets/Yaniv-Resume.pdf")}
                   download="Yaniv-Resume.pdf"
                 >
                   <i className="fa-solid fa-download"></i> Resume
