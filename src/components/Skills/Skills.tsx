@@ -24,7 +24,7 @@ const Skill = ({ name, color, link, img }: SkillProps) => {
       className="skill"
       style={{
         boxShadow: isHovering
-          ? `1px 1px 10px 4px ${color}`
+          ? `1px 1px 10px 5px ${color}`
           : `1px 1px 10px 2px ${color}`,
       }}
       onMouseOver={() => setIsHovering(true)}
