@@ -1,10 +1,10 @@
-import React, { FC, useState } from "react";
+import { useState } from "react";
 import { Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
 import "./About.css";
 import Typewriter from "typewriter-effect";
 
-const About: FC = () => {
+const About = () => {
   const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
   const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
 

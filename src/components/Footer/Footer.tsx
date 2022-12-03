@@ -1,8 +1,7 @@
-import React, { FC } from "react";
 import { Link } from "react-scroll";
 import "./Footer.css";
 
-const Footer: FC = () => {
+const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div>

@@ -37,6 +37,10 @@
   min-height: 11.5rem;
   padding-bottom: 0.5rem;
 }
+.card-1 .topCardBody,
+.card-2 .topCardBody {
+  min-height: 14rem;
+}
 
 .card-text {
   font-weight: 600;
@@ -97,6 +101,10 @@
   background-color: var(--color-primary);
 }
 
+.card button:focus {
+  outline: none;
+}
+
 .card .greyButton {
   border: 2px solid #777;
   color: #777;
@@ -118,6 +126,11 @@
   }
 
   .topCardBody {
+    min-height: 0;
+  }
+
+  .card-1 .topCardBody,
+  .card-2 .topCardBody {
     min-height: 0;
   }
 

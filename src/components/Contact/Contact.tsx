@@ -1,9 +1,9 @@
-import React, { useState, FC } from "react";
+import { useState } from "react";
 import { Container, Form, FormGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
-const Contact: FC = () => {
+const Contact = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");

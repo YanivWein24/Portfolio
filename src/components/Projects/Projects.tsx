@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Cards from "../Cards/Cards";
 import myProjects from "./myProjects";
@@ -6,7 +5,7 @@ import "./Projects.css";
 
 const smallScreen: Boolean = window.innerWidth < 940;
 
-const Projects: FC = () => (
+const Projects = () => (
   <div data-aos="slide-up" data-aos-once={smallScreen && "true"}>
     <div className="topAngle-svg">
       <svg
@@ -31,8 +30,8 @@ const Projects: FC = () => (
               data-aos-once={smallScreen && "true"}
               key={project.id}
               sm={12}
-              md={project.id === 0 || project.id === 1 ? 6 : 4}
-              lg={project.id === 0 || project.id === 1 ? 6 : 4}
+              md={6}
+              lg={4}
             >
               <Cards project={project} />
             </Col>

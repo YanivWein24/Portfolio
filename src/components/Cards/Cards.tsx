@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import "./Cards.css";
 
@@ -17,21 +17,14 @@ interface CardProps {
   };
 }
 
-const Cards: FC<CardProps> = ({ project }) => {
+const Cards = ({ project }: CardProps) => {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
     <Card
+      className={`card-${project.id}`}
       style={{
-        width:
-          (!smallScreen && project.id === 0) ||
-          (!smallScreen && project.id === 1)
-            ? "80%"
-            : smallScreen
-            ? "95%"
-            : tabletScreen
-            ? "95%"
-            : "21rem",
+        width: smallScreen ? "95%" : tabletScreen ? "92%" : "21rem",
       }}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
