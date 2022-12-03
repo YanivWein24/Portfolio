@@ -2,20 +2,7 @@ import { useState } from "react";
 import "./Skills.css";
 import { Row, Col } from "react-bootstrap";
 import { SkillsList, FamiliarSkillsList } from "./SkillsList";
-
-interface SkillProps {
-  name: string;
-  color: string;
-  link: string;
-  img: string;
-}
-
-interface FamiliarSkillProps {
-  name: string;
-  link: string;
-  img: string;
-  smallScreen?: Boolean;
-}
+import { FamiliarSkillProps, SkillProps } from "../../types/SkillsProps";
 
 const Skill = ({ name, color, link, img }: SkillProps) => {
   const [isHovering, setIsHovering] = useState<boolean>(false);

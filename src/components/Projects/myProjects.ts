@@ -1,13 +1,6 @@
-interface product {
-  id: number,
-  name: string,
-  description: string,
-  image: string[],
-  tools: string[],
-  links: string[]
-}
+import { Project } from "../../types/Projects"
 
-const myProducts: product[] = [
+const Projects: Project[] = [
   {
     id: 0,
     name: "Get Jokes 😂",
@@ -58,4 +51,4 @@ const myProducts: product[] = [
   }
 ]
 
-export default myProducts
+export default Projects

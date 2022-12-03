@@ -2,17 +2,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Header.css";
+import { HeaderLinkProps } from "../../types/HeaderLinkProps";
 
-interface LinkProps {
-  name: string;
-  icon: string;
-  duration?: number;
-  offset: number;
-  smallScreen?: boolean;
-  scroll?: boolean;
-}
-
-const links: LinkProps[] = [
+const links: HeaderLinkProps[] = [
   {
     name: "About",
     icon: "fa-solid fa-address-card",
@@ -43,7 +35,7 @@ const AbstractLink = ({
   offset,
   smallScreen,
   scroll,
-}: LinkProps) => {
+}: HeaderLinkProps) => {
   const [hoverLink, setHoverLink] = useState<boolean>(false);
 
   return (

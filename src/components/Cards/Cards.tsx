@@ -1,21 +1,11 @@
 import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
+import { CardProps } from "../../types/CardProps";
 import "./Cards.css";
 
 const tabletScreen: boolean =
   window.innerWidth > 768 && window.innerWidth < 1000;
 const smallScreen: boolean = window.innerWidth < 768;
-
-interface CardProps {
-  project: {
-    name: string;
-    description: string;
-    id: number;
-    image: string[];
-    tools: string[];
-    links: string[];
-  };
-}
 
 const Cards = ({ project }: CardProps) => {
   const [hover, setHover] = useState<boolean>(false);
