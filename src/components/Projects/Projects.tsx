@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Cards from "../Cards/Cards";
-import myProjects from "./myProjects";
+import MyProjects from "../../data/MyProjects";
 import "./Projects.css";
 
 const smallScreen: Boolean = window.innerWidth < 940;
@@ -24,7 +24,7 @@ const Projects = () => (
       <h1>Top Projects:</h1>
       <Container>
         <Row className="no-gutters">
-          {myProjects.map((project) => (
+          {MyProjects.map((project) => (
             <Col
               data-aos="slide-up"
               data-aos-once={smallScreen && "true"}

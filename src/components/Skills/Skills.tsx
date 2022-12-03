@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Skills.css";
 import { Row, Col } from "react-bootstrap";
-import { SkillsList, FamiliarSkillsList } from "./SkillsList";
+import { SkillsList, FamiliarSkillsList } from "../../data/SkillsList";
 import { FamiliarSkillProps, SkillProps } from "../../types/SkillsProps";
 
 const Skill = ({ name, color, link, img }: SkillProps) => {
@@ -107,13 +107,20 @@ const Skills = () => {
         <Row>
           <Col>
             {SkillsList.misc.map((skill, index) => (
-              <Skill
-                key={index}
-                name={skill.name}
-                color={skill.color}
-                link={skill.link}
-                img={skill.img}
-              />
+              <>
+                <Skill
+                  key={index}
+                  name={skill.name}
+                  color={skill.color}
+                  link={skill.link}
+                  img={skill.img}
+                />
+                {window.innerWidth > 1200 && index === 3 && (
+                  <>
+                    <br /> <br />
+                  </>
+                )}
+              </>
             ))}
           </Col>
         </Row>

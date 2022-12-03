@@ -113,16 +113,22 @@ export const SkillsList = {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Circleci-icon-logo.svg/1200px-Circleci-icon-logo.svg.png",
     },
     {
+      name: "Postman",
+      color: "#ff6c37",
+      link: "https://www.postman.com/",
+      img: "https://iconape.com/wp-content/png_logo_vector/postman.png",
+    },
+    {
       name: "Git",
       color: "#f03c2e",
       link: "https://git-scm.com/",
       img: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
     },
     {
-      name: "Postman",
-      color: "#ff6c37",
-      link: "https://www.postman.com/",
-      img: "https://iconape.com/wp-content/png_logo_vector/postman.png",
+      name: "Linux",
+      color: "#f5be04",
+      link: "https://en.wikipedia.org/wiki/Unix",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
     },
     {
       name: "Python",
