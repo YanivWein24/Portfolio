@@ -111,7 +111,10 @@ a.link {
   }
 
   button.navbar-toggler {
-    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
   }
 
   button.navbar-toggler:focus {

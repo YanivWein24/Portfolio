@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Header.css";
 import { HeaderLinkProps } from "../../types/HeaderLinkProps";
 import HeaderLinks from "../../data/HeaderLinks";
+import Hamburger from "../Hamburger/Hamburger";
 
 const AbstractLink = ({
   name,
@@ -42,6 +43,7 @@ const AbstractLink = ({
 
 const Header = () => {
   const [scroll, setScroll] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
   const smallScreen: boolean = window.innerWidth < 480;
 
   const changeBackground = () => {
@@ -57,33 +59,26 @@ const Header = () => {
     <div
       className="header"
       style={{
-        backgroundColor: smallScreen
-          ? "#000000e6"
-          : scroll
-          ? "#000000e6"
-          : "transparent",
-        borderBottom: smallScreen
-          ? "5px solid #1c72ff"
-          : scroll
-          ? "5px solid #1c72ff"
-          : "transparent",
-        padding: smallScreen || scroll ? "8px" : "0",
+        backgroundColor:
+          smallScreen || (!smallScreen && scroll) ? "#000000e6" : "transparent",
+        borderBottom:
+          smallScreen || (!smallScreen && scroll)
+            ? "5px solid #1c72ff"
+            : "transparent",
+        padding: smallScreen || (!smallScreen && scroll) ? "8px" : "0",
       }}
     >
       <Navbar variant="dark" expand="lg" className="navbar">
         <Container>
-          <Link
-            to="About"
-            smooth={true}
-            duration={1000}
-            offset={-500}
-            aria-label="Move To Page Top"
+          <Navbar.Brand
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <Navbar.Brand>
-              Yaniv <span>Weinshtein</span>
-            </Navbar.Brand>
-          </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            Yaniv <span>Weinshtein</span>
+          </Navbar.Brand>
+
+          <Navbar.Toggle>
+            <Hamburger isActive={isActive} setIsActive={setIsActive} />
+          </Navbar.Toggle>
           <Navbar.Collapse
             id="basic-navbar-nav"
             className="justify-content-center"
