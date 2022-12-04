@@ -1,66 +1,33 @@
-#About {
+.aboutMeContainer {
   text-align: center;
   width: 100%;
+  position: relative;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1.aboutMeHeader {
+  margin: 0 auto 4rem;
+  padding-top: 1rem;
+  width: 30%;
   color: var(--color-offWhite);
+  font-size: 2.3rem;
+  border-bottom: 2px solid;
 }
 
-h1 span {
-  line-height: 1.4;
-  background-color: rgba(255, 255, 255, 0.3);
-  letter-spacing: 1px;
-  font-size: 3.3rem;
+.about-me {
+  background: linear-gradient(180deg, #01254c 0%, var(--color-primary) 100%);
+  padding: 0 10rem;
 }
 
-h2 {
-  margin-top: 2rem;
-  font-size: 1.7rem;
+.about-me p {
+  padding: 0 0.75rem;
+  color: var(--color-offWhite);
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  text-align: left;
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-.intro {
-  font-family: "Mali", cursive;
-  padding-bottom: 7rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  gap: 10rem;
-  margin-top: 8rem;
-}
-
-.intro h1 {
-  display: inline-block;
-  transition: all 0.3s ease;
-  font-weight: 600;
-}
-
-.intro .welcomeMessage {
-  margin: 3rem auto 2rem;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  z-index: -10;
+p.bigger {
+  font-size: 1rem;
 }
 
 .imageContainer {
@@ -69,82 +36,14 @@ h4 {
   justify-content: center;
 }
 
-#About img {
-  width: 27rem;
-  height: 27rem;
+img.profile {
+  width: 23rem;
+  height: 23rem;
   transition: 0.3s ease-in-out;
 }
 
 .textContainer {
   margin: 0 0 2rem 0;
-}
-
-#About img.profile {
-  width: 23rem;
-  height: 23rem;
-}
-
-h1.aboutMeHeader {
-  margin: 0 auto 4rem;
-  padding-top: 4rem;
-  width: 30%;
-  color: var(--color-offWhite);
-  font-size: 2.3rem;
-  border-bottom: 2px solid;
-}
-
-.Typewriter {
-  display: inline-block;
-}
-
-.Typewriter__wrapper {
-  font-weight: 600;
-  color: var(--color-primary-dark);
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.Typewriter__cursor {
-  color: var(--color-primary-dark);
-}
-
-.bottomContainer {
-  position: relative;
-}
-
-#About button {
-  margin: 6rem 0.5rem 2rem;
-  border-radius: 30px;
-  background: linear-gradient(
-    0deg,
-    var(--color-primary) 0%,
-    var(--color-primary-light) 100%
-  );
-  transition: all 0.2s ease-in-out;
-  text-transform: capitalize;
-}
-
-#About button:hover {
-  background: linear-gradient(
-    0deg,
-    rgb(10, 92, 193) 0%,
-    rgb(44, 139, 255) 100%
-  );
-}
-
-#About .downloadButton {
-  background: #444;
-}
-
-#About .downloadButton:hover {
-  background: #222;
-}
-
-#About button a {
-  color: #fff;
-}
-
-#About button a:hover {
-  text-decoration: none;
 }
 
 /* from https://www.shapedivider.app/ */
@@ -189,83 +88,22 @@ h1.aboutMeHeader {
   fill: var(--color-primary);
 }
 
-.col {
-  text-align: center;
-}
-
-.about-me {
-  background: linear-gradient(180deg, #01254c 0%, var(--color-primary) 100%);
-  padding: 0 10rem;
-}
-
-.about-me p {
-  padding: 0 0.75rem;
-  color: var(--color-offWhite);
-  font-size: 0.85rem;
-  letter-spacing: 0.8px;
-  text-align: left;
-}
-
-p.bigger {
-  font-size: 1rem;
-}
-
 @media screen and (max-width: 940px) {
-  .intro {
-    padding-bottom: 1.5rem;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 6rem;
-  }
-
   h1.aboutMeHeader {
     width: 80%;
     margin-bottom: 2.5rem;
+    padding-top: 2rem;
     font-size: 1.8rem;
   }
 
-  #About img.profile {
-    width: 15rem;
-    height: 15rem;
+  img.profile {
+    width: 13rem;
+    height: 13rem;
     margin-bottom: 2rem;
   }
 
-  .intro h1,
-  .intro h1 span {
-    font-size: 2.2rem;
-    letter-spacing: 0;
-  }
-
-  .intro h1 {
-    padding: 0 0.5rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-    margin-top: 2rem;
-  }
-
-  h2 span {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
-  #About img {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .intro .welcomeMessage {
-    margin: 1rem auto 1.5rem;
-  }
-
   .about-me {
-    padding: 1rem;
+    padding: 0 1.5rem;
   }
 
   .about-me p {
@@ -277,29 +115,14 @@ p.bigger {
     font-size: 16px;
   }
 
-  #About button {
-    margin: 3rem 0.5rem 0.5rem;
-    font-size: 10px;
-    padding: 0.6rem 1.2rem;
-  }
-
   .wave svg,
   .bottom-wave svg {
     height: 50px;
-  }
-
-  .Typewriter {
-    display: flex;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .about-me {
     padding: 1rem 17rem;
-  }
-
-  .intro {
-    margin-top: 13rem;
-    padding-bottom: 15rem;
   }
 }

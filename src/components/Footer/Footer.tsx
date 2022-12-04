@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <button className="backToTop">
         <Link
-          to="About"
+          to="Intro"
           smooth={true}
           duration={1000}
           offset={-500}

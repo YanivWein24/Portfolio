@@ -1,0 +1,178 @@
+.intro {
+  font-family: "Mali", cursive;
+  padding-bottom: 7rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 8rem;
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-offWhite);
+}
+
+h1 span {
+  line-height: 1.4;
+  background-color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+  font-size: 3.3rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.intro h1 {
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.intro .welcomeMessage {
+  margin: 3rem auto 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -10;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
+.Typewriter__wrapper {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Typewriter__cursor {
+  color: var(--color-primary-dark);
+}
+
+.bottomContainer {
+  position: relative;
+}
+
+.intro button {
+  margin: 6rem 0.5rem 2rem;
+  border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
+  );
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+}
+
+.intro button:hover {
+  background: linear-gradient(
+    0deg,
+    rgb(10, 92, 193) 0%,
+    rgb(44, 139, 255) 100%
+  );
+}
+
+.intro .downloadButton {
+  background: #444;
+}
+
+.intro .downloadButton:hover {
+  background: #222;
+}
+
+.intro button a {
+  color: #fff;
+}
+
+.intro button a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 940px) {
+  .intro {
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 9rem;
+  }
+
+  .intro h1,
+  .intro h1 span {
+    font-size: 2.2rem;
+    letter-spacing: 0;
+  }
+
+  .intro h1 {
+    padding: 0 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+
+  h2 span {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+  .intro .welcomeMessage {
+    margin: 1rem auto 1.5rem;
+  }
+
+  .about-me p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  p.bigger {
+    font-size: 16px;
+  }
+
+  .intro button {
+    margin: 8rem 0.5rem 2rem;
+    font-size: 10px;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .Typewriter {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .intro {
+    margin-top: 13rem;
+    padding-bottom: 15rem;
+  }
+}
