@@ -4,7 +4,7 @@ const HeaderLinks: HeaderLinkProps[] = [
   {
     name: "About",
     icon: "fa-solid fa-address-card",
-    offset: 500,
+    offset: window.innerWidth < 1200 ? 420 : 550,
     duration: 1000,
   },
   {
