@@ -88,16 +88,10 @@ a.link {
   transform: scale(1.15);
 }
 
-.fa-linkedin:hover {
-  color: #0a66c2;
-}
-
-.fa-github:hover {
-  color: #555;
-}
-
+.fa-linkedin:hover,
+.fa-github:hover,
 .fa-envelope:hover {
-  color: rgb(229, 220, 56);
+  color: #0a66c2;
 }
 
 /* The envelope icon in "Contact Me" link should stay the same color */

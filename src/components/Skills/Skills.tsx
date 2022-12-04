@@ -58,21 +58,20 @@ const Skills = () => {
         <hr />
         <Row>
           <Col>
-            {SkillsList.frontend.map((skill, index) => (
-              <>
+            {SkillsList.frontend.map((skill) => (
+              <div className="skillContainer" key={skill.id}>
                 <Skill
-                  key={index}
                   name={skill.name}
                   color={skill.color}
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 && index === 4 && (
+                {window.innerWidth > 1200 && skill.id === 4 && (
                   <>
                     <br /> <br />
                   </>
                 )}
-              </>
+              </div>
             ))}
           </Col>
         </Row>
@@ -82,21 +81,20 @@ const Skills = () => {
         <hr />
         <Row>
           <Col>
-            {SkillsList.backend.map((skill, index) => (
-              <>
+            {SkillsList.backend.map((skill) => (
+              <div className="skillContainer" key={skill.id}>
                 <Skill
-                  key={index}
                   name={skill.name}
                   color={skill.color}
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 && index === 3 && (
+                {window.innerWidth > 1200 && skill.id === 3 && (
                   <>
                     <br /> <br />
                   </>
                 )}
-              </>
+              </div>
             ))}
           </Col>
         </Row>
@@ -106,21 +104,20 @@ const Skills = () => {
         <hr />
         <Row>
           <Col>
-            {SkillsList.misc.map((skill, index) => (
-              <>
+            {SkillsList.misc.map((skill) => (
+              <div className="skillContainer" key={skill.id}>
                 <Skill
-                  key={index}
                   name={skill.name}
                   color={skill.color}
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 && index === 3 && (
+                {window.innerWidth > 1200 && skill.id === 3 && (
                   <>
                     <br /> <br />
                   </>
                 )}
-              </>
+              </div>
             ))}
           </Col>
         </Row>
@@ -132,9 +129,9 @@ const Skills = () => {
         <hr />
         <Row>
           <Col>
-            {FamiliarSkillsList.map((skill, index) => (
+            {FamiliarSkillsList.map((skill) => (
               <FamiliarSkill
-                key={index}
+                key={skill.id}
                 name={skill.name}
                 link={skill.link}
                 img={skill.img}
