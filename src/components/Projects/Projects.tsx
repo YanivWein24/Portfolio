@@ -2,23 +2,15 @@ import { Row, Col, Container } from "react-bootstrap";
 import Cards from "../Cards/Cards";
 import MyProjects from "../../data/MyProjects";
 import "./Projects.css";
+import { ReactComponent as TopAngle } from "../../assets/media/TopAngle.svg";
+import { ReactComponent as BottomAngle } from "../../assets/media/BottomAngle.svg";
 
 const smallScreen: Boolean = window.innerWidth < 940;
 
 const Projects = () => (
   <div data-aos="slide-up" data-aos-once={smallScreen && "true"}>
     <div className="topAngle-svg">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-          className="shape-fill"
-        ></path>
-      </svg>
+      <TopAngle />
     </div>
     <div className="projects" id="Projects">
       <h1>Top Projects:</h1>
@@ -51,17 +43,7 @@ const Projects = () => (
       </a>
     </div>
     <div className="bottomAngle-svg">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-          className="shape-fill"
-        ></path>
-      </svg>
+      <BottomAngle />
     </div>
   </div>
 );
