@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Container, Form, FormGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import Text from "../../constants";
 
-const Contact = () => {
+function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -16,7 +17,7 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-    form && form.classList.remove("was-validated");
+    if (form) form.classList.remove("was-validated");
   };
 
   const sendEmail = () => {
@@ -33,8 +34,8 @@ const Contact = () => {
           setMessageSent(false);
         }, 2500);
       },
-      (error) => {
-        console.log(error.text);
+      (err) => {
+        console.log(err.text); // eslint-disable-line
         setError(true);
         setTimeout(() => {
           setError(false);
@@ -51,13 +52,13 @@ const Contact = () => {
       data-aos-once={smallScreen && "true"}
       id="Contact"
     >
-      <h1>contact me:</h1>
+      <h1>Contact Me:</h1>
       <Container>
         <Form>
           <p data-aos="fade-down" data-aos-once={smallScreen && "true"}>
-            If you came all this way, you probably liked what you've seen.
+            {Text.ContactMe}
             <br />
-            <span>if so, tell me about it!</span>
+            <span>{Text.ContactMeBold}</span>
           </p>
           <FormGroup
             data-aos="fade-down"
@@ -72,7 +73,7 @@ const Contact = () => {
               placeholder="Name"
               name="name"
               onChange={(e) => setName(e.target.value)}
-            ></input>
+            />
             <div className="invalid-feedback">Required Field</div>
           </FormGroup>
           <FormGroup
@@ -88,7 +89,7 @@ const Contact = () => {
               placeholder="Email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-            ></input>
+            />
             <div className="invalid-feedback">
               {email.length === 0 ? "Required Field" : "Invalid Email"}
             </div>
@@ -106,7 +107,7 @@ const Contact = () => {
               required
               name="message"
               onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
+            />
             <div className="invalid-feedback">Required Field</div>
           </FormGroup>
           <button
@@ -114,9 +115,9 @@ const Contact = () => {
             data-aos-once={smallScreen && "true"}
             className="reset"
             onClick={resetForm}
-            type="reset"
+            type="button"
           >
-            Reset <i className="fa-solid fa-eraser"></i>
+            Reset <i className="fa-solid fa-eraser" />
           </button>
           <button
             data-aos="fade-down"
@@ -124,25 +125,23 @@ const Contact = () => {
             type="submit"
             onClick={(event) => {
               event.preventDefault();
-              form && form.checkValidity()
-                ? sendEmail()
-                : form && form.classList.add("was-validated");
+              if (form) {
+                form.checkValidity()
+                  ? sendEmail()
+                  : form.classList.add("was-validated");
+              }
             }}
           >
-            Submit <i className="fa-solid fa-paper-plane"></i>
+            Submit <i className="fa-solid fa-paper-plane" />
           </button>
           {messageSent && (
-            <h3 className="messageSent fade-in">
-              Thank you for your response!
-            </h3>
+            <h3 className="messageSent fade-in">{Text.MessageSent}</h3>
           )}
-          {error && (
-            <h3 className="error fade-in">Failed to send message...</h3>
-          )}
+          {error && <h3 className="error fade-in">{Text.ErrorMessage}</h3>}
         </Form>
       </Container>
     </div>
   );
-};
+}
 
 export default Contact;
