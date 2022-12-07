@@ -3,8 +3,10 @@ import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
 import "./Intro.css";
+import Video from "../../assets/Graphic.mp4";
+import Resume from "../../assets/Yaniv-Resume.pdf";
 
-const Intro = () => {
+function Intro() {
   const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
   const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
 
@@ -12,7 +14,7 @@ const Intro = () => {
     <div className="intro fade-in" id="Intro">
       <div>
         <video autoPlay muted loop>
-          <source src={require("../../assets/Graphic.mp4")} type="video/mp4" />
+          <source src={Video} type="video/mp4" />
         </video>
         <h4 className="welcomeMessage">
           <em>Hi! my name is</em>
@@ -22,6 +24,7 @@ const Intro = () => {
         </h1>
         <h2>
           <span>
+            {/* eslint-disable-next-line */}
             I'm A{" "}
             <Typewriter
               options={{
@@ -42,11 +45,8 @@ const Intro = () => {
               : "downloadButton"
           }
         >
-          <a
-            href={require("../../assets/Yaniv-Resume.pdf")}
-            download="Yaniv-Resume.pdf"
-          >
-            <i className="fa-solid fa-download"></i> &nbsp;Download Resume
+          <a href={Resume} download="Yaniv-Resume.pdf">
+            <i className="fa-solid fa-download" /> &nbsp;Download Resume
           </a>
         </Button>
         <Button
@@ -56,18 +56,18 @@ const Intro = () => {
         >
           <Link
             to="Contact"
-            smooth={true}
+            smooth
             duration={1000}
             offset={-60}
             className="link"
             aria-label="To 'Contact-Me' Section"
           >
-            <i className="fa-solid fa-envelope"></i> &nbsp;Contact Me
+            <i className="fa-solid fa-envelope" /> &nbsp;Contact Me
           </Link>
         </Button>
       </div>
     </div>
   );
-};
+}
 
 export default Intro;

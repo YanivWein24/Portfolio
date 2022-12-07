@@ -7,7 +7,7 @@ const tabletScreen: boolean =
   window.innerWidth > 768 && window.innerWidth < 1000;
 const smallScreen: boolean = window.innerWidth < 768;
 
-const Cards = ({ project }: CardProps) => {
+function Cards({ project }: CardProps) {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
@@ -50,18 +50,20 @@ const Cards = ({ project }: CardProps) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="greyButton">Code</button>
+          <button type="button" className="greyButton">
+            Code
+          </button>
         </Card.Link>
         <Card.Link
           href={project.links[1]}
           target={project.links[1] === "/" ? "" : "_blank"}
           rel="noopener noreferrer"
         >
-          <button>Live Project</button>
+          <button type="button">Live Project</button>
         </Card.Link>
       </Card.Body>
     </Card>
   );
-};
+}
 
 export default Cards;

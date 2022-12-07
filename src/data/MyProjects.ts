@@ -65,7 +65,7 @@ const MyProjects: Project[] = [
   {
     id: 3,
     name: "Shortly 🔗",
-    description: `Links shortener website. convert any valid URL to a short link, using shrtco.de API. A pixel-perfect implementation of the "Shortly URL shortening API Challenge" on frontend master.`,
+    description: "Links shortener website. convert any valid URL to a short link, using shrtco.de API. A pixel-perfect implementation of the \"Shortly URL shortening API Challenge\" on frontend master.",
     image: [
       "https://user-images.githubusercontent.com/97472180/205455630-d3a19391-159b-4010-9a39-9c6750c81cc8.png",
       "https://user-images.githubusercontent.com/97472180/205455533-faa3ca83-3043-4bf3-9de9-9ee08acef7ec.gif",

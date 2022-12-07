@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FamiliarSkillProps, SkillProps } from "../../types/SkillsProps";
 
-const Skill = ({ name, color, link, img }: SkillProps) => {
+function Skill({ name, color, link, img }: SkillProps) {
   const [isHovering, setIsHovering] = useState<boolean>(false);
   return (
     <div
@@ -20,26 +20,28 @@ const Skill = ({ name, color, link, img }: SkillProps) => {
       </a>
     </div>
   );
-};
+}
 
-export const FamiliarSkill = ({
+export function FamiliarSkill({
   name,
   link,
   img,
   smallScreen,
-}: FamiliarSkillProps) => (
-  <div
-    className="skill familiarSkill"
-    data-aos={smallScreen && "fade-down"}
-    data-aos-once={smallScreen && "true"}
-    style={{ transition: "all .3s ease" }}
-  >
-    <p>{name}</p>
-    <a target="_blank" rel="noopener noreferrer" href={link}>
-      {" "}
-      <img src={img} alt={name} />
-    </a>
-  </div>
-);
+}: FamiliarSkillProps) {
+  return (
+    <div
+      className="skill familiarSkill"
+      data-aos={smallScreen && "fade-down"}
+      data-aos-once={smallScreen && "true"}
+      style={{ transition: "all .3s ease" }}
+    >
+      <p>{name}</p>
+      <a target="_blank" rel="noopener noreferrer" href={link}>
+        {" "}
+        <img src={img} alt={name} />
+      </a>
+    </div>
+  );
+}
 
 export default Skill;

@@ -5,15 +5,16 @@ import "./Header.css";
 import { HeaderLinkProps } from "../../types/HeaderLinkProps";
 import HeaderLinks from "../../data/HeaderLinks";
 import Hamburger from "../Hamburger/Hamburger";
+import Resume from "../../assets/Yaniv-Resume.pdf";
 
-const AbstractLink = ({
+function AbstractLink({
   name,
   icon,
   duration,
   offset,
   smallScreen,
   scroll,
-}: HeaderLinkProps) => {
+}: HeaderLinkProps) {
   const [hoverLink, setHoverLink] = useState<boolean>(false);
 
   return (
@@ -27,7 +28,7 @@ const AbstractLink = ({
     >
       <Link
         to={name}
-        smooth={true}
+        smooth
         duration={duration}
         offset={offset}
         className="link"
@@ -35,13 +36,13 @@ const AbstractLink = ({
           color: smallScreen || hoverLink ? "#fff" : scroll ? "#ccc" : "#fff",
         }}
       >
-        <i className={icon}></i> {name}
+        <i className={icon} /> {name}
       </Link>
     </div>
   );
-};
+}
 
-const Header = () => {
+function Header() {
   const [scroll, setScroll] = useState<boolean>(false);
   const [isActive, setIsActive] = useState<boolean>(false);
   const smallScreen: boolean = window.innerWidth < 480;
@@ -84,9 +85,10 @@ const Header = () => {
             className="justify-content-center"
           >
             <Nav className="me-auto ">
-              {HeaderLinks.map((link, index) => (
+              {HeaderLinks.map((link) => (
                 <AbstractLink
-                  key={index}
+                  key={link.id}
+                  id={link.id}
                   name={link.name}
                   icon={link.icon}
                   offset={link.offset}
@@ -105,12 +107,8 @@ const Header = () => {
                     : "0 0 10px 10px",
                 }}
               >
-                <a
-                  className="link"
-                  href={require("../../assets/Yaniv-Resume.pdf")}
-                  download="Yaniv-Resume.pdf"
-                >
-                  <i className="fa-solid fa-download"></i> Resume
+                <a className="link" href={Resume} download="Yaniv-Resume.pdf">
+                  <i className="fa-solid fa-download" /> Resume
                 </a>
               </div>
             </Nav>
@@ -121,7 +119,7 @@ const Header = () => {
                 href="https://github.com/YanivWein24/"
                 aria-label="My Github"
               >
-                <i className="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github" />
               </a>
               <a
                 target="_blank"
@@ -129,10 +127,10 @@ const Header = () => {
                 href="https://www.linkedin.com/in/yaniv-weinshtein/"
                 aria-label="My Linkedin"
               >
-                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin" />
               </a>
               <a href="mailto:yanivwein22@gmail.com" aria-label="Email Me">
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope" />
               </a>
             </div>
           </Navbar.Collapse>
@@ -140,5 +138,5 @@ const Header = () => {
       </Navbar>
     </div>
   );
-};
+}
 export default Header;

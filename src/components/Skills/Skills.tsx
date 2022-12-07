@@ -3,7 +3,7 @@ import { SkillsList, FamiliarSkillsList } from "../../data/SkillsList";
 import Skill, { FamiliarSkill } from "./Skill";
 import "./Skills.css";
 
-const Skills = () => {
+function Skills() {
   const smallScreen: Boolean = window.innerWidth < 940;
 
   return (
@@ -101,6 +101,6 @@ const Skills = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Skills;

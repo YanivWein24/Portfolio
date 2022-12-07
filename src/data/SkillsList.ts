@@ -51,7 +51,7 @@ export const SkillsList = {
     },
     {
       id: 7,
-      name: `SASS`,
+      name: "SASS",
       color: "#cd669a",
       link: "https://sass-lang.com/",
       img: "https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png",

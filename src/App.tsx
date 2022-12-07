@@ -6,16 +6,18 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Intro from "./components/Intro/Intro";
 
-const App = () => (
-  <div className="App">
-    <Header />
-    <Intro />
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
-    <Footer />
-  </div>
-);
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Intro />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
 
 export default App;

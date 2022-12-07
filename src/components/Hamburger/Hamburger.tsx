@@ -5,9 +5,11 @@ interface HamburgerProps {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Hamburger = ({ isActive, setIsActive }: HamburgerProps) => {
+function Hamburger({ isActive, setIsActive }: HamburgerProps) {
   return (
     <div
+      role="button"
+      tabIndex={0}
       className={`hamburger hamburger--collapse ${isActive && "is-active"}`}
       onClick={() =>
         isActive === false ? setIsActive(true) : setIsActive(false)
@@ -18,6 +20,6 @@ const Hamburger = ({ isActive, setIsActive }: HamburgerProps) => {
       </span>
     </div>
   );
-};
+}
 
 export default Hamburger;
