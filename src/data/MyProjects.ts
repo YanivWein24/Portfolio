@@ -7,8 +7,8 @@ const MyProjects: Project[] = [
     description:
       "A MERN stack application that provides custom jokes from Joke-API. Users can register (also using their Google / Meta accounts) and create their private collection of jokes.",
     image: [
-      "https://user-images.githubusercontent.com/97472180/190004399-e3a20011-8b87-42f6-9620-aa857e623f27.png",
-      "https://user-images.githubusercontent.com/97472180/191485163-4e68f614-d672-444d-ad17-d2603cdab483.gif",
+      "https://user-images.githubusercontent.com/97472180/211169796-f8472f4d-5cac-46bb-b156-8d071211a9cf.PNG",
+      "https://user-images.githubusercontent.com/97472180/211169602-9b7471de-dd74-4d04-adf8-2bc5ba27a4f3.gif",
     ],
     tools: [
       "React",

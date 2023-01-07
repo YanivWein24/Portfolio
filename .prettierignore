@@ -6,3 +6,4 @@ reportWebVitals.ts
 package-lock.json
 package.json
 build
+config.yml
