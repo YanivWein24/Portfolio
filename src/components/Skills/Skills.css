@@ -1,6 +1,8 @@
 .skills {
   margin: 4rem auto;
+  padding-bottom: 1rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .skillContainer {

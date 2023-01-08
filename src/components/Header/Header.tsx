@@ -61,12 +61,12 @@ function Header() {
       className="header"
       style={{
         backgroundColor:
-          smallScreen || (!smallScreen && scroll) ? "#000000e6" : "transparent",
+          smallScreen || (!smallScreen && scroll) ? "#000000d4" : "transparent",
         borderBottom:
           smallScreen || (!smallScreen && scroll)
             ? "5px solid #1c72ff"
             : "transparent",
-        padding: smallScreen || (!smallScreen && scroll) ? "8px" : "0",
+        padding: smallScreen || (!smallScreen && scroll) ? "10px" : "0",
       }}
     >
       <Navbar variant="dark" expand="lg" className="navbar">
