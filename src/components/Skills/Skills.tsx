@@ -11,7 +11,11 @@ function Skills() {
       <h1 data-aos="fade-right" data-aos-once={smallScreen && "true"}>
         Skills:
       </h1>
-      <div data-aos="fade-left" data-aos-once={smallScreen && "true"}>
+      <div
+        className="skillsSet"
+        data-aos="fade-left"
+        data-aos-once={smallScreen && "true"}
+      >
         <h2>Front-End:</h2>
         <hr />
         <Row>
@@ -24,17 +28,22 @@ function Skills() {
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 && skill.id === 4 && (
-                  <>
-                    <br /> <br />
-                  </>
-                )}
+                {window.innerWidth > 1200 &&
+                  (skill.id === 3 || skill.id === 7) && (
+                    <>
+                      <br /> <br />
+                    </>
+                  )}
               </div>
             ))}
           </Col>
         </Row>
       </div>
-      <div data-aos="fade-right" data-aos-once={smallScreen && "true"}>
+      <div
+        className="skillsSet"
+        data-aos="fade-right"
+        data-aos-once={smallScreen && "true"}
+      >
         <h2>Back-End:</h2>
         <hr />
         <Row>
@@ -57,7 +66,11 @@ function Skills() {
           </Col>
         </Row>
       </div>
-      <div data-aos="fade-left" data-aos-once={smallScreen && "true"}>
+      <div
+        className="skillsSet"
+        data-aos="fade-left"
+        data-aos-once={smallScreen && "true"}
+      >
         <h2>Misc:</h2>
         <hr />
         <Row>
@@ -80,7 +93,11 @@ function Skills() {
           </Col>
         </Row>
       </div>
-      <div data-aos="fade-down" data-aos-once={smallScreen && "true"}>
+      <div
+        className="skillsSet"
+        data-aos="fade-down"
+        data-aos-once={smallScreen && "true"}
+      >
         <h2 className="familiarHeader">
           Also familiar with the following CS concepts:
         </h2>
