@@ -6,5 +6,7 @@ export interface CardProps {
     image: string[];
     tools: string[];
     links: string[];
+    date?: string;
   };
+  experienceProject?: boolean;
 }

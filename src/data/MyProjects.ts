@@ -1,5 +1,44 @@
 import { Project } from "../types/Projects";
 
+export const MyExperience: Project[] = [
+  {
+    id: 0,
+    name: "Socialo - Full-Stack Developer",
+    date: "Jan 2023 - Present",
+    description:
+      "Developing an AI-based SAAS digital marketing platform for businesses and marketing agencies. Automating the process of creating, refining, and publishing professional posts on social media. Enabling companies to efficiently create and maintain high-quality content quickly and with ease.",
+    image: [
+      "https://user-images.githubusercontent.com/97472180/225657056-2d7dd1cf-bcd3-49a1-a059-8ec4ae86c67f.png",
+      "https://user-images.githubusercontent.com/97472180/225657056-2d7dd1cf-bcd3-49a1-a059-8ec4ae86c67f.png",
+    ],
+    tools: [
+      "React", "Node.js", "MongoDB", "Oauth", "TypeScript", "Context", "React-Query", "Formik", "Styled-Components", "Material-UI"
+    ],
+    links: [
+      "https://github.com/YanivWein24/Get-Jokes",
+      "https://get-jokes.onrender.com/",
+    ],
+  },
+   {
+    id: 1,
+    name: "eBigay - Front-End Developer",
+    date: "Oct 2022 - Present",
+    description:
+      "Working in the frontend team for a marketplace web app that connects donors with those in need. Developing responsive and user-friendly UI from scratch, according to the given design in Figma. Consuming the server API and collaborating with the back-end team. Working with SCRUM methodology. ",
+    image: [
+      "https://user-images.githubusercontent.com/97472180/225657045-44497d82-b94d-4e23-ac49-82fb8682c0c5.png",
+      "https://user-images.githubusercontent.com/97472180/225690012-986f6e73-b4e6-4a02-be29-84d36ec5b3a9.gif",
+    ],
+    tools: [
+      "React", "TypeScript", "PWA", "Context", "React-Query", "Formik", "Styled-Components", "Material-UI"
+    ],
+    links: [
+      "https://github.com/YanivWein24/Get-Jokes",
+      "https://get-jokes.onrender.com/",
+    ],
+  },
+]
+
 const MyProjects: Project[] = [
   {
     id: 0,

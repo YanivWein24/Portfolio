@@ -16,7 +16,7 @@ const HeaderLinks: HeaderLinkProps[] = [
   },
   {
     id: 2,
-    name: "Projects",
+    name: "Experience",
     icon: "fa-solid fa-code",
     offset: -20,
   },

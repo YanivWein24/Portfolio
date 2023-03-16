@@ -5,4 +5,5 @@ export interface Project {
   image: string[];
   tools: string[];
   links: string[];
+  date?: string;
 }

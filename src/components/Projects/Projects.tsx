@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Cards from "../Cards/Cards";
-import MyProjects from "../../data/MyProjects";
+import MyProjects, { MyExperience } from "../../data/MyProjects";
 import "./Projects.css";
 import { ReactComponent as TopAngle } from "../../assets/media/TopAngle.svg";
 import { ReactComponent as BottomAngle } from "../../assets/media/BottomAngle.svg";
@@ -13,9 +13,26 @@ function Projects() {
       <div className="topAngle-svg">
         <TopAngle />
       </div>
-      <div className="projects" id="Projects">
-        <h1>Top Projects:</h1>
+      <div className="projects" id="Experience">
+        <h1>Experience:</h1>
         <Container>
+          <Row className="no-gutters">
+            {MyExperience.map((project) => (
+              <Col
+                data-aos="slide-up"
+                data-aos-once={smallScreen && "true"}
+                key={project.id}
+                sm={12}
+                md={6}
+                lg={6}
+              >
+                <Cards project={project} experienceProject />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+        <Container data-aos="slide-up" data-aos-once={smallScreen && "true"}>
+          <h1>Side Projects:</h1>
           <Row className="no-gutters">
             {MyProjects.map((project) => (
               <Col

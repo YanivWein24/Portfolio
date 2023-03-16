@@ -12,6 +12,10 @@
   min-height: 40rem;
 }
 
+.card.experienceCard {
+  min-height: 42rem;
+}
+
 .card:hover {
   transform: scale(1.03);
   box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.5), -6px -6px 13px rgba(0, 0, 0, 0.5);
@@ -26,6 +30,11 @@
   font-size: 1.3rem;
   font-weight: 700;
   font-family: "mali", sans-serif;
+}
+
+.card-title.long {
+  width: 90%;
+  margin-bottom: 0px;
 }
 
 .card-img-top {
@@ -122,7 +131,7 @@
 }
 
 .includesGetJokes {
-  color: var(--color-primary);
+  color: var(--color-primary-light);
 }
 
 @media screen and (max-width: 768px) {
@@ -136,7 +145,8 @@
   }
 
   .card-1 .topCardBody,
-  .card-2 .topCardBody {
+  .card-2 .topCardBody,
+  .card.experienceCard {
     min-height: 0;
   }
 

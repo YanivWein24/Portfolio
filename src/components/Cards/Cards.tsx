@@ -7,14 +7,20 @@ const tabletScreen: boolean =
   window.innerWidth > 768 && window.innerWidth < 1000;
 const smallScreen: boolean = window.innerWidth < 768;
 
-function Cards({ project }: CardProps) {
+function Cards({ project, experienceProject }: CardProps) {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
     <Card
-      className={`card-${project.id}`}
+      className={`card-${project.id} ${experienceProject && "experienceCard"}`}
       style={{
-        width: smallScreen ? "95%" : tabletScreen ? "92%" : "21rem",
+        width: smallScreen
+          ? "95%"
+          : tabletScreen
+          ? "92%"
+          : experienceProject
+          ? "90%"
+          : "21rem",
       }}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
@@ -25,15 +31,29 @@ function Cards({ project }: CardProps) {
         alt={project.name}
       />
       <Card.Body className="topCardBody">
-        <Card.Title>{project.name}</Card.Title>
-        <Card.Text>{project.description}</Card.Text>
-        {project.id === 0 && (
-          <Card.Text>
-            <strong className="includesGetJokes">
-              Includes Unit Tests And CI/CD
-            </strong>
+        <Card.Title className={experienceProject ? "long" : ""}>
+          {project.name}
+        </Card.Title>
+        {experienceProject && (
+          <Card.Text style={{ margin: "4px 0" }}>
+            <strong className="includesGetJokes">{project.date}</strong>
           </Card.Text>
         )}
+        <Card.Text>{project.description}</Card.Text>
+        {project.id === 0 &&
+          (experienceProject ? (
+            <Card.Text>
+              <strong className="includesGetJokes">
+                Currently running in closed beta
+              </strong>
+            </Card.Text>
+          ) : (
+            <Card.Text>
+              <strong className="includesGetJokes">
+                Includes Unit Tests And CI/CD
+              </strong>
+            </Card.Text>
+          ))}
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
@@ -45,22 +65,26 @@ function Cards({ project }: CardProps) {
         </ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link
-          href={project.links[0]}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button type="button" className="greyButton">
-            Code
-          </button>
-        </Card.Link>
-        <Card.Link
-          href={project.links[1]}
-          target={project.links[1] === "/" ? "" : "_blank"}
-          rel="noopener noreferrer"
-        >
-          <button type="button">Live Project</button>
-        </Card.Link>
+        {!experienceProject && (
+          <>
+            <Card.Link
+              href={project.links[0]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button type="button" className="greyButton">
+                Code
+              </button>
+            </Card.Link>
+            <Card.Link
+              href={project.links[1]}
+              target={project.links[1] === "/" ? "" : "_blank"}
+              rel="noopener noreferrer"
+            >
+              <button type="button">Live Project</button>
+            </Card.Link>
+          </>
+        )}
       </Card.Body>
     </Card>
   );
