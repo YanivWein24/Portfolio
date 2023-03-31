@@ -64,7 +64,7 @@ function Cards({ project, experienceProject }: CardProps) {
           ))}
         </ListGroup.Item>
       </ListGroup>
-      <Card.Body>
+      <div className="cardButtonsContainer">
         {!experienceProject && (
           <>
             <Card.Link
@@ -85,7 +85,7 @@ function Cards({ project, experienceProject }: CardProps) {
             </Card.Link>
           </>
         )}
-      </Card.Body>
+      </div>
     </Card>
   );
 }

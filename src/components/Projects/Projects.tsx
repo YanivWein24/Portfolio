@@ -32,7 +32,7 @@ function Projects() {
           </Row>
         </Container>
         <Container data-aos="slide-up" data-aos-once={smallScreen && "true"}>
-          <h1>Side Projects:</h1>
+          <h1>Projects:</h1>
           <Row className="no-gutters">
             {MyProjects.map((project) => (
               <Col
@@ -57,7 +57,7 @@ function Projects() {
           data-aos="slide-up"
           data-aos-once={smallScreen && "true"}
         >
-          Check out more projects!
+          More Projects!
         </a>
       </div>
       <div className="bottomAngle-svg">
