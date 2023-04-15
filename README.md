@@ -7,11 +7,11 @@ alt="My Project GIF" width="600" height="323">
 <br>
 
 My personal portfolio.<br />
-Including my top projects and overall technical skills. <br/>
+Including my latest experience, top projects and technical skills. <br/>
 Visitors can also leave me a message, which will be sent to my mail using <a href="https://www.emailjs.com/">EmailJS</a>. <br/>
 Using modern and responsive design, making it beautiful and user-friendly across all platforms.
 
-## Lighthouse Score:
+## LightHouse Score:
 
 <img src="https://user-images.githubusercontent.com/97472180/194729906-16fc1fec-7593-4a94-8c42-72f188d297c3.PNG" height="180" width="600" alt="HomeScreen-light"/>
 
