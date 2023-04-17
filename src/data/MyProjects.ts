@@ -22,7 +22,7 @@ export const MyExperience: Project[] = [
    {
     id: 1,
     name: "eBigay - Front-End Developer",
-    date: "Oct 2022 - Present",
+    date: "Oct 2022 - Feb 2023",
     description:
       "Working in the frontend team for a marketplace web app that connects donors with those in need. Developing responsive and user-friendly UI from scratch, according to the given design in Figma. Consuming the server API and collaborating with the back-end team. Working with SCRUM methodology. ",
     image: [
@@ -67,6 +67,21 @@ const MyProjects: Project[] = [
   },
   {
     id: 1,
+    name: "Similarity API ⚖️",
+    description:
+      "A Full-Stack Next.js project, containing a rate-limited API in the backend and a user dashboard with documentation in the frontend. The API receives 2 pieces of text and returns a number between 0-1, representing their similarity.",
+    image: [
+      "https://user-images.githubusercontent.com/97472180/232338288-338c4f62-600e-438f-850c-f58a1f93f362.png",
+      "https://user-images.githubusercontent.com/97472180/232347078-333578bd-e49e-4e48-bcfe-238b0266198f.gif",
+    ],
+    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "Redis", "Radix-UI"],
+    links: [
+      "https://github.com/YanivWein24/Similarity-API-Next.js",
+      "https://similarity-api-next.vercel.app",
+    ],
+  },
+  {
+    id: 2,
     name: "Post It 🔥",
     description:
       "Full-Stack social media application built with Next.js. Users can sign up and authenticate with Google or GitHub to start sharing and commenting on posts.",
@@ -74,14 +89,14 @@ const MyProjects: Project[] = [
       "https://user-images.githubusercontent.com/97472180/230383665-d73d4364-c24a-4ecd-b2d8-a5ecfdda23ef.png",
       "https://user-images.githubusercontent.com/97472180/230383676-ba8c0517-d6ea-4419-b3d3-8c762c5a5ae9.gif",
     ],
-    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "PostgreSQL", "React-Query", "TailwindCSS"],
+    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "PostgreSQL", "React-Query"],
     links: [
       "https://github.com/YanivWein24/Post-It-Next.js",
       "https://post-it-next-js.vercel.app/",
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "IP Tracker 🌎",
     description:
       "Tracking app that locates users by their IP address. Can locate any valid IPv4 address on the globe! Using 3 different APIs: to find the local IP (optional), track its location, and display it on a live map!",
@@ -102,7 +117,7 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Shortly 🔗",
     description: "Links shortener website. convert any valid URL to a short link, using shrtco.de API. A pixel-perfect implementation of the \"Shortly URL shortening API Challenge\" on frontend master.",
     image: [
@@ -116,7 +131,7 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Git Finderr 🔍",
     description:
       "Search engine for GitHub users. All data is coming from GitHub's REST-API. Also features light/dark themes. using localStorage to memorize the user's theme for the next visit!",
@@ -129,19 +144,7 @@ const MyProjects: Project[] = [
       "https://github.com/YanivWein24/Git-Finder",
       "https://git-finderr.netlify.app/",
     ],
-  },
-  {
-    id: 5,
-    name: "Portfolio 👨🏻‍💻",
-    description:
-      "My personal portfolio website, Using modern and user-friendly design. Press the 'Live Project' button to learn about recursion!",
-    image: [
-      "https://user-images.githubusercontent.com/97472180/194753848-154c5853-c190-4201-bae2-4560e97c0d84.PNG",
-      "https://user-images.githubusercontent.com/97472180/194753796-148c3e8a-6fe4-450a-9777-760785a85a3f.gif",
-    ],
-    tools: ["React", "TypeScript", "Bootstrap", "AOS", "EmailJS"],
-    links: ["https://github.com/YanivWein24/Portfolio", "/"],
-  },
+  }
 ];
 
 export default MyProjects;
