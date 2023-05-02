@@ -44,25 +44,19 @@ function Contact() {
     );
   };
 
-  const smallScreen: Boolean = window.innerWidth < 940;
-
   return (
-    <div
-      data-aos="fade-down"
-      data-aos-once={smallScreen && "true"}
-      id="Contact"
-    >
+    <div data-aos="fade-down" data-aos-once="true" id="Contact">
       <h1>Contact Me:</h1>
       <Container>
         <Form>
-          <p data-aos="fade-down" data-aos-once={smallScreen && "true"}>
+          <p data-aos="fade-down" data-aos-once="true">
             {Text.ContactMe}
             <br />
             <span>{Text.ContactMeBold}</span>
           </p>
           <FormGroup
             data-aos="fade-down"
-            data-aos-once={smallScreen && "true"}
+            data-aos-once="true"
             className="fullName"
           >
             <input
@@ -78,7 +72,7 @@ function Contact() {
           </FormGroup>
           <FormGroup
             data-aos="fade-down"
-            data-aos-once={smallScreen && "true"}
+            data-aos-once="true"
             className="email"
           >
             <input
@@ -96,7 +90,7 @@ function Contact() {
           </FormGroup>
           <FormGroup
             data-aos="fade-down"
-            data-aos-once={smallScreen && "true"}
+            data-aos-once="true"
             className="message"
           >
             <textarea
@@ -112,7 +106,7 @@ function Contact() {
           </FormGroup>
           <button
             data-aos="fade-down"
-            data-aos-once={smallScreen && "true"}
+            data-aos-once="true"
             className="reset"
             onClick={resetForm}
             type="button"
@@ -121,7 +115,7 @@ function Contact() {
           </button>
           <button
             data-aos="fade-down"
-            data-aos-once={smallScreen && "true"}
+            data-aos-once="true"
             type="submit"
             onClick={(event) => {
               event.preventDefault();

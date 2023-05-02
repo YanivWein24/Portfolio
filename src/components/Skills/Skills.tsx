@@ -1,21 +1,15 @@
 import { Row, Col } from "react-bootstrap";
-import { SkillsList, FamiliarSkillsList } from "../../data/SkillsList";
-import Skill, { FamiliarSkill } from "./Skill";
+import SkillsList from "../../data/SkillsList";
+import Skill from "./Skill";
 import "./Skills.css";
 
-function Skills() {
-  const smallScreen: Boolean = window.innerWidth < 940;
-
+export default function Skills() {
   return (
     <div className="skills" id="Skills">
-      <h1 data-aos="fade-right" data-aos-once={smallScreen && "true"}>
+      <h1 data-aos="fade-right" data-aos-once="true">
         Skills:
       </h1>
-      <div
-        className="skillsSet"
-        data-aos="fade-left"
-        data-aos-once={smallScreen && "true"}
-      >
+      <div className="skillsSet" data-aos="fade-left" data-aos-once="true">
         <h2>Front-End:</h2>
         <hr />
         <Row>
@@ -39,11 +33,7 @@ function Skills() {
           </Col>
         </Row>
       </div>
-      <div
-        className="skillsSet"
-        data-aos="fade-right"
-        data-aos-once={smallScreen && "true"}
-      >
+      <div className="skillsSet" data-aos="fade-right" data-aos-once="true">
         <h2>Back-End:</h2>
         <hr />
         <Row>
@@ -66,11 +56,7 @@ function Skills() {
           </Col>
         </Row>
       </div>
-      <div
-        className="skillsSet"
-        data-aos="fade-left"
-        data-aos-once={smallScreen && "true"}
-      >
+      <div className="skillsSet" data-aos="fade-left" data-aos-once="true">
         <h2>Misc:</h2>
         <hr />
         <Row>
@@ -93,31 +79,6 @@ function Skills() {
           </Col>
         </Row>
       </div>
-      <div
-        className="skillsSet"
-        data-aos="fade-down"
-        data-aos-once={smallScreen && "true"}
-      >
-        <h2 className="familiarHeader">
-          Also familiar with the following CS concepts:
-        </h2>
-        <hr />
-        <Row>
-          <Col>
-            {FamiliarSkillsList.map((skill) => (
-              <FamiliarSkill
-                key={skill.id}
-                name={skill.name}
-                link={skill.link}
-                img={skill.img}
-                smallScreen={smallScreen}
-              />
-            ))}
-          </Col>
-        </Row>
-      </div>
     </div>
   );
 }
-
-export default Skills;

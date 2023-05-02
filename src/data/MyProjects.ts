@@ -1,44 +1,5 @@
 import { Project } from "../types/Projects";
 
-export const MyExperience: Project[] = [
-  {
-    id: 0,
-    name: "Socialo - Full-Stack Developer",
-    date: "Jan 2023 - Present",
-    description:
-      "Developing an AI-based SAAS digital marketing platform for businesses and marketing agencies. Automating the process of creating, refining, and publishing professional posts on social media. Enabling companies to efficiently create and maintain high-quality content quickly and with ease.",
-    image: [
-      "https://user-images.githubusercontent.com/97472180/225657056-2d7dd1cf-bcd3-49a1-a059-8ec4ae86c67f.png",
-      "https://user-images.githubusercontent.com/97472180/225657056-2d7dd1cf-bcd3-49a1-a059-8ec4ae86c67f.png",
-    ],
-    tools: [
-      "React", "Node.js", "MongoDB", "Oauth", "TypeScript", "Context", "React-Query", "Formik", "Styled-Components", "Material-UI"
-    ],
-    links: [
-      "https://github.com/YanivWein24/Get-Jokes",
-      "https://get-jokes.onrender.com/",
-    ],
-  },
-   {
-    id: 1,
-    name: "eBigay - Front-End Developer",
-    date: "Oct 2022 - Feb 2023",
-    description:
-      "Working in the frontend team for a marketplace web app that connects donors with those in need. Developing responsive and user-friendly UI from scratch, according to the given design in Figma. Consuming the server API and collaborating with the back-end team. Working with SCRUM methodology. ",
-    image: [
-      "https://user-images.githubusercontent.com/97472180/225657045-44497d82-b94d-4e23-ac49-82fb8682c0c5.png",
-      "https://user-images.githubusercontent.com/97472180/225690012-986f6e73-b4e6-4a02-be29-84d36ec5b3a9.gif",
-    ],
-    tools: [
-      "React", "TypeScript", "PWA", "Context", "React-Query", "Formik", "Styled-Components", "Material-UI"
-    ],
-    links: [
-      "https://github.com/YanivWein24/Get-Jokes",
-      "https://get-jokes.onrender.com/",
-    ],
-  },
-]
-
 const MyProjects: Project[] = [
   {
     id: 0,
@@ -74,7 +35,7 @@ const MyProjects: Project[] = [
       "https://user-images.githubusercontent.com/97472180/232338288-338c4f62-600e-438f-850c-f58a1f93f362.png",
       "https://user-images.githubusercontent.com/97472180/232347078-333578bd-e49e-4e48-bcfe-238b0266198f.gif",
     ],
-    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "Redis", "Radix-UI"],
+    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "Redis"],
     links: [
       "https://github.com/YanivWein24/Similarity-API-Next.js",
       "https://similarity-api-next.vercel.app",
@@ -89,7 +50,7 @@ const MyProjects: Project[] = [
       "https://user-images.githubusercontent.com/97472180/230383665-d73d4364-c24a-4ecd-b2d8-a5ecfdda23ef.png",
       "https://user-images.githubusercontent.com/97472180/230383676-ba8c0517-d6ea-4419-b3d3-8c762c5a5ae9.gif",
     ],
-    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "PostgreSQL", "React-Query"],
+    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "React-Query"],
     links: [
       "https://github.com/YanivWein24/Post-It-Next.js",
       "https://post-it-next-js.vercel.app/",

@@ -1,6 +1,6 @@
 .intro {
   font-family: "Mali", cursive;
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
   overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
@@ -173,6 +173,6 @@ video {
 @media screen and (min-width: 1600px) {
   .intro {
     margin-top: 13rem;
-    padding-bottom: 15rem;
+    padding-bottom: 12rem;
   }
 }

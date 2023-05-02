@@ -1,43 +1,24 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Cards from "../Cards/Cards";
-import MyProjects, { MyExperience } from "../../data/MyProjects";
+import MyProjects from "../../data/MyProjects";
 import "./Projects.css";
 import { ReactComponent as TopAngle } from "../../assets/media/TopAngle.svg";
 import { ReactComponent as BottomAngle } from "../../assets/media/BottomAngle.svg";
 
-const smallScreen: Boolean = window.innerWidth < 940;
-
-function Projects() {
+export default function Projects() {
   return (
-    <div data-aos="slide-up" data-aos-once={smallScreen && "true"}>
+    <div data-aos="slide-up" data-aos-once="true">
       <div className="topAngle-svg">
         <TopAngle />
       </div>
-      <div className="projects" id="Experience">
-        <h1>Experience:</h1>
-        <Container>
-          <Row className="no-gutters">
-            {MyExperience.map((project) => (
-              <Col
-                data-aos="slide-up"
-                data-aos-once={smallScreen && "true"}
-                key={project.id}
-                sm={12}
-                md={6}
-                lg={6}
-              >
-                <Cards project={project} experienceProject />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-        <Container data-aos="slide-up" data-aos-once={smallScreen && "true"}>
+      <div className="projects" id="Projects">
+        <Container data-aos="slide-up" data-aos-once="true">
           <h1>Projects:</h1>
           <Row className="no-gutters">
             {MyProjects.map((project) => (
               <Col
                 data-aos="slide-up"
-                data-aos-once={smallScreen && "true"}
+                data-aos-once="true"
                 key={project.id}
                 sm={12}
                 md={6}
@@ -55,7 +36,7 @@ function Projects() {
           className="githubLink"
           aria-label="my github"
           data-aos="slide-up"
-          data-aos-once={smallScreen && "true"}
+          data-aos-once="true"
         >
           More Projects!
         </a>
@@ -66,4 +47,3 @@ function Projects() {
     </div>
   );
 }
-export default Projects;

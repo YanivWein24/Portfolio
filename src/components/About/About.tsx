@@ -14,13 +14,7 @@ function About() {
         <TopWave />
       </div>
       <Row className="about-me no-gutters">
-        <Col
-          lg={12}
-          md={12}
-          sm={12}
-          data-aos="fade-down"
-          data-aos-once={smallScreen && "true"}
-        >
+        <Col lg={12} md={12} sm={12} data-aos="fade-down" data-aos-once="true">
           <h1 className="aboutMeHeader">About Me:</h1>
         </Col>
         <Col
@@ -28,7 +22,7 @@ function About() {
           md={12}
           sm={12}
           data-aos={smallScreen ? "fade-right" : "zoom-in-right"}
-          data-aos-once={smallScreen && "true"}
+          data-aos-once="true"
         >
           <img className="profile" src={Profile} alt="Me" />
         </Col>
@@ -36,7 +30,7 @@ function About() {
           <div
             className="textContainer"
             data-aos={smallScreen ? "fade-left" : "fade-down"}
-            data-aos-once={smallScreen && "true"}
+            data-aos-once="true"
           >
             <p className="bigger">{Text.AboutMeText}</p>
           </div>
@@ -45,7 +39,7 @@ function About() {
               lg={6}
               className="textContainer"
               data-aos={smallScreen ? "fade-right" : "fade-right"}
-              data-aos-once={smallScreen && "true"}
+              data-aos-once="true"
             >
               <h3>Always Discovering</h3>
               <p>{Text.AlwaysDiscovering}</p>
@@ -54,7 +48,7 @@ function About() {
               lg={6}
               className="textContainer"
               data-aos={smallScreen ? "fade-left" : "fade-left"}
-              data-aos-once={smallScreen && "true"}
+              data-aos-once="true"
             >
               <h3>Former Naval Technician</h3>
               <p>{Text.NavalTechnician}</p>

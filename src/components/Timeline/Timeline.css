@@ -1,0 +1,78 @@
+.timeline-container {
+  padding: 6rem 0;
+  overflow: hidden; /* prevent issues with the navbar on mobile */
+}
+
+.timeline-container h1 {
+  margin: 0 auto 4rem;
+  width: 22%;
+  color: var(--color-primary-light);
+  font-size: 2.3rem;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+.timeline-container h4 {
+  font-size: 18px;
+}
+
+.timeline-container h3 {
+  font-size: 22px;
+}
+
+.blueBorder .vertical-timeline-element-content {
+  border-top: 4px solid rgb(33, 150, 243);
+  border-radius: 0 0 12px 12px;
+}
+.redBorder .vertical-timeline-element-content {
+  border-top: 4px solid rgb(233, 30, 99);
+  border-radius: 0 0 12px 12px;
+}
+
+.timelineCurrentHeader {
+  font-family: Montserrat;
+  color: white;
+}
+
+.timelineCurrentText {
+  font-family: Montserrat;
+  color: var(--color-offWhite);
+}
+
+.timelineHeader {
+  color: #666;
+  font-family: Montserrat;
+}
+
+.timelineIcon {
+  padding: 12px;
+}
+
+.toolsContainer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.tool.socialo {
+  background-color: var(--color-offWhite);
+  color: var(--color-primary-light);
+}
+
+@media screen and (max-width: 940px) {
+  .timeline-container {
+    padding: 2rem 0 4rem;
+  }
+
+  .current .vertical-timeline-element-date {
+    color: white;
+  }
+
+  .timeline-container h1 {
+    width: 80%;
+    font-size: 1.8rem;
+  }
+
+  .toolsContainer {
+    text-align: left;
+  }
+}

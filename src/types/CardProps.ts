@@ -8,5 +8,4 @@ export interface CardProps {
     links: string[];
     date?: string;
   };
-  experienceProject?: boolean;
 }

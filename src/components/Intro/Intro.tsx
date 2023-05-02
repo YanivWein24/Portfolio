@@ -57,7 +57,7 @@ function Intro() {
           <Link
             to="Contact"
             smooth
-            duration={1000}
+            duration={3000}
             offset={-60}
             className="link"
             aria-label="To 'Contact-Me' Section"

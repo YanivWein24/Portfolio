@@ -9,7 +9,7 @@ function Footer() {
         <Link
           to="Intro"
           smooth
-          duration={1000}
+          duration={3000}
           offset={-500}
           className="link"
           aria-label="Back To Top"

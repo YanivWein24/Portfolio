@@ -104,7 +104,16 @@ a.link {
   .linkContainer a.link {
     font-size: 0.8rem;
   }
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+    margin-left: 0;
+  }
 }
+
 @media screen and (max-width: 940px) {
   .header {
     border-bottom: 3px solid var(--color-primary-light);

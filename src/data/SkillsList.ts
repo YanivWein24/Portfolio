@@ -1,4 +1,4 @@
-export const SkillsList = {
+const SkillsList = {
   frontend: [
     {
       id: 0,
@@ -204,23 +204,4 @@ export const SkillsList = {
   ],
 };
 
-export const FamiliarSkillsList = [
-  {
-    id: 0,
-    name: "Data Structures",
-    link: "https://www.geeksforgeeks.org/data-structures/",
-    img: "https://cdn-icons-png.flaticon.com/512/1953/1953354.png",
-  },
-  {
-    id: 1,
-    name: "Algorithms",
-    link: "https://www.geeksforgeeks.org/fundamentals-of-algorithms/",
-    img: "https://i.pinimg.com/originals/dd/4e/5e/dd4e5ee83c35523f1e06fc7548af119c.png",
-  },
-  {
-    id: 2,
-    name: "Object-Oriented Programming",
-    link: "https://en.wikipedia.org/wiki/Object-oriented_programming",
-    img: "https://cdn4.iconfinder.com/data/icons/technology-83/1000/object_programming_development_oriented_developer_object-oriented_programming_software-512.png",
-  },
-];
+export default SkillsList;

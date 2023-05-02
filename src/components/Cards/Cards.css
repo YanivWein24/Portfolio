@@ -64,7 +64,7 @@
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 1px 5px #333;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .tool:hover {
@@ -140,8 +140,7 @@
   }
 
   .card-1 .topCardBody,
-  .card-2 .topCardBody,
-  .card.experienceCard {
+  .card-2 .topCardBody {
     min-height: 0;
   }
 
@@ -151,7 +150,6 @@
 
   .tool {
     padding: 0.5rem;
-    font-size: 13px;
   }
 }
 

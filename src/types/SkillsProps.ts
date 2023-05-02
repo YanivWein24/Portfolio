@@ -4,10 +4,3 @@ export interface SkillProps {
   link: string;
   img: string;
 }
-
-export interface FamiliarSkillProps {
-  name: string;
-  link: string;
-  img: string;
-  smallScreen?: Boolean;
-}

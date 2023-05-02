@@ -55,24 +55,7 @@
   width: 6rem;
 }
 
-.skills .familiarHeader {
-  font-size: 1.7rem;
-  margin-top: 3rem;
-  min-width: 55%;
-}
-
-.skills .familiarSkill {
-  box-shadow: 1px 1px 10px 2px var(--color-primary-light);
-  min-width: 15%;
-  padding: 0.5rem 0.5rem 0.2rem;
-}
-
-.familiarSkill p {
-  color: var(--color-primary-light);
-}
-
-.skills .skill:hover,
-.skills .familiarSkill:hover {
+.skills .skill:hover {
   transform: translateY(-10px);
   background-color: rgba(235, 235, 235, 0.7);
 }
@@ -120,33 +103,10 @@
   .skills hr {
     width: 10%;
   }
-
-  .skills .familiarHeader {
-    margin-top: 2rem;
-    min-width: 95%;
-    font-size: 20px;
-  }
-
-  .skills .familiarSkill {
-    display: block;
-    width: 85%;
-    margin: 0 auto 1.5rem;
-  }
-
-  .skills .familiarSkill img {
-    width: 5rem;
-    height: 5rem;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 940px) {
   .skills h1 {
     width: 40%;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .skills .familiarSkill {
-    min-width: 10%;
   }
 }
