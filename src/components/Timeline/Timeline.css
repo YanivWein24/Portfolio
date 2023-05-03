@@ -21,12 +21,15 @@
 }
 
 .blueBorder .vertical-timeline-element-content {
-  border-top: 4px solid rgb(33, 150, 243);
+  border-top: 5px solid rgb(33, 150, 243);
   border-radius: 0 0 12px 12px;
 }
 .redBorder .vertical-timeline-element-content {
-  border-top: 4px solid rgb(233, 30, 99);
+  border-top: 5px solid rgb(233, 30, 99);
   border-radius: 0 0 12px 12px;
+}
+.current .vertical-timeline-element-content {
+  border-top: 5px solid white;
 }
 
 .timelineCurrentHeader {
@@ -54,7 +57,7 @@
 }
 
 .tool.socialo {
-  background-color: var(--color-offWhite);
+  background-color: white;
   color: var(--color-primary-light);
 }
 
