@@ -54,7 +54,6 @@
     var(--color-primary-light) 100%
   );
   gap: 1rem;
-  font-family: "Mali", cursive;
 }
 
 .footer .contactInfo {
@@ -86,6 +85,5 @@
 
 .footer .copyright {
   font-size: 10px;
-  font-family: "Mali", cursive;
   margin-top: 1rem;
 }

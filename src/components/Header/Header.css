@@ -20,7 +20,6 @@
 }
 
 .navbar-brand {
-  font-family: "Mali", cursive;
   font-weight: 500;
 }
 
@@ -35,10 +34,11 @@
 }
 
 .linkContainer {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   padding: 0.5rem;
   margin-right: 0.5rem;
   transition: all 0.4s ease;
+  text-transform: capitalize;
 }
 
 .linkContainer:hover,
@@ -102,7 +102,7 @@ a.link {
 
 @media screen and (min-width: 941px) and (max-width: 1200px) {
   .linkContainer a.link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .container {
     max-width: 100%;
@@ -128,6 +128,10 @@ a.link {
 
   button.navbar-toggler:focus {
     outline: none;
+  }
+
+  .linkContainer a.link {
+    font-size: 0.85rem;
   }
 
   .linkContainer.resume {

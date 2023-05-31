@@ -3,21 +3,16 @@
   overflow: hidden; /* prevent issues with the navbar on mobile */
 }
 
-.timeline-container h1 {
-  margin: 0 auto 4rem;
-  width: 22%;
-  color: var(--color-primary-light);
-  font-size: 2.3rem;
-  border-bottom: 2px solid;
-  text-align: center;
-}
-
 .timeline-container h4 {
   font-size: 18px;
 }
 
 .timeline-container h3 {
   font-size: 22px;
+}
+
+.timelineText {
+  font-size: 16px !important;
 }
 
 .blueBorder .vertical-timeline-element-content {
@@ -33,18 +28,15 @@
 }
 
 .timelineCurrentHeader {
-  font-family: Montserrat;
   color: white;
 }
 
 .timelineCurrentText {
-  font-family: Montserrat;
   color: var(--color-offWhite);
 }
 
 .timelineHeader {
   color: #666;
-  font-family: Montserrat;
 }
 
 .timelineIcon {
@@ -68,11 +60,6 @@
 
   .current .vertical-timeline-element-date {
     color: white;
-  }
-
-  .timeline-container h1 {
-    width: 80%;
-    font-size: 1.8rem;
   }
 
   .toolsContainer {

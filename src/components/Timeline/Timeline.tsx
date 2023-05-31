@@ -64,7 +64,13 @@ export default function Timeline() {
             >
               {chapter.subHeader}
             </h4>
-            <p className={chapter.id === 0 ? "timelineCurrentText" : ""}>
+            <p
+              className={
+                chapter.id === 0
+                  ? "timelineText timelineCurrentText"
+                  : "timelineText"
+              }
+            >
               {chapter.text}
             </p>
             {chapter.scores && (

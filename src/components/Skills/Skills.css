@@ -13,14 +13,6 @@
   margin-top: 3rem;
 }
 
-.skills h1 {
-  margin: 0 auto 2.5rem;
-  width: 20%;
-  color: var(--color-primary-light);
-  font-size: 2.3rem;
-  border-bottom: 2px solid;
-}
-
 .skills h2 {
   color: var(--color-primary-light);
   font-size: 1.8rem;
@@ -83,16 +75,10 @@
     padding: 0.3rem 0.1rem;
   }
 
-  .skills h1 {
-    width: 75%;
-    font-size: 2rem;
-    margin: 0 auto 2rem;
-  }
-
   .skills h2 {
     width: 70%;
     margin: 1rem auto 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .skills img {
@@ -102,11 +88,5 @@
 
   .skills hr {
     width: 10%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 940px) {
-  .skills h1 {
-    width: 40%;
   }
 }

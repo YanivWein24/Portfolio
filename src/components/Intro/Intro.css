@@ -1,5 +1,4 @@
 .intro {
-  font-family: "Mali", cursive;
   padding-bottom: 5rem;
   overflow: hidden;
   display: flex;
@@ -22,12 +21,36 @@ h1 span {
   line-height: 1.4;
   background-color: rgba(255, 255, 255, 0.3);
   letter-spacing: 1px;
-  font-size: 3.3rem;
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+h1.aboutMeHeader,
+.timeline-container h1,
+.skills h1,
+.cards h1,
+.projects h1,
+.timeline h1,
+#Contact h1 {
+  margin: 0 auto 4rem;
+  width: max-content;
+  color: var(--color-primary-light);
+  font-size: 3.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid;
+  text-transform: capitalize;
+}
+
+h1.aboutMeHeader,
+.projects h1 {
+  color: white;
 }
 
 h2 {
   margin-top: 2rem;
   font-size: 1.7rem;
+  text-transform: capitalize;
 }
 
 h3 {
@@ -66,12 +89,12 @@ video {
 
 .Typewriter__wrapper {
   font-weight: 600;
-  color: var(--color-primary-dark);
-  background-color: rgba(255, 255, 255, 0.4);
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .Typewriter__cursor {
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 .bottomContainer {
@@ -130,6 +153,17 @@ video {
 
   .intro h1 {
     padding: 0 0.5rem;
+  }
+
+  h1.aboutMeHeader,
+  .skills h1,
+  .cards h1,
+  .timeline-container h1,
+  .projects h1,
+  .timeline h1,
+  #Contact h1 {
+    font-size: 2.4rem;
+    margin: 0 auto 2rem;
   }
 
   h2 {

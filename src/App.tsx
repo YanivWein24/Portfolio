@@ -7,9 +7,9 @@ import Footer from "./components/Footer/Footer";
 import Intro from "./components/Intro/Intro";
 import Timeline from "./components/Timeline/Timeline";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Intro />
       <About />
@@ -18,8 +18,6 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
-
-export default App;

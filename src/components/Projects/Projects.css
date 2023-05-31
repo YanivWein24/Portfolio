@@ -12,9 +12,10 @@
 .projects h1 {
   margin: 0 auto 4rem;
   padding-top: 4rem;
-  width: 30%;
+  width: max-content;
   color: var(--color-offWhite);
-  font-size: 2.3rem;
+  font-size: 3rem;
+  font-weight: 500;
   border-bottom: 2px solid;
 }
 
@@ -89,9 +90,8 @@
   }
 
   .projects h1 {
-    width: 80%;
     margin-bottom: 2.5rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .projects .githubLink {

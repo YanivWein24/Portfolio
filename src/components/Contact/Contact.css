@@ -29,12 +29,7 @@ form p span {
 }
 
 #Contact h1 {
-  margin: 2.5rem auto;
-  width: 22%;
-  color: var(--color-primary-light);
-  font-size: 2.3rem;
-  border-bottom: 2px solid;
-  text-align: center;
+  margin: 2.5rem auto !important;
 }
 
 input.form-control,
