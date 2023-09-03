@@ -6,6 +6,9 @@ interface TimelineChapter {
   date: string;
   type: "school" | "work" | "military";
   technologies?: string[];
+  link?: string;
+  image?: string;
+  alt?: string;
   scores?: {
     final: string;
     project: string;

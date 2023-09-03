@@ -1,13 +1,18 @@
 import TimelineChapter from "../types/TimelineChapters";
+import Socialo from "../assets/media/Socialo.png";
+import eBigay from "../assets/media/eBigay.png";
 
 const TimelineChapters: TimelineChapter[] = [
   {
     id: 0,
     header: "Full-Stack Developer",
     subHeader: "Socialo",
-    text: "Developing from scratch an AI-based SAAS digital marketing platform for businesses and marketing agencies. Automating the process of creating, refining, and publishing professional posts on social media. Enabling companies to efficiently create and maintain high-quality content quickly and with ease.",
+    text: "Building an AI-based B2B SaaS digital-marketing platform for businesses and marketing agencies. Leading product development from planning to production. Working end-to-end, writing clean, reusable, and type-safe code, managing integrations (AI models, Social networks, Analytics, etc.), building CI/CD pipelines, working with SCRUM methodology.",
     date: "Jan 2023 - Present",
     type: "work",
+    link: "https://www.socialo.app",
+    image: Socialo,
+    alt: "Socialo",
     technologies: [
       "React",
       "Node.js",
@@ -28,6 +33,8 @@ const TimelineChapters: TimelineChapter[] = [
     text: "Working in the frontend team for a marketplace web app that connects donors with those in need. Developing responsive and user-friendly UI from scratch, according to the given design in Figma. Consuming the server API and working alongside the back-end team. Working with SCRUM methodology.",
     date: "Oct 2022 - Feb 2023",
     type: "work",
+    image: eBigay,
+    alt: "eBigay",
     technologies: [
       "React",
       "TypeScript",

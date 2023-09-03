@@ -68,7 +68,7 @@ const SkillsList = {
       name: "SASS",
       color: "#cd669a",
       link: "https://sass-lang.com/",
-      img: "https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png",
+      img: "https://sass-lang.com/assets/img/styleguide/seal-color.png",
     },
     {
       id: 10,

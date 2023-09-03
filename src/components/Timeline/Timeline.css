@@ -13,6 +13,7 @@
 
 .timelineText {
   font-size: 16px !important;
+  font-weight: 400 !important;
 }
 
 .blueBorder .vertical-timeline-element-content {
@@ -43,14 +44,35 @@
   padding: 12px;
 }
 
+.timeLineLinkIcon {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+
+  &:hover {
+    color: var(--color-offWhite);
+  }
+}
+
 .toolsContainer {
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem;
   text-align: center;
 }
 
 .tool.socialo {
   background-color: white;
   color: var(--color-primary-light);
+}
+
+.disableNavigation {
+  pointer-events: none;
+}
+
+.timeLineImage {
+  width: 100%;
+  box-shadow: rgb(167 167 167 / 50%) 0px 4px 6px;
 }
 
 @media screen and (max-width: 940px) {
