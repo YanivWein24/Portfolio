@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
+import useWindowSize from "../../hooks/useWindowSize";
 import { CardProps } from "../../types/CardProps";
 import "./Cards.css";
 
-const tabletScreen: boolean =
-  window.innerWidth > 768 && window.innerWidth < 1000;
-const smallScreen: boolean = window.innerWidth < 768;
-
 function Cards({ project }: CardProps) {
   const [hover, setHover] = useState<boolean>(false);
+  const { innerWidth } = useWindowSize();
+
+  const smallScreen: boolean = innerWidth < 768;
+  const tabletScreen: boolean = innerWidth >= 768 && innerWidth < 1000;
 
   return (
     <Card
@@ -27,7 +28,7 @@ function Cards({ project }: CardProps) {
       <Card.Body className="topCardBody">
         <Card.Title>{project.name}</Card.Title>
         <Card.Text>{project.description}</Card.Text>
-        {project.id === 0 && (
+        {project.id === 2 && (
           <Card.Text>
             <strong className="includesGetJokes">
               Includes Unit Tests And CI/CD

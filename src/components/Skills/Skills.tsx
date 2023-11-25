@@ -1,9 +1,12 @@
 import { Row, Col } from "react-bootstrap";
+import useWindowSize from "../../hooks/useWindowSize";
 import SkillsList from "../../data/SkillsList";
 import Skill from "./Skill";
 import "./Skills.css";
 
 export default function Skills() {
+  const { mobileSize } = useWindowSize();
+
   return (
     <div className="skills" id="Skills">
       <h1 data-aos="fade-right" data-aos-once="true">
@@ -22,12 +25,11 @@ export default function Skills() {
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 &&
-                  (skill.id === 3 || skill.id === 7) && (
-                    <>
-                      <br /> <br />
-                    </>
-                  )}
+                {!mobileSize && (skill.id === 3 || skill.id === 7) && (
+                  <>
+                    <br /> <br />
+                  </>
+                )}
               </div>
             ))}
           </Col>
@@ -46,7 +48,7 @@ export default function Skills() {
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 && skill.id === 3 && (
+                {!mobileSize && skill.id === 3 && (
                   <>
                     <br /> <br />
                   </>
@@ -69,7 +71,7 @@ export default function Skills() {
                   link={skill.link}
                   img={skill.img}
                 />
-                {window.innerWidth > 1200 && skill.id === 3 && (
+                {!mobileSize && skill.id === 3 && (
                   <>
                     <br /> <br />
                   </>

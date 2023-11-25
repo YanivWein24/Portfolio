@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import "./Header.css";
+import useWindowSize from "../../hooks/useWindowSize";
 import { HeaderLinkProps } from "../../types/HeaderLinkProps";
 import HeaderLinks from "../../data/HeaderLinks";
 import Hamburger from "../Hamburger/Hamburger";
 import Resume from "../../assets/Yaniv-Resume.pdf";
+import "./Header.css";
 
 function AbstractLink({
   name,
   icon,
   duration,
   offset,
-  smallScreen,
+  mobileSize,
   scroll,
 }: HeaderLinkProps) {
   const [hoverLink, setHoverLink] = useState<boolean>(false);
@@ -21,7 +22,7 @@ function AbstractLink({
     <div
       className="linkContainer"
       style={{
-        borderRadius: smallScreen || scroll ? "10px" : "0 0 10px 10px",
+        borderRadius: mobileSize || scroll ? "10px" : "0 0 10px 10px",
       }}
       onMouseOver={() => setHoverLink(true)}
       onMouseOut={() => setHoverLink(false)}
@@ -33,7 +34,7 @@ function AbstractLink({
         offset={offset}
         className="link"
         style={{
-          color: smallScreen || hoverLink ? "#fff" : scroll ? "#ccc" : "#fff",
+          color: mobileSize || hoverLink ? "#fff" : scroll ? "#ccc" : "#fff",
         }}
       >
         <i className={icon} /> {name}
@@ -45,7 +46,7 @@ function AbstractLink({
 function Header() {
   const [scroll, setScroll] = useState<boolean>(false);
   const [isActive, setIsActive] = useState<boolean>(false);
-  const smallScreen: boolean = window.innerWidth < 480;
+  const { mobileSize } = useWindowSize();
 
   const changeBackground = () => {
     window.scrollY >= 66 ? setScroll(true) : setScroll(false);
@@ -61,12 +62,12 @@ function Header() {
       className="header"
       style={{
         backgroundColor:
-          smallScreen || (!smallScreen && scroll) ? "#000000d4" : "transparent",
+          mobileSize || (!mobileSize && scroll) ? "#000000d4" : "transparent",
         borderBottom:
-          smallScreen || (!smallScreen && scroll)
+          mobileSize || (!mobileSize && scroll)
             ? "5px solid #1c72ff"
             : "transparent",
-        padding: smallScreen || (!smallScreen && scroll) ? "10px" : "0",
+        padding: mobileSize || (!mobileSize && scroll) ? "10px" : "0",
       }}
     >
       <Navbar variant="dark" expand="lg" className="navbar">
@@ -93,18 +94,18 @@ function Header() {
                   icon={link.icon}
                   offset={link.offset}
                   duration={link.duration || 750}
-                  smallScreen={smallScreen}
+                  mobileSize={mobileSize}
                   scroll={scroll}
                 />
               ))}
               <div
                 className="linkContainer resume"
                 style={{
-                  borderRadius: smallScreen
+                  borderRadius: mobileSize
                     ? "10px"
                     : scroll
-                    ? "10px"
-                    : "0 0 10px 10px",
+                      ? "10px"
+                      : "0 0 10px 10px",
                 }}
               >
                 <a className="link" href={Resume} download="Yaniv-Resume.pdf">

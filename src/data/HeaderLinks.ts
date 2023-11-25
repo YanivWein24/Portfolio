@@ -30,7 +30,7 @@ const HeaderLinks: HeaderLinkProps[] = [
     duration: 1000,
   },
   {
-    id: 3,
+    id: 4,
     name: "Contact",
     icon: "fa-solid fa-envelope",
     offset: -110,

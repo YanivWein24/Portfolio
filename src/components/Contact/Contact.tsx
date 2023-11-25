@@ -40,7 +40,7 @@ function Contact() {
         setTimeout(() => {
           setError(false);
         }, 2500);
-      }
+      },
     );
   };
 

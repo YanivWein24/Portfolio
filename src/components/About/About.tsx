@@ -1,12 +1,13 @@
 import { Row, Col } from "react-bootstrap";
+import useWindowSize from "../../hooks/useWindowSize";
+import Text from "../../constants";
 import { ReactComponent as TopWave } from "../../assets/media/TopWave.svg";
 import { ReactComponent as BottomWave } from "../../assets/media/BottomWave.svg";
 import Profile from "../../assets/media/profile.png";
 import "./About.css";
-import Text from "../../constants";
 
 function About() {
-  const smallScreen: boolean = window.innerWidth < 768;
+  const { tabletSize } = useWindowSize();
 
   return (
     <div className="aboutMeContainer" id="About">
@@ -21,7 +22,7 @@ function About() {
           lg={6}
           md={12}
           sm={12}
-          data-aos={smallScreen ? "fade-right" : "zoom-in-right"}
+          data-aos={tabletSize ? "fade-right" : "zoom-in-right"}
           data-aos-once="true"
         >
           <img className="profile" src={Profile} alt="Me" />
@@ -29,7 +30,7 @@ function About() {
         <Col lg={6} md={12} sm={12}>
           <div
             className="textContainer"
-            data-aos={smallScreen ? "fade-left" : "fade-down"}
+            data-aos={tabletSize ? "fade-left" : "fade-down"}
             data-aos-once="true"
           >
             <p className="bigger">{Text.AboutMeText}</p>
@@ -38,7 +39,7 @@ function About() {
             <Col
               lg={6}
               className="textContainer"
-              data-aos={smallScreen ? "fade-right" : "fade-right"}
+              data-aos={tabletSize ? "fade-right" : "fade-right"}
               data-aos-once="true"
             >
               <h3>Always Discovering</h3>
@@ -47,7 +48,7 @@ function About() {
             <Col
               lg={6}
               className="textContainer"
-              data-aos={smallScreen ? "fade-left" : "fade-left"}
+              data-aos={tabletSize ? "fade-left" : "fade-left"}
               data-aos-once="true"
             >
               <h3>Former Naval Technician</h3>

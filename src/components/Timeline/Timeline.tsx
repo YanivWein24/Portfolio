@@ -27,19 +27,22 @@ export default function Timeline() {
             technologies,
             link,
             image,
-            alt,
             scores,
           } = chapter;
+          const isActiveChapter = [0, 1].includes(id);
           return (
             <VerticalTimelineElement
+              key={id}
               className={`vertical-timeline-element--work ${
                 type === "school" ? "redBorder" : "blueBorder"
-              } ${id === 0 && "current"}`}
+              } ${isActiveChapter && "current"}`}
               contentStyle={{
-                background: id === 0 ? "rgb(33, 150, 243)" : "",
+                background: isActiveChapter ? "rgb(33, 150, 243)" : "",
               }}
               contentArrowStyle={{
-                borderRight: id === 0 ? "7px solid  rgb(33, 150, 243)" : "",
+                borderRight: isActiveChapter
+                  ? "7px solid  rgb(33, 150, 243)"
+                  : "",
               }}
               date={date}
               iconStyle={{
@@ -53,8 +56,8 @@ export default function Timeline() {
                     type === "school"
                       ? School
                       : type === "work"
-                      ? Suitcase
-                      : Anchor
+                        ? Suitcase
+                        : Anchor
                   }
                   alt="icon"
                   className="timelineIcon"
@@ -63,21 +66,23 @@ export default function Timeline() {
             >
               <h3
                 className={`vertical-timeline-element-title ${
-                  id === 0 ? "timelineCurrentHeader" : "timelineHeader"
+                  isActiveChapter ? "timelineCurrentHeader" : "timelineHeader"
                 }`}
               >
                 {header}
               </h3>
               <h4
                 className={`vertical-timeline-element-subtitle ${
-                  id === 0 ? "timelineCurrentHeader" : "timelineHeader"
+                  isActiveChapter ? "timelineCurrentHeader" : "timelineHeader"
                 }`}
               >
                 {subHeader}
               </h4>
               <p
                 className={
-                  id === 0 ? "timelineText timelineCurrentText" : "timelineText"
+                  isActiveChapter
+                    ? "timelineText timelineCurrentText"
+                    : "timelineText"
                 }
               >
                 {text}
@@ -101,7 +106,10 @@ export default function Timeline() {
               <div className="toolsContainer">
                 {technologies &&
                   technologies.map((tool) => (
-                    <div key={tool} className={`tool ${id === 0 && "socialo"}`}>
+                    <div
+                      key={tool}
+                      className={`tool ${isActiveChapter && "socialo"}`}
+                    >
                       {tool}
                     </div>
                   ))}
@@ -113,7 +121,11 @@ export default function Timeline() {
                   rel="noreferrer"
                   className={!link ? "disableNavigation" : ""}
                 >
-                  <img src={image} alt={alt ?? ""} className="timeLineImage" />
+                  <img
+                    src={image}
+                    alt={subHeader ?? ""}
+                    className="timeLineImage"
+                  />
                 </a>
               )}
             </VerticalTimelineElement>

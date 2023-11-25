@@ -4,6 +4,6 @@ export interface HeaderLinkProps {
   icon: string;
   duration?: number;
   offset: number;
-  smallScreen?: boolean;
+  mobileSize?: boolean;
   scroll?: boolean;
 }

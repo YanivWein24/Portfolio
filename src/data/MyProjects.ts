@@ -3,6 +3,36 @@ import { Project } from "../types/Projects";
 const MyProjects: Project[] = [
   {
     id: 0,
+    name: "Similarity API ⚖️",
+    description:
+      "A Full-Stack Next.js project, containing a rate-limited API in the backend and a user dashboard with documentation in the frontend. The API receives 2 pieces of text and returns a number between 0-1, representing their similarity.",
+    image: [
+      "https://user-images.githubusercontent.com/97472180/232338288-338c4f62-600e-438f-850c-f58a1f93f362.png",
+      "https://user-images.githubusercontent.com/97472180/232347078-333578bd-e49e-4e48-bcfe-238b0266198f.gif",
+    ],
+    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "Redis"],
+    links: [
+      "https://github.com/YanivWein24/Similarity-API-Next.js",
+      "https://similarity-api-next.vercel.app",
+    ],
+  },
+  {
+    id: 1,
+    name: "Post It 🔥",
+    description:
+      "Full-Stack social media application built with Next.js. Users can sign up and authenticate with Google or GitHub to start sharing and commenting on posts.",
+    image: [
+      "https://user-images.githubusercontent.com/97472180/230383665-d73d4364-c24a-4ecd-b2d8-a5ecfdda23ef.png",
+      "https://user-images.githubusercontent.com/97472180/230383676-ba8c0517-d6ea-4419-b3d3-8c762c5a5ae9.gif",
+    ],
+    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "React-Query"],
+    links: [
+      "https://github.com/YanivWein24/Post-It-Next.js",
+      "https://post-it-next-js.vercel.app/",
+    ],
+  },
+  {
+    id: 2,
     name: "Get Jokes 😂",
     description:
       "Full-Stack application that provides custom jokes from Joke-API. Users can register (also using their Google / Meta accounts) and create their private collection of jokes.",
@@ -24,36 +54,6 @@ const MyProjects: Project[] = [
     links: [
       "https://github.com/YanivWein24/Get-Jokes",
       "https://get-jokes.onrender.com/",
-    ],
-  },
-  {
-    id: 1,
-    name: "Similarity API ⚖️",
-    description:
-      "A Full-Stack Next.js project, containing a rate-limited API in the backend and a user dashboard with documentation in the frontend. The API receives 2 pieces of text and returns a number between 0-1, representing their similarity.",
-    image: [
-      "https://user-images.githubusercontent.com/97472180/232338288-338c4f62-600e-438f-850c-f58a1f93f362.png",
-      "https://user-images.githubusercontent.com/97472180/232347078-333578bd-e49e-4e48-bcfe-238b0266198f.gif",
-    ],
-    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "Redis"],
-    links: [
-      "https://github.com/YanivWein24/Similarity-API-Next.js",
-      "https://similarity-api-next.vercel.app",
-    ],
-  },
-  {
-    id: 2,
-    name: "Post It 🔥",
-    description:
-      "Full-Stack social media application built with Next.js. Users can sign up and authenticate with Google or GitHub to start sharing and commenting on posts.",
-    image: [
-      "https://user-images.githubusercontent.com/97472180/230383665-d73d4364-c24a-4ecd-b2d8-a5ecfdda23ef.png",
-      "https://user-images.githubusercontent.com/97472180/230383676-ba8c0517-d6ea-4419-b3d3-8c762c5a5ae9.gif",
-    ],
-    tools: ["Next.js", "TypeScript", "Next-auth", "Prisma", "React-Query"],
-    links: [
-      "https://github.com/YanivWein24/Post-It-Next.js",
-      "https://post-it-next-js.vercel.app/",
     ],
   },
   {
