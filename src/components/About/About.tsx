@@ -3,7 +3,7 @@ import useWindowSize from "../../hooks/useWindowSize";
 import Text from "../../constants";
 import { ReactComponent as TopWave } from "../../assets/media/TopWave.svg";
 import { ReactComponent as BottomWave } from "../../assets/media/BottomWave.svg";
-import Profile from "../../assets/media/profile.png";
+import Profile from "../../assets/media/profile.jpg";
 import "./About.css";
 
 function About() {

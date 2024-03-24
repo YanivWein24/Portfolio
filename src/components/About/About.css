@@ -37,6 +37,7 @@ img.profile {
   width: 23rem;
   height: 23rem;
   transition: 0.3s ease-in-out;
+  border-radius: 100%;
 }
 
 .textContainer {
