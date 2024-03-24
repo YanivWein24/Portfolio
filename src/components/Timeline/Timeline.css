@@ -33,7 +33,7 @@
 }
 
 .timelineCurrentText {
-  color: var(--color-offWhite);
+  color: white;
 }
 
 .timelineHeader {
@@ -58,7 +58,6 @@
 
 .toolsContainer {
   margin: 1rem 0 1.5rem;
-  text-align: center;
 }
 
 .tool.socialo {

@@ -17,7 +17,7 @@ const HeaderLinks: HeaderLinkProps[] = [
   },
   {
     id: 2,
-    name: "TimeLine",
+    name: "Experience",
     icon: "fa-solid fa-clock-rotate-left",
     offset: -100,
     duration: 1000,

@@ -13,12 +13,11 @@ export default function Timeline() {
   return (
     <div className="timeline-container">
       <h1 id="TimeLine" data-aos="fade-down" data-aos-once="true">
-        TimeLine
+        Experience
       </h1>
       <VerticalTimeline>
-        {TimelineChapters.map((chapter) => {
+        {TimelineChapters.map((chapter, index) => {
           const {
-            id,
             header,
             subHeader,
             text,
@@ -29,18 +28,18 @@ export default function Timeline() {
             image,
             scores,
           } = chapter;
-          const isActiveChapter = [0, 1].includes(id);
+          const isCurrentChapter = !index;
           return (
             <VerticalTimelineElement
-              key={id}
+              key={`${header} ${subHeader}`}
               className={`vertical-timeline-element--work ${
                 type === "school" ? "redBorder" : "blueBorder"
-              } ${isActiveChapter && "current"}`}
+              } ${isCurrentChapter && "current"}`}
               contentStyle={{
-                background: isActiveChapter ? "rgb(33, 150, 243)" : "",
+                background: isCurrentChapter ? "rgb(33, 150, 243)" : "",
               }}
               contentArrowStyle={{
-                borderRight: isActiveChapter
+                borderRight: isCurrentChapter
                   ? "7px solid  rgb(33, 150, 243)"
                   : "",
               }}
@@ -66,21 +65,21 @@ export default function Timeline() {
             >
               <h3
                 className={`vertical-timeline-element-title ${
-                  isActiveChapter ? "timelineCurrentHeader" : "timelineHeader"
+                  isCurrentChapter ? "timelineCurrentHeader" : "timelineHeader"
                 }`}
               >
                 {header}
               </h3>
               <h4
                 className={`vertical-timeline-element-subtitle ${
-                  isActiveChapter ? "timelineCurrentHeader" : "timelineHeader"
+                  isCurrentChapter ? "timelineCurrentHeader" : "timelineHeader"
                 }`}
               >
                 {subHeader}
               </h4>
               <p
                 className={
-                  isActiveChapter
+                  isCurrentChapter
                     ? "timelineText timelineCurrentText"
                     : "timelineText"
                 }
@@ -108,7 +107,7 @@ export default function Timeline() {
                   technologies.map((tool) => (
                     <div
                       key={tool}
-                      className={`tool ${isActiveChapter && "socialo"}`}
+                      className={`tool ${isCurrentChapter && "socialo"}`}
                     >
                       {tool}
                     </div>

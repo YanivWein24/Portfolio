@@ -1,5 +1,4 @@
 interface TimelineChapter {
-  id: number;
   header: string;
   subHeader: string;
   text: string;
