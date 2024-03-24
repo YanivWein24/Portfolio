@@ -65,13 +65,34 @@
   color: var(--color-primary-light);
 }
 
-.disableNavigation {
-  pointer-events: none;
+.imageContainer {
+  overflow: hidden;
 }
 
 .timeLineImage {
   width: 100%;
   box-shadow: rgb(167 167 167 / 50%) 0px 4px 6px;
+}
+
+.timeLineImage {
+  transition: 0.3s ease-in-out;
+}
+
+.timeLineImage:hover {
+  transform: scale(1.05);
+}
+
+.fa-link {
+  color: #d1d1d1;
+  transition: 0.15s ease-in-out;
+}
+
+.fa-link.current {
+  color: #f2f2f2;
+}
+
+.fa-link:hover {
+  color: #b5b5b5;
 }
 
 @media screen and (max-width: 940px) {

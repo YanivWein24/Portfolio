@@ -93,7 +93,11 @@ export default function Timeline() {
                   rel="noreferrer"
                   className="timeLineLinkIcon"
                 >
-                  <i className="fa-solid fa-link" />
+                  <i
+                    className={`fa-solid fa-link ${
+                      isCurrentChapter && "current"
+                    }`}
+                  />
                 </a>
               )}
               {scores && (
@@ -115,10 +119,11 @@ export default function Timeline() {
               </div>
               {image && (
                 <a
-                  href={link ?? ""}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={!link ? "disableNavigation" : ""}
+                  href={link ?? "javascript:void(0)"} // eslint-disable-line
+                  aria-disabled={!link}
+                  target={link && "_blank"}
+                  rel={link && "noreferrer"}
+                  className={`imageContainer ${!link && "disableNavigation"}`}
                 >
                   <img
                     src={image}
