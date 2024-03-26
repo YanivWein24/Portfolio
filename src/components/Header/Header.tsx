@@ -85,7 +85,7 @@ function Header() {
             id="basic-navbar-nav"
             className="justify-content-center"
           >
-            <Nav className="me-auto ">
+            <Nav className="me-auto">
               {HeaderLinks.map((link) => (
                 <AbstractLink
                   key={link.id}

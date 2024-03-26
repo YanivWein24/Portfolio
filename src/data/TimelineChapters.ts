@@ -12,7 +12,14 @@ const TimelineChapters: TimelineChapter[] = [
     type: "work",
     link: "https://productive.co.il",
     image: Productive,
-    technologies: ["Salesforce", "Monday", "Make", "Automation", "Jira"],
+    technologies: [
+      "Salesforce",
+      "Monday",
+      "Make",
+      "Automation",
+      "Postman",
+      "Jira",
+    ],
   },
   {
     header: "Front-End Developer",

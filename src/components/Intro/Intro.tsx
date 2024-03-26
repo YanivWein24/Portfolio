@@ -28,13 +28,13 @@ function Intro() {
             I'm A{" "}
             <Typewriter
               options={{
-                strings: ["FULL-STACK", "FRONT-END"],
+                strings: ["FULL-STACK", "FRONT-END", "REACT"],
                 autoStart: true,
                 loop: true,
               }}
             />
           </span>
-          Web Developer.
+          Developer.
         </h2>
         <Button
           onMouseOver={() => setFirstHovering(true)}

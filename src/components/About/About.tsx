@@ -9,6 +9,19 @@ import "./About.css";
 function About() {
   const { tabletSize } = useWindowSize();
 
+  const bottomSections: Record<string, string>[] = [
+    {
+      label: "1.5 years of experience",
+      text: Text.yearsOfExperience,
+      animation: "fade-right",
+    },
+    {
+      label: "Always Discovering",
+      text: Text.AlwaysDiscovering,
+      animation: "fade-left",
+    },
+  ];
+
   return (
     <div className="aboutMeContainer" id="About">
       <div className="wave">
@@ -36,24 +49,18 @@ function About() {
             <p className="bigger">{Text.AboutMeText}</p>
           </div>
           <Row>
-            <Col
-              lg={6}
-              className="textContainer"
-              data-aos={tabletSize ? "fade-right" : "fade-right"}
-              data-aos-once="true"
-            >
-              <h3>Always Discovering</h3>
-              <p>{Text.AlwaysDiscovering}</p>
-            </Col>
-            <Col
-              lg={6}
-              className="textContainer"
-              data-aos={tabletSize ? "fade-left" : "fade-left"}
-              data-aos-once="true"
-            >
-              <h3>Former Naval Technician</h3>
-              <p>{Text.NavalTechnician}</p>
-            </Col>
+            {bottomSections.map(({ label, text, animation }) => (
+              <Col
+                key={label}
+                lg={6}
+                className="textContainer"
+                data-aos={animation}
+                data-aos-once="true"
+              >
+                <h3>{label}</h3>
+                <p>{text}</p>
+              </Col>
+            ))}
           </Row>
         </Col>
       </Row>

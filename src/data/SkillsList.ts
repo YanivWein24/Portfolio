@@ -39,7 +39,7 @@ const SkillsList = {
       id: 5,
       name: "React-Query",
       color: "#ff4154",
-      link: "https://www.npmjs.com/package/react-query",
+      link: "https://tanstack.com/query/latest",
       img: "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
     },
     {
