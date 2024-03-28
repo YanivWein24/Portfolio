@@ -20,11 +20,11 @@
 .footer a,
 .footer i,
 .footer .copyright {
-  color: white;
+  color: var(--color-offWhite);
 }
 
 .backToTop:hover {
-  border: 2px solid white;
+  border: 2px solid var(--color-offWhite);
   background-color: var(--color-primary);
 }
 

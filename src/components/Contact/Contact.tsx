@@ -8,8 +8,9 @@ function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [messageSent, setMessageSent] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
+  const [isError, setIsError] = useState<boolean>(false);
 
   const form = document.querySelector("form");
 
@@ -24,10 +25,14 @@ function Contact() {
     const publicKey: string = process.env.REACT_APP_PUBLIC_KEY || "error";
     const templateId: string = process.env.REACT_APP_TEMPLATE_ID || "error";
     const serviceId: string = process.env.REACT_APP_SERVICE_ID || "error";
+    setIsLoading(true);
+    setIsError(false);
+    setMessageSent(false);
 
     emailjs.sendForm(serviceId, templateId, form || "error", publicKey).then(
       () => {
         setMessageSent(true);
+        setIsLoading(false);
         window.navigator.vibrate(250); // only on devices with supported hardware
         resetForm();
         setTimeout(() => {
@@ -36,10 +41,8 @@ function Contact() {
       },
       (err) => {
         console.log(err.text); // eslint-disable-line
-        setError(true);
-        setTimeout(() => {
-          setError(false);
-        }, 2500);
+        setIsError(true);
+        setIsLoading(false);
       },
     );
   };
@@ -47,7 +50,7 @@ function Contact() {
   return (
     <div data-aos="fade-down" data-aos-once="true" id="Contact">
       <h1>Contact Me:</h1>
-      <Container>
+      <Container className="formContainer">
         <Form>
           <p data-aos="fade-down" data-aos-once="true">
             {Text.ContactMe}
@@ -104,34 +107,31 @@ function Contact() {
             />
             <div className="invalid-feedback">Required Field</div>
           </FormGroup>
-          <button
-            data-aos="fade-down"
-            data-aos-once="true"
-            className="reset"
-            onClick={resetForm}
-            type="button"
-          >
-            Reset <i className="fa-solid fa-eraser" />
-          </button>
-          <button
-            data-aos="fade-down"
-            data-aos-once="true"
-            type="submit"
-            onClick={(event) => {
-              event.preventDefault();
-              if (form) {
-                form.checkValidity()
+          <div className="bottomContainer">
+            <button
+              data-aos="fade-down"
+              data-aos-once="true"
+              type="submit"
+              onClick={(event) => {
+                event.preventDefault();
+
+                !!form && form.checkValidity()
                   ? sendEmail()
-                  : form.classList.add("was-validated");
-              }
-            }}
-          >
-            Submit <i className="fa-solid fa-paper-plane" />
-          </button>
-          {messageSent && (
-            <h3 className="messageSent fade-in">{Text.MessageSent}</h3>
-          )}
-          {error && <h3 className="error fade-in">{Text.ErrorMessage}</h3>}
+                  : form?.classList.add("was-validated");
+              }}
+            >
+              Submit <i className="fa-solid fa-paper-plane" />
+            </button>
+            {(isError || messageSent || isLoading) && (
+              <h3 className="bottomMessage fade-in">
+                {messageSent
+                  ? Text.MessageSent
+                  : isError
+                    ? Text.ErrorMessage
+                    : "Submitting..."}
+              </h3>
+            )}
+          </div>
         </Form>
       </Container>
     </div>
