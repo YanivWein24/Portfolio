@@ -29,7 +29,7 @@ function About() {
       </div>
       <Row className="about-me no-gutters">
         <Col lg={12} md={12} sm={12} data-aos="fade-down" data-aos-once="true">
-          <h1 className="aboutMeHeader">About Me:</h1>
+          <h1 className="aboutMeHeader">{Text.headers.aboutMe}</h1>
         </Col>
         <Col
           lg={6}

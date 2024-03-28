@@ -43,13 +43,13 @@ function Contact() {
         console.log(err.text); // eslint-disable-line
         setIsError(true);
         setIsLoading(false);
-      },
+      }
     );
   };
 
   return (
     <div data-aos="fade-down" data-aos-once="true" id="Contact">
-      <h1>Contact Me:</h1>
+      <h1>{Text.headers.contactMe}</h1>
       <Container className="formContainer">
         <Form>
           <p data-aos="fade-down" data-aos-once="true">

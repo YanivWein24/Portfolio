@@ -1,5 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import useWindowSize from "../../hooks/useWindowSize";
+import Text from "../../constants";
 import SkillsList from "../../data/SkillsList";
 import Skill from "./Skill";
 import "./Skills.css";
@@ -10,7 +11,7 @@ export default function Skills() {
   return (
     <div className="skills" id="Skills">
       <h1 data-aos="fade-right" data-aos-once="true">
-        Skills:
+        {Text.headers.skills}
       </h1>
       <div className="skillsSet" data-aos="fade-left" data-aos-once="true">
         <h2>Front-End:</h2>

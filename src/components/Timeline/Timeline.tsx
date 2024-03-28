@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Text from "../../constants";
 import TimelineChapters from "../../data/TimelineChapters";
 import Suitcase from "../../assets/media/suitcase.svg";
 import School from "../../assets/media/school.svg";
@@ -13,7 +14,7 @@ export default function Timeline() {
   return (
     <div className="timeline-container">
       <h1 id="Experience" data-aos="fade-down" data-aos-once="true">
-        Experience
+        {Text.headers.experience}
       </h1>
       <VerticalTimeline>
         {TimelineChapters.map((chapter, index) => {

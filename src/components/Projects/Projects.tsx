@@ -1,5 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Cards from "../Cards/Cards";
+import Text from "../../constants";
 import MyProjects from "../../data/MyProjects";
 import "./Projects.css";
 import { ReactComponent as TopAngle } from "../../assets/media/TopAngle.svg";
@@ -13,7 +14,7 @@ export default function Projects() {
       </div>
       <div className="projects" id="Projects">
         <Container data-aos="slide-up" data-aos-once="true">
-          <h1>Projects:</h1>
+          <h1>{Text.headers.projects}</h1>
           <Row className="no-gutters">
             {MyProjects.map((project) => (
               <Col
