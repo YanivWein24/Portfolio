@@ -1,10 +1,13 @@
 const Text = {
   headers: {
     aboutMe: "About Me:",
-    experience: "Experience:",
     skills: "Skills:",
+    experience: "Experience:",
     projects: "Projects:",
     contactMe: "Contact Me:",
+    frontend: "Front-End:",
+    backend: "Back-End:",
+    misc: "Misc:",
   },
   AboutMeText:
     "My name is Yaniv Weinshtein. I'm a Practical Engineer in Electronics and a Full stack developer specializing in the \"MERN\" stack. I got exposed to coding in some of my practical engineering courses, and immediately I fell in love with the idea of creating solutions to day-to-day problems using only lines of code! I continued to code for fun for a while, and now I'm doing it professionally as my main career path!",
