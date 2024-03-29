@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import useWindowSize from "../../hooks/useWindowSize";
 import { CardProps } from "../../types/CardProps";
-import "./Cards.css";
+import "./ProjectCard.css";
 
-function Cards({ project }: CardProps) {
+function ProjectCard({ project }: CardProps) {
   const [hover, setHover] = useState<boolean>(false);
   const { innerWidth } = useWindowSize();
 
@@ -67,4 +67,4 @@ function Cards({ project }: CardProps) {
   );
 }
 
-export default Cards;
+export default ProjectCard;

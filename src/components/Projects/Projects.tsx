@@ -1,5 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
-import Cards from "../Cards/Cards";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import Text from "../../constants";
 import MyProjects from "../../data/MyProjects";
 import "./Projects.css";
@@ -25,7 +25,7 @@ export default function Projects() {
                 md={6}
                 lg={4}
               >
-                <Cards project={project} />
+                <ProjectCard project={project} />
               </Col>
             ))}
           </Row>

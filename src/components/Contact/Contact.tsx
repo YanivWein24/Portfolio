@@ -43,7 +43,7 @@ function Contact() {
         console.log(err.text); // eslint-disable-line
         setIsError(true);
         setIsLoading(false);
-      }
+      },
     );
   };
 

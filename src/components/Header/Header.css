@@ -96,7 +96,7 @@ a.link {
 .fa-linkedin:hover,
 .fa-github:hover,
 .fa-envelope:hover {
-  color: #0a66c2;
+  color: grey;
 }
 
 /* The envelope icon in "Contact Me" link should stay the same color */
