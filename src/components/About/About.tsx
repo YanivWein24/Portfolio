@@ -32,7 +32,8 @@ function About() {
           <h1 className="aboutMeHeader">{Text.headers.aboutMe}</h1>
         </Col>
         <Col
-          lg={6}
+          xl={3}
+          lg={12}
           md={12}
           sm={12}
           data-aos={tabletSize ? "fade-right" : "zoom-in-right"}
@@ -40,7 +41,7 @@ function About() {
         >
           <img className="profile" src={Profile} alt="Me" />
         </Col>
-        <Col lg={6} md={12} sm={12}>
+        <Col xl={9} lg={12} md={12} sm={12}>
           <div
             className="textContainer"
             data-aos={tabletSize ? "fade-left" : "fade-down"}

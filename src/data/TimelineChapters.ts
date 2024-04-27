@@ -17,6 +17,7 @@ const TimelineChapters: TimelineChapter[] = [
       "Monday",
       "Make",
       "Automation",
+      "Integrations",
       "Postman",
       "Jira",
     ],

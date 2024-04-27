@@ -34,8 +34,8 @@ p.bigger {
 }
 
 img.profile {
-  width: 23rem;
-  height: 23rem;
+  width: 15rem;
+  height: 15rem;
   transition: 0.3s ease-in-out;
   border-radius: 100%;
 }
@@ -84,6 +84,14 @@ img.profile {
 
 .bottom-wave .shape-fill {
   fill: var(--color-primary);
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  img.profile {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 940px) {
