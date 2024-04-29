@@ -27,44 +27,45 @@ function About() {
       <div className="wave">
         <TopWave />
       </div>
-      <Row className="about-me no-gutters">
-        <Col lg={12} md={12} sm={12} data-aos="fade-down" data-aos-once="true">
-          <h1 className="aboutMeHeader">{Text.headers.aboutMe}</h1>
-        </Col>
-        <Col
-          xl={3}
-          lg={12}
-          md={12}
-          sm={12}
-          data-aos={tabletSize ? "fade-right" : "zoom-in-right"}
-          data-aos-once="true"
-        >
-          <img className="profile" src={Profile} alt="Me" />
-        </Col>
-        <Col xl={9} lg={12} md={12} sm={12}>
-          <div
-            className="textContainer"
-            data-aos={tabletSize ? "fade-left" : "fade-down"}
+      <div className="backgroundLinear">
+        <Row className="about-me no-gutters mx-auto">
+          <Col xs={12} data-aos="fade-down" data-aos-once="true">
+            <h1 className="aboutMeHeader">{Text.headers.aboutMe}</h1>
+          </Col>
+          <Col
+            sm={12}
+            data-aos={tabletSize ? "fade-right" : "fade-up"}
             data-aos-once="true"
+            className="mb-4"
           >
-            <p className="bigger">{Text.AboutMeText}</p>
-          </div>
-          <Row>
-            {bottomSections.map(({ label, text, animation }) => (
-              <Col
-                key={label}
-                lg={6}
-                className="textContainer"
-                data-aos={animation}
-                data-aos-once="true"
-              >
-                <h3>{label}</h3>
-                <p>{text}</p>
-              </Col>
-            ))}
-          </Row>
-        </Col>
-      </Row>
+            <img className="profile" src={Profile} alt="Me" />
+          </Col>
+          <Col xs={12}>
+            <div
+              className="textContainer"
+              data-aos={tabletSize ? "fade-left" : "fade-down"}
+              data-aos-once="true"
+            >
+              <p className="bigger">{Text.AboutMeText}</p>
+            </div>
+            <Row>
+              {bottomSections.map(({ label, text, animation }) => (
+                <Col
+                  key={label}
+                  lg={6}
+                  className="textContainer"
+                  data-aos={animation}
+                  data-aos-once="true"
+                >
+                  <h3>{label}</h3>
+                  <p>{text}</p>
+                </Col>
+              ))}
+            </Row>
+          </Col>
+        </Row>
+      </div>
+
       <div className="bottom-wave">
         <BottomWave />
       </div>
