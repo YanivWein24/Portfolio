@@ -201,6 +201,34 @@ const SkillsList = {
       link: "https://www.python.org/",
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
     },
+    {
+      id: 8,
+      name: "Jira",
+      color: "#0f65e0",
+      link: "https://www.python.org/",
+      img: "https://cdn.worldvectorlogo.com/logos/jira-1.svg",
+    },
+    {
+      id: 9,
+      name: "Monday",
+      color: "#fb275d",
+      link: "https://monday.com/",
+      img: "https://monday.com/p/wp-content/uploads/2020/07/Icon10-1.png",
+    },
+    {
+      id: 10,
+      name: "SalesForce",
+      color: "#00a2e1",
+      link: "https://www.salesforce.com/",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png",
+    },
+    {
+      id: 11,
+      name: "Make",
+      color: "#5800c0",
+      link: "https://www.make.com/en",
+      img: "https://play-lh.googleusercontent.com/48jrCqrPKi0Af5z9gMVGVVap1EEfswtQuwh9tAdF7nL478jKzg2i9KiC6b2NMMoSaVM",
+    },
   ],
 };
 
