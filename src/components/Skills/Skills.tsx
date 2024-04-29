@@ -6,40 +6,72 @@ import Skill from "./Skill";
 import "./Skills.css";
 
 export default function Skills() {
-  const { mobileSize } = useWindowSize();
+  const { mobileSize, innerWidth } = useWindowSize();
+  const bootstrapLaptopSize = innerWidth < 1120;
 
   const skillsSets = ["frontend", "backend", "misc"] as const;
 
   return (
     <div className="skills" id="Skills">
-      <h1 data-aos="fade-right" data-aos-once="true">
+      <h1
+        data-aos={mobileSize ? "fade-right" : "fade-down"}
+        data-aos-once="true"
+      >
         {Text.headers.skills}
       </h1>
-      {skillsSets.map((skillSet, index) => (
-        <div
-          className="skillsSet"
-          data-aos={index % 2 ? "fade-right" : "fade-left"}
-          data-aos-once="true"
-          key={skillSet}
-        >
-          <h2>{Text.headers[skillSet]}</h2>
-          <hr />
-          <Row>
-            <Col>
-              {SkillsList[skillSet].map(({ id, name, color, link, img }) => (
-                <div className="skillContainer" key={id}>
-                  <Skill name={name} color={color} link={link} img={img} />
-                  {!mobileSize && (id === 3 || id === 7) && (
-                    <>
-                      <br /> <br />
-                    </>
+      <Row className={`${!mobileSize && "container"} mx-auto`}>
+        {skillsSets.map((skillSet, index) => {
+          const isMiscSection = index === 2;
+
+          const skillsListGridStyles = {
+            display: "grid",
+            gridTemplateColumns: `repeat(${
+              mobileSize ? 3 : bootstrapLaptopSize ? 4 : isMiscSection ? 6 : 4
+            }, 1fr)`,
+          };
+
+          const skillsSetAnimation =
+            !bootstrapLaptopSize && isMiscSection
+              ? "fade-down"
+              : index % 2
+                ? "fade-right"
+                : "fade-left";
+
+          return (
+            <Col
+              xs={12}
+              xl={isMiscSection ? 12 : 6}
+              key={skillSet}
+              className={`mx-auto skillsSetContainer ${
+                isMiscSection && "miscSection"
+              }`}
+            >
+              <div
+                className="skillsSet"
+                data-aos={skillsSetAnimation}
+                data-aos-once="true"
+              >
+                <h2>{Text.headers[skillSet]}</h2>
+                <hr />
+                <div style={skillsListGridStyles}>
+                  {SkillsList[skillSet].map(
+                    ({ id, name, color, link, img }) => (
+                      <div className="skillContainer" key={id}>
+                        <Skill
+                          name={name}
+                          color={color}
+                          link={link}
+                          img={img}
+                        />
+                      </div>
+                    ),
                   )}
                 </div>
-              ))}
+              </div>
             </Col>
-          </Row>
-        </div>
-      ))}
+          );
+        })}
+      </Row>
     </div>
   );
 }

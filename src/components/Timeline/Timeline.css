@@ -95,6 +95,18 @@
   color: #b5b5b5;
 }
 
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .vertical-timeline-element-content {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1169px) {
+  .vertical-timeline-element-content {
+    max-width: 600px;
+  }
+}
+
 @media screen and (max-width: 940px) {
   .timeline-container {
     padding: 2rem 0 4rem;
