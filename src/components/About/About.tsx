@@ -29,7 +29,7 @@ function About() {
       </div>
       <div className="backgroundLinear">
         <Row className="about-me no-gutters mx-auto">
-          <Col xs={12} data-aos="fade-down" data-aos-once="true">
+          <Col xs={12} data-aos="fade-up" data-aos-once="true">
             <h1 className="aboutMeHeader">{Text.headers.aboutMe}</h1>
           </Col>
           <Col

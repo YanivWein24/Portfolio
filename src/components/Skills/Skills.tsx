@@ -13,10 +13,7 @@ export default function Skills() {
 
   return (
     <div className="skills" id="Skills">
-      <h1
-        data-aos={mobileSize ? "fade-right" : "fade-down"}
-        data-aos-once="true"
-      >
+      <h1 data-aos={mobileSize ? "fade-right" : "fade-up"} data-aos-once="true">
         {Text.headers.skills}
       </h1>
       <Row className={`${!mobileSize && "container"} mx-auto`}>

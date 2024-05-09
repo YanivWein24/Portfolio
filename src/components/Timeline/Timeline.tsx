@@ -13,7 +13,7 @@ import Anchor from "../../assets/media/anchor.svg";
 export default function Timeline() {
   return (
     <div className="timeline-container">
-      <h1 id="Experience" data-aos="fade-down" data-aos-once="true">
+      <h1 id="Experience" data-aos="fade-up" data-aos-once="true">
         {Text.headers.experience}
       </h1>
       <VerticalTimeline>
