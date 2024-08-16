@@ -1,4 +1,6 @@
 import { Row, Col } from "react-bootstrap";
+import StatBox from "../StatBox/StatBox";
+import { StatBoxProps } from "../../types/StatBoxProps";
 import useWindowSize from "../../hooks/useWindowSize";
 import Text from "../../constants";
 import { ReactComponent as TopWave } from "../../assets/media/TopWave.svg";
@@ -7,11 +9,37 @@ import Profile from "../../assets/media/profile.jpg";
 import "./About.css";
 
 function About() {
-  const { tabletSize } = useWindowSize();
+  const { mobileSize, tabletSize } = useWindowSize();
 
-  const bottomSections: Record<string, string>[] = [
+  const statNumbers: Record<string, number> = {
+    projects: 30,
+    components: 250,
+    endpoints: 70,
+    contributions: 2000,
+  };
+
+  const statsBoxes: StatBoxProps[] = [
     {
-      label: "1.5 years of experience",
+      title: "Total Projects",
+      number: statNumbers.projects,
+    },
+    {
+      title: "Total Components",
+      number: statNumbers.components,
+    },
+    {
+      title: "Total API Endpoints",
+      number: statNumbers.endpoints,
+    },
+    {
+      title: "GitHub Contributions",
+      number: statNumbers.contributions,
+    },
+  ];
+
+  const bottomDescriptions: Record<string, string>[] = [
+    {
+      label: "2 years of experience",
       text: Text.yearsOfExperience,
       animation: "fade-right",
     },
@@ -49,7 +77,7 @@ function About() {
               <p className="bigger">{Text.AboutMeText}</p>
             </div>
             <Row>
-              {bottomSections.map(({ label, text, animation }) => (
+              {bottomDescriptions.map(({ label, text, animation }) => (
                 <Col
                   key={label}
                   lg={6}
@@ -64,8 +92,22 @@ function About() {
             </Row>
           </Col>
         </Row>
+        <Row className="about-me mx-auto StatBoxesRow">
+          {statsBoxes.map((statsBox, index) => (
+            <Col
+              key={statsBox.title}
+              xs={12}
+              sm={6}
+              lg={3}
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay={!(mobileSize || tabletSize) && 200 * index}
+            >
+              <StatBox {...statsBox} />
+            </Col>
+          ))}
+        </Row>
       </div>
-
       <div className="bottom-wave">
         <BottomWave />
       </div>

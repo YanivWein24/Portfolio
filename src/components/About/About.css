@@ -48,6 +48,11 @@ img.profile {
   margin: 0 0 2rem 0;
 }
 
+.StatBoxesRow {
+  overflow: hidden;
+  padding-bottom: 2rem !important;
+}
+
 /* from https://www.shapedivider.app/ */
 .wave {
   position: relative;

@@ -1,0 +1,51 @@
+.AnimatedNumbersContainer {
+  display: flex;
+  align-items: center;
+}
+
+.StatBoxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 180px;
+  background-color: var(--color-offWhite);
+  box-shadow: 0 0 10px #333;
+  text-align: left;
+  border-radius: 20px;
+  padding: 1.2rem 1rem;
+  transition: scale 0.3s ease-in-out;
+}
+
+.StatBoxContainer:hover {
+  scale: 1.02;
+}
+
+.StatBoxContainer h2 {
+  margin: 0 0 0 2px;
+  color: #00172f;
+  font-size: 36px;
+}
+
+.StatBoxContainer p {
+  padding: 0;
+  margin-bottom: 8px;
+  color: #111 !important;
+  line-height: 18px;
+}
+.StatBoxContainer .graph {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .StatBoxContainer {
+    margin-bottom: 20px;
+  }
+
+  .StatBoxContainer p {
+    text-align: center !important;
+  }
+
+  .AnimatedNumbersContainer {
+    justify-content: center;
+  }
+}
