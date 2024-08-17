@@ -16,7 +16,7 @@ Using modern and responsive design, making it beautiful and user-friendly across
 
 <img src="https://user-images.githubusercontent.com/97472180/194729906-16fc1fec-7593-4a94-8c42-72f188d297c3.PNG" height="180" width="600" alt="HomeScreen-light"/>
 
-## Where can i check this out?
+## Where can I check this out?
 
-Right Here: https://yaniv-weinshtein.netlify.app/
+Right Here: https://yaniv-weinshtein.com
 <br />
