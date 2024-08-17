@@ -2,48 +2,67 @@ import { Link } from "react-scroll";
 import "./Footer.css";
 
 function Footer() {
+  const topDetails = {
+    phone: "+972-544-718-317",
+    email: "Yanivwein22@gmail.com",
+  } as const;
+
+  const bottomLinks: {
+    href: string;
+    ariaLabel: string;
+    icon: string;
+  }[] = [
+    {
+      href: "https://github.com/YanivWein24/",
+      ariaLabel: "My Github",
+      icon: "fa-brands fa-github",
+    },
+    {
+      href: "https://www.linkedin.com/in/yaniv-weinshtein/",
+      ariaLabel: "My Linkedin",
+      icon: "fa-brands fa-linkedin",
+    },
+    {
+      href: "mailto:Yanivwein22@gmail.com",
+      ariaLabel: "My Email",
+      icon: "fa-solid fa-envelope",
+    },
+  ];
+
   const year = new Date().getFullYear();
+
   return (
     <div>
-      <button className="backToTop" type="button">
-        <Link
-          to="Intro"
-          smooth
-          duration={3000}
-          offset={-500}
-          className="link"
-          aria-label="Back To Top"
-        >
+      <Link
+        to="Intro"
+        smooth
+        duration={3000}
+        offset={-500}
+        className="link"
+        aria-label="Back To Top"
+      >
+        <button className="backToTop" type="button">
           Back To Top
-        </Link>
-      </button>
+        </button>
+      </Link>
       <div className="footer">
         <p className="contactInfo">Contact Info</p>
-        <p className="phone">
-          <a href="tel:+972-544-718-317">+972-544-718-317</a>
-        </p>
-        <p className="email">
-          <a href="mailto:Yanivwein22@gmail.com">yanivwein22@gmail.com</a>
-        </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/YanivWein24/"
-          aria-label="My Github"
-        >
-          <i className="fa-brands fa-github" />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/yaniv-weinshtein/"
-          aria-label="My Linkedin"
-        >
-          <i className="fa-brands fa-linkedin" />
-        </a>
-        <a href="mailto:yanivwein22@gmail.com" aria-label="Email Me">
-          <i className="fa-solid fa-envelope" />
-        </a>
+        {Object.values(topDetails).map((detail, index) => (
+          <p key={detail} className={index ? "email" : "phone"}>
+            <a href={`${index ? "mailto" : "tel"}:${detail}`}>{detail}</a>
+          </p>
+        ))}
+        {bottomLinks.map((link) => (
+          <a
+            key={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={link.href}
+            aria-label={link.ariaLabel}
+          >
+            <i className={link.icon} />
+          </a>
+        ))}
         <p className="copyright">Ⓒ {year} Yaniv Weinshtein</p>
       </div>
     </div>
