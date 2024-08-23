@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/742cc686-3052-432c-a678-70e0d7dae957/deploy-status)](https://app.netlify.com/sites/yaniv-weinshtein/deploys)
 ![eslint-status](https://img.shields.io/badge/es--lint-Passing-bef9c6?logo=eslint&logoColor=whtie&badgeColor=white)
 
-<img align="center" src="https://user-images.githubusercontent.com/97472180/194753796-148c3e8a-6fe4-450a-9777-760785a85a3f.gif"
+<img align="center" src="https://github.com/user-attachments/assets/c12e03a3-8281-4998-a61f-7627d0d4d14f"
 alt="My Project GIF" width="600" height="323">  
 <br>
 
