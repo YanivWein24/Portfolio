@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
@@ -10,12 +10,25 @@ function Intro() {
   const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
   const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
 
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const handleLoadedVideo = () => {
+    if (videoRef.current) videoRef.current.style.opacity = "1";
+  };
+
   return (
     <div className="intro fade-in" id="Intro">
       <div>
-        <video autoPlay muted loop>
-          <source src={Video} type="video/mp4" />
-        </video>
+        <div className="videoContainer">
+          <video
+            autoPlay
+            muted
+            loop
+            ref={videoRef}
+            onLoadedData={handleLoadedVideo}
+          >
+            <source src={Video} type="video/mp4" />
+          </video>
+        </div>
         <h4 className="welcomeMessage">
           <em>Hi! my name is</em>
         </h4>
