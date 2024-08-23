@@ -16,7 +16,7 @@ function Intro() {
   };
 
   return (
-    <div className="intro fade-in" id="Intro">
+    <div className="intro fade-in">
       <div>
         <div className="videoContainer">
           <video
