@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Container, Form, FormGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import "./Contact.css";
 import Text from "../../constants";
+import "./Contact.css";
 
 function Contact() {
   const [name, setName] = useState<string>("");
@@ -45,6 +45,15 @@ function Contact() {
         setIsLoading(false);
       },
     );
+  };
+
+  const submitForm = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => {
+    event.preventDefault();
+    !!form && form.checkValidity()
+      ? sendEmail()
+      : form?.classList.add("was-validated");
   };
 
   return (
@@ -112,13 +121,7 @@ function Contact() {
               data-aos="fade-down"
               data-aos-once="true"
               type="submit"
-              onClick={(event) => {
-                event.preventDefault();
-
-                !!form && form.checkValidity()
-                  ? sendEmail()
-                  : form?.classList.add("was-validated");
-              }}
+              onClick={submitForm}
             >
               Submit <i className="fa-solid fa-paper-plane" />
             </button>

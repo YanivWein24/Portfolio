@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
-import "./Intro.css";
 import Video from "../../assets/Graphic.mp4";
 import Resume from "../../assets/Yaniv-Resume.pdf";
+import "./Intro.css";
 
 function Intro() {
   const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
@@ -36,19 +36,17 @@ function Intro() {
           </span>
           Developer.
         </h2>
-        <Button
-          onMouseOver={() => setFirstHovering(true)}
-          onMouseOut={() => setFirstHovering(false)}
-          className={
-            firstButtonHovering
-              ? "shake-bottom downloadButton"
-              : "downloadButton"
-          }
-        >
-          <a href={Resume} download="Yaniv-Resume.pdf">
+        <a href={Resume} download="Yaniv-Resume.pdf">
+          <Button
+            onMouseOver={() => setFirstHovering(true)}
+            onMouseOut={() => setFirstHovering(false)}
+            className={`downloadButton ${
+              firstButtonHovering && "shake-bottom"
+            }`}
+          >
             <i className="fa-solid fa-download" /> &nbsp;Download Resume
-          </a>
-        </Button>
+          </Button>
+        </a>
         <Button
           onMouseOver={() => setSecondeHovering(true)}
           onMouseOut={() => setSecondeHovering(false)}
