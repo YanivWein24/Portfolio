@@ -148,7 +148,7 @@ a.link {
     align-items: center;
   }
 
-  .link {
+  .header .link {
     font-size: 0.7rem;
     margin: 0 !important;
   }
