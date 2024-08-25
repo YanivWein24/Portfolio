@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import socialLinks from "../../data/SocialLinks";
 import "./Footer.css";
 
 function Footer() {
@@ -6,28 +7,6 @@ function Footer() {
     phone: "+972-544-718-317",
     email: "Yanivwein22@gmail.com",
   } as const;
-
-  const bottomLinks: {
-    href: string;
-    ariaLabel: string;
-    icon: string;
-  }[] = [
-    {
-      href: "https://github.com/YanivWein24/",
-      ariaLabel: "My Github",
-      icon: "fa-brands fa-github",
-    },
-    {
-      href: "https://www.linkedin.com/in/yaniv-weinshtein/",
-      ariaLabel: "My Linkedin",
-      icon: "fa-brands fa-linkedin",
-    },
-    {
-      href: "mailto:Yanivwein22@gmail.com",
-      ariaLabel: "My Email",
-      icon: "fa-solid fa-envelope",
-    },
-  ];
 
   const year = new Date().getFullYear();
 
@@ -52,7 +31,7 @@ function Footer() {
             <a href={`${index ? "mailto" : "tel"}:${detail}`}>{detail}</a>
           </p>
         ))}
-        {bottomLinks.map((link) => (
+        {socialLinks.map((link) => (
           <a
             key={link.href}
             target="_blank"

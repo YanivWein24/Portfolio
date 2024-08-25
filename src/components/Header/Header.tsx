@@ -4,10 +4,12 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import useWindowSize from "../../hooks/useWindowSize";
 import { HeaderLinkProps } from "../../types/HeaderLinkProps";
 import HeaderLinks from "../../data/HeaderLinks";
+import socialLinks from "../../data/SocialLinks";
 import Hamburger from "../Hamburger/Hamburger";
 import Resume from "../../assets/Yaniv-Resume.pdf";
 import "./Header.css";
 
+// MARK: AbstractLink
 function AbstractLink({
   name,
   icon,
@@ -43,6 +45,7 @@ function AbstractLink({
   );
 }
 
+// MARK: Header
 function Header() {
   const [scroll, setScroll] = useState<boolean>(false);
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -89,11 +92,7 @@ function Header() {
               {HeaderLinks.map((link) => (
                 <AbstractLink
                   key={link.id}
-                  id={link.id}
-                  name={link.name}
-                  icon={link.icon}
-                  offset={link.offset}
-                  duration={link.duration || 750}
+                  {...link}
                   mobileSize={mobileSize}
                   scroll={scroll}
                 />
@@ -114,25 +113,17 @@ function Header() {
               </div>
             </Nav>
             <div className="socials">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/YanivWein24/"
-                aria-label="My Github"
-              >
-                <i className="fa-brands fa-github" />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/yaniv-weinshtein/"
-                aria-label="My Linkedin"
-              >
-                <i className="fa-brands fa-linkedin" />
-              </a>
-              <a href="mailto:yanivwein22@gmail.com" aria-label="Email Me">
-                <i className="fa-solid fa-envelope" />
-              </a>
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link.href}
+                  aria-label={link.ariaLabel}
+                >
+                  <i className={link.icon} />
+                </a>
+              ))}
             </div>
           </Navbar.Collapse>
         </Container>
