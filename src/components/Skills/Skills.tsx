@@ -51,18 +51,11 @@ export default function Skills() {
                 <h2>{Text.headers[skillSet]}</h2>
                 <hr />
                 <div style={skillsListGridStyles}>
-                  {SkillsList[skillSet].map(
-                    ({ id, name, color, link, img }) => (
-                      <div className="skillContainer" key={id}>
-                        <Skill
-                          name={name}
-                          color={color}
-                          link={link}
-                          img={img}
-                        />
-                      </div>
-                    ),
-                  )}
+                  {SkillsList[skillSet].map(({ id, ...skill }) => (
+                    <div className="skillContainer" key={id}>
+                      <Skill {...skill} />
+                    </div>
+                  ))}
                 </div>
               </div>
             </Col>

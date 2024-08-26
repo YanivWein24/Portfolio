@@ -27,7 +27,7 @@
 }
 
 .StatBoxContainer p {
-  padding: 0;
+  padding: 0 !important;
   margin-bottom: 8px;
   color: #111 !important;
   line-height: 18px;
