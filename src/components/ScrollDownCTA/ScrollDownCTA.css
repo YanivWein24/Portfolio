@@ -1,0 +1,50 @@
+.scrollDownLink {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.scrollDownLink:hover {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.7));
+}
+
+.scrollDownContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  opacity: 0.8;
+}
+
+.mouseSVG {
+  width: 55px;
+}
+
+.fa-chevron-down {
+  font-size: 12px;
+}
+
+.scrollDownText {
+  font-size: 12px;
+  margin: 0;
+}
+
+.bounce {
+  animation: bounceDown 1.5s infinite 2s;
+}
+
+@keyframes bounceDown {
+  0%,
+  100% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}

@@ -4,15 +4,18 @@ import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
 import useWindowSize from "../../hooks/useWindowSize";
 import PDFModal from "../PDFModal/PDFModal";
+import ScrollDownCTA from "../ScrollDownCTA/ScrollDownCTA";
 import Video from "../../assets/Graphic.mp4";
 import Resume from "../../assets/Yaniv-Resume.pdf";
 import "./Intro.css";
 
 function Intro() {
-  const { tabletSize } = useWindowSize();
+  const { tabletSize, innerWidth } = useWindowSize();
   const [firstButtonHovering, setFirstHovering] = useState<boolean>(false);
   const [secondButtonHovering, setSecondeHovering] = useState<boolean>(false);
   const [isPDFModalOpen, setIsPDFModalOpen] = useState<boolean>(false);
+
+  const isLargeDisplay = innerWidth >= 1600;
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const handleLoadedVideo = () => {
@@ -79,7 +82,7 @@ function Intro() {
                 }`}
               />{" "}
               &nbsp;
-              {tabletSize ? "Download" : "My"} Resume
+              {tabletSize ? "Download" : "View"} Resume
             </Button>
           </a>
           <Button
@@ -98,6 +101,7 @@ function Intro() {
               <i className="fa-solid fa-envelope" /> &nbsp;Contact Me
             </Link>
           </Button>
+          {isLargeDisplay && <ScrollDownCTA />}
         </div>
       </div>
     </>

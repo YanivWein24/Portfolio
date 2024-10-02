@@ -7,7 +7,7 @@ const TimelineChapters: TimelineChapter[] = [
   {
     header: "CRM Developer",
     subHeader: "Productive Software",
-    text: "Building custom CRM solutions tailored to diverse clients, ranging from small businesses to large companies. Utilizing platforms such as Salesforce and Monday.com for CRM functionalities, alongside Make (Integromat) for automation and API integrations. Leading the development process from the initial characterization stage through to production, and working in an agile environment.",
+    text: "Building custom CRM solutions tailored to diverse clients, ranging from small businesses to large companies. Utilizing platforms such as Salesforce and Monday.com for CRM functionalities, alongside Make (Integromat) and Zapier for automation and API integrations. Leading the development process from the initial characterization stage through to production, and working in an agile environment.",
     date: "Dec 2023 - Present",
     type: "work",
     link: "https://productive.co.il",
