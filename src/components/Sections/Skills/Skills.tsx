@@ -1,7 +1,7 @@
 import { Row, Col } from "react-bootstrap";
-import useWindowSize from "../../hooks/useWindowSize";
-import Text from "../../constants";
-import SkillsList from "../../data/SkillsList";
+import useWindowSize from "../../../hooks/useWindowSize";
+import Text from "../../../constants";
+import SkillsList from "../../../data/SkillsList";
 import Skill from "./Skill";
 import "./Skills.css";
 

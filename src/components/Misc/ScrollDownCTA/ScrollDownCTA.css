@@ -6,7 +6,7 @@
 }
 
 .scrollDownLink:hover {
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0px 0px 10px black);
 }
 
 .scrollDownContainer {
@@ -23,7 +23,7 @@
 }
 
 .mouseSVG {
-  width: 55px;
+  width: 50px;
 }
 
 .fa-chevron-down {

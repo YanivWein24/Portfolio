@@ -4,11 +4,11 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Text from "../../constants";
-import TimelineChapters from "../../data/TimelineChapters";
-import Suitcase from "../../assets/media/suitcase.svg";
-import School from "../../assets/media/school.svg";
-import Anchor from "../../assets/media/anchor.svg";
+import Text from "../../../constants";
+import TimelineChapters from "../../../data/TimelineChapters";
+import Suitcase from "../../../assets/media/suitcase.svg";
+import School from "../../../assets/media/school.svg";
+import Anchor from "../../../assets/media/anchor.svg";
 
 export default function Timeline() {
   return (

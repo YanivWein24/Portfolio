@@ -1,10 +1,10 @@
 import { Row, Col, Container } from "react-bootstrap";
-import ProjectCard from "../ProjectCard/ProjectCard";
-import Text from "../../constants";
-import MyProjects from "../../data/MyProjects";
+import ProjectCard from "../../Misc/ProjectCard/ProjectCard";
+import Text from "../../../constants";
+import MyProjects from "../../../data/MyProjects";
+import { ReactComponent as TopAngle } from "../../../assets/media/TopAngle.svg";
+import { ReactComponent as BottomAngle } from "../../../assets/media/BottomAngle.svg";
 import "./Projects.css";
-import { ReactComponent as TopAngle } from "../../assets/media/TopAngle.svg";
-import { ReactComponent as BottomAngle } from "../../assets/media/BottomAngle.svg";
 
 export default function Projects() {
   return (

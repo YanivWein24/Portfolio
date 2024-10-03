@@ -2,11 +2,11 @@ import { useRef, useState } from "react";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { Button } from "react-bootstrap";
-import useWindowSize from "../../hooks/useWindowSize";
-import PDFModal from "../PDFModal/PDFModal";
-import ScrollDownCTA from "../ScrollDownCTA/ScrollDownCTA";
-import Video from "../../assets/Graphic.mp4";
-import Resume from "../../assets/Yaniv-Resume.pdf";
+import useWindowSize from "../../../hooks/useWindowSize";
+import PDFModal from "../../Misc/PDFModal/PDFModal";
+import ScrollDownCTA from "../../Misc/ScrollDownCTA/ScrollDownCTA";
+import Video from "../../../assets/Graphic.mp4";
+import Resume from "../../../assets/Yaniv-Resume.pdf";
 import "./Intro.css";
 
 function Intro() {
@@ -16,7 +16,6 @@ function Intro() {
   const [isPDFModalOpen, setIsPDFModalOpen] = useState<boolean>(false);
 
   const isLargeDisplay = innerWidth >= 1600;
-
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const handleLoadedVideo = () => {
     if (videoRef.current) videoRef.current.style.opacity = "1";
@@ -50,8 +49,7 @@ function Intro() {
           </h1>
           <h2>
             <span>
-              {/* eslint-disable-next-line */}
-              I'm A{" "}
+              I&apos;m A&nbsp;
               <Typewriter
                 options={{
                   strings: ["FULL-STACK", "FRONT-END", "REACT"],

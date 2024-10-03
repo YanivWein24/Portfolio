@@ -1,7 +1,7 @@
 import AnimatedNumbers from "react-animated-numbers";
 import { Col } from "react-bootstrap";
-import { StatBoxProps } from "../../types/StatBoxProps";
-import { ReactComponent as BlueGraph } from "../../assets/media/BlueGraph.svg";
+import { StatBoxProps } from "../../../types/StatBoxProps";
+import { ReactComponent as BlueGraph } from "../../../assets/media/BlueGraph.svg";
 import "./StatBox.css";
 
 function StatBox({ title, number }: StatBoxProps) {

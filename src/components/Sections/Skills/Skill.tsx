@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SkillProps } from "../../types/SkillsProps";
+import { SkillProps } from "../../../types/SkillsProps";
 
 function Skill({ name, color, link, img }: SkillProps) {
   const [isHovering, setIsHovering] = useState<boolean>(false);

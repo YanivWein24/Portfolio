@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Form, FormGroup } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import Text from "../../constants";
+import Text from "../../../constants";
 import "./Contact.css";
 
 function Contact() {

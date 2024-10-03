@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import socialLinks from "../../data/SocialLinks";
+import socialLinks from "../../../data/SocialLinks";
 import "./Footer.css";
 
 function Footer() {

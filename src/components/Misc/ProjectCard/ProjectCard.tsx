@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
-import useWindowSize from "../../hooks/useWindowSize";
-import { CardProps } from "../../types/CardProps";
+import useWindowSize from "../../../hooks/useWindowSize";
+import { CardProps } from "../../../types/CardProps";
 import "./ProjectCard.css";
 
 function ProjectCard({ project }: CardProps) {

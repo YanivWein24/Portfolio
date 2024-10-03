@@ -1,6 +1,6 @@
 import { Dispatch, MutableRefObject, SetStateAction, useRef } from "react";
-import Backdrop from "../Backdrop/Backdrop";
-import Resume from "../../assets/Yaniv-Resume.pdf";
+import Backdrop from "../../Layout/Backdrop/Backdrop";
+import Resume from "../../../assets/Yaniv-Resume.pdf";
 import "./PDFModal.css";
 
 interface PDFModalProps {

@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import useWindowSize from "../../hooks/useWindowSize";
-import { HeaderLinkProps } from "../../types/HeaderLinkProps";
-import HeaderLinks from "../../data/HeaderLinks";
-import socialLinks from "../../data/SocialLinks";
+import useWindowSize from "../../../hooks/useWindowSize";
+import { HeaderLinkProps } from "../../../types/HeaderLinkProps";
+import HeaderLinks from "../../../data/HeaderLinks";
+import socialLinks from "../../../data/SocialLinks";
 import Hamburger from "../Hamburger/Hamburger";
-import Resume from "../../assets/Yaniv-Resume.pdf";
+import Resume from "../../../assets/Yaniv-Resume.pdf";
 import "./Header.css";
 
 // MARK: AbstractLink

@@ -1,11 +1,11 @@
 import { Row, Col } from "react-bootstrap";
-import StatBox from "../StatBox/StatBox";
-import { StatBoxProps } from "../../types/StatBoxProps";
-import useWindowSize from "../../hooks/useWindowSize";
-import Text from "../../constants";
-import { ReactComponent as TopWave } from "../../assets/media/TopWave.svg";
-import { ReactComponent as BottomWave } from "../../assets/media/BottomWave.svg";
-import Profile from "../../assets/media/profile.jpg";
+import StatBox from "../../Misc/StatBox/StatBox";
+import { StatBoxProps } from "../../../types/StatBoxProps";
+import useWindowSize from "../../../hooks/useWindowSize";
+import Text from "../../../constants";
+import { ReactComponent as TopWave } from "../../../assets/media/TopWave.svg";
+import { ReactComponent as BottomWave } from "../../../assets/media/BottomWave.svg";
+import Profile from "../../../assets/media/profile.jpg";
 import "./About.css";
 
 function About() {
