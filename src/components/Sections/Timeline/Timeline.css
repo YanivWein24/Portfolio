@@ -60,9 +60,12 @@
   margin: 1rem 0 1.5rem;
 }
 
-.tool.socialo {
+.tool.current {
   background-color: white;
   color: var(--color-primary-light);
+}
+.tool.current:hover {
+  background-color: #f5f5f5;
 }
 
 .imageContainer {

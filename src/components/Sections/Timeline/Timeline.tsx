@@ -112,7 +112,7 @@ export default function Timeline() {
                   technologies.map((tool) => (
                     <div
                       key={tool}
-                      className={`tool ${isCurrentChapter && "socialo"}`}
+                      className={`tool ${isCurrentChapter && "current"}`}
                     >
                       {tool}
                     </div>
