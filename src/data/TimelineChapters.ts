@@ -15,7 +15,9 @@ const TimelineChapters: TimelineChapter[] = [
     technologies: [
       "Salesforce",
       "Monday",
+      "SQL",
       "Make",
+      "Zapier",
       "Automation",
       "Integrations",
       "Postman",
