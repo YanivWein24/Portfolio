@@ -3,6 +3,18 @@
   display: block;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .scrollDownLink:hover {

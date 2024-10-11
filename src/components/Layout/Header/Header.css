@@ -7,6 +7,16 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   backdrop-filter: blur(3px);
+  animation: scrollDown 2s ease-in-out;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .header .navbar {
