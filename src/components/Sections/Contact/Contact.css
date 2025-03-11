@@ -163,6 +163,7 @@ textarea.form-control::placeholder {
   #Contact h1 {
     width: 80%;
     font-size: 1.8rem;
+    text-align: center;
   }
 
   input.form-control,
