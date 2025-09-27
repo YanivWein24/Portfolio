@@ -88,7 +88,7 @@ export default function Timeline() {
                 {text}
                 <br />
                 {finalProjectScore &&
-                  "Final Project Score: " + finalProjectScore}
+                  `Final Project Score: ${finalProjectScore}`}
               </p>
               {link && (
                 <a
