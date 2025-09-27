@@ -27,6 +27,11 @@
   margin: auto;
   height: 100%;
   padding: 0 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
 }
 
 .container {

@@ -9,7 +9,7 @@ export default function Skills() {
   const { mobileSize, innerWidth } = useWindowSize();
   const bootstrapLaptopSize = innerWidth < 1120;
 
-  const skillsSets = ["frontend", "backend", "misc"] as const;
+  const skillsSets = ["frontend", "backend", "crm", "misc"] as const;
 
   return (
     <div className="skills" id="Skills">
@@ -18,30 +18,25 @@ export default function Skills() {
       </h1>
       <Row className={`${!mobileSize && "container"} mx-auto`}>
         {skillsSets.map((skillSet, index) => {
-          const isMiscSection = index === 2;
-
           const skillsListGridStyles = {
             display: "grid",
             gridTemplateColumns: `repeat(${
-              mobileSize ? 3 : bootstrapLaptopSize ? 4 : isMiscSection ? 6 : 4
+              mobileSize ? 3 : bootstrapLaptopSize ? 4 : 4
             }, 1fr)`,
           };
 
-          const skillsSetAnimation =
-            !bootstrapLaptopSize && isMiscSection
-              ? "fade-down"
-              : index % 2
-                ? "fade-right"
-                : "fade-left";
+          const skillsSetAnimation = !bootstrapLaptopSize
+            ? "fade-down"
+            : index % 2
+              ? "fade-right"
+              : "fade-left";
 
           return (
             <Col
               xs={12}
-              xl={isMiscSection ? 12 : 6}
+              xl={6}
               key={skillSet}
-              className={`mx-auto skillsSetContainer ${
-                isMiscSection && "miscSection"
-              }`}
+              className="mx-auto skillsSetContainer"
             >
               <div
                 className="skillsSet"
