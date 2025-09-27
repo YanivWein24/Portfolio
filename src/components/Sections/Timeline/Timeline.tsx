@@ -27,7 +27,7 @@ export default function Timeline() {
             technologies,
             link,
             image,
-            scores,
+            finalProjectScore,
           } = chapter;
           const isCurrentChapter = !index;
           return (
@@ -86,6 +86,9 @@ export default function Timeline() {
                 }
               >
                 {text}
+                <br />
+                {finalProjectScore &&
+                  "Final Project Score: " + finalProjectScore}
               </p>
               {link && (
                 <a
@@ -101,18 +104,12 @@ export default function Timeline() {
                   />
                 </a>
               )}
-              {scores && (
-                <p>
-                  Final Score: <strong>{scores.final}</strong> <br />
-                  Final Project Score: <strong>{scores.project}</strong>
-                </p>
-              )}
               <div className="toolsContainer">
                 {technologies &&
                   technologies.map((tool) => (
                     <div
                       key={tool}
-                      className={`tool ${isCurrentChapter && "current"}`}
+                      className={`tool${isCurrentChapter ? " current" : ""}`}
                     >
                       {tool}
                     </div>

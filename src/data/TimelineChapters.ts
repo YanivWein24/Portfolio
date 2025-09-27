@@ -104,10 +104,7 @@ const TimelineChapters: TimelineChapter[] = [
     text: "Electrical And Electronics Engineering.",
     date: "2017 - 2019",
     type: "school",
-    scores: {
-      final: "87",
-      project: "97",
-    },
+    finalProjectScore: "97",
   },
   {
     header: "High-School",
@@ -115,10 +112,7 @@ const TimelineChapters: TimelineChapter[] = [
     text: "Electrical And Electronics Engineering - 10 points",
     date: "2015 - 2017",
     type: "school",
-    scores: {
-      final: "94",
-      project: "100",
-    },
+    finalProjectScore: "100",
   },
 ];
 

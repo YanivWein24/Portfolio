@@ -8,10 +8,7 @@ interface TimelineChapter {
   link?: string;
   image?: string;
   alt?: string;
-  scores?: {
-    final: string;
-    project: string;
-  };
+  finalProjectScore?: string;
 }
 
 export default TimelineChapter;

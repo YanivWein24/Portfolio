@@ -28,13 +28,6 @@ function ProjectCard({ project }: CardProps) {
       <Card.Body className="topCardBody">
         <Card.Title>{project.name}</Card.Title>
         <Card.Text>{project.description}</Card.Text>
-        {project.id === 2 && (
-          <Card.Text>
-            <strong className="includesGetJokes">
-              Includes Unit Tests And CI/CD
-            </strong>
-          </Card.Text>
-        )}
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
