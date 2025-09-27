@@ -19,7 +19,7 @@ const SkillsList = {
       name: "React",
       color: "#53d2fa",
       link: "https://reactjs.org/",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207",
+      img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     },
     {
       id: 3,
@@ -33,14 +33,14 @@ const SkillsList = {
       name: "Redux",
       color: "#764abc",
       link: "https://redux.js.org/",
-      img: "https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png",
+      img: "https://raw.githubusercontent.com/reactjs/redux/24bab8f05987542ffd186c19400a80f12f717492/logo/logo.png",
     },
     {
       id: 5,
       name: "React-Query",
       color: "#ff4154",
       link: "https://tanstack.com/query/latest",
-      img: "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
+      img: "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/2/react-query-icon-xjukes5xosrrwg3y3ics1f.png/react-query-icon-2dw36yx2b016w37mbipyn.png?_a=DATAg1AAZAA0",
     },
     {
       id: 6,
@@ -112,7 +112,7 @@ const SkillsList = {
       name: "Kafka",
       color: "#444",
       link: "https://kafka.apache.org/",
-      img: "https://cdn.creazilla.com/icons/3207476/apache-kafka-icon-sm.png",
+      img: "https://svn.apache.org/repos/asf/kafka/site/logos/originals/png/ICON%20-%20Black%20on%20Transparent.png",
     },
     {
       id: 5,
@@ -149,7 +149,7 @@ const SkillsList = {
       name: "SalesForce",
       color: "#00a2e1",
       link: "https://www.salesforce.com/",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png",
+      img: "https://images.icon-icons.com/2699/PNG/512/salesforce_logo_icon_170764.png",
     },
     {
       id: 1,
@@ -190,7 +190,7 @@ const SkillsList = {
     },
     {
       id: 2,
-      name: "GitHub Actions",
+      name: "Actions",
       color: "#2287fb",
       link: "https://github.com/features/actions",
       img: "https://avatars.githubusercontent.com/u/44036562?s=280&v=4",
@@ -207,7 +207,7 @@ const SkillsList = {
       name: "ES-Lint",
       color: "#4a2ec4",
       link: "https://eslint.org/",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png",
+      img: "https://eslint.org/icon-512.png",
     },
     {
       id: 5,
