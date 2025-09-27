@@ -39,12 +39,12 @@ function About() {
 
   const bottomDescriptions: Record<string, string>[] = [
     {
-      label: "2 years of experience",
+      label: "3+ years of experience",
       text: Text.yearsOfExperience,
       animation: "fade-right",
     },
     {
-      label: "Always Discovering",
+      label: "Growth is my default",
       text: Text.AlwaysDiscovering,
       animation: "fade-left",
     },

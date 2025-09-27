@@ -5,7 +5,7 @@ const HeaderLinks: HeaderLinkProps[] = [
     id: 0,
     name: "About",
     icon: "fa-solid fa-address-card",
-    offset: -20,
+    offset: 35,
     duration: 1500,
   },
   {

@@ -27,6 +27,11 @@ h1.aboutMeHeader {
   text-align: left;
 }
 
+.about-me h3 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
 p.bigger {
   font-size: 1rem;
 }
