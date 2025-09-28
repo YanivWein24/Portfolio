@@ -1,5 +1,4 @@
 export interface HeaderLinkProps {
-  id: number;
   name: string;
   icon: string;
   duration: number;

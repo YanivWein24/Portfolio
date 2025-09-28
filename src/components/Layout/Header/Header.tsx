@@ -91,7 +91,7 @@ function Header() {
             <Nav className="me-auto">
               {HeaderLinks.map((link) => (
                 <AbstractLink
-                  key={link.id}
+                  key={link.name}
                   {...link}
                   mobileSize={mobileSize}
                   scroll={scroll}

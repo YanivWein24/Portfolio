@@ -20,7 +20,7 @@ export default function Projects() {
               <Col
                 data-aos="slide-up"
                 data-aos-once="true"
-                key={project.id}
+                key={project.name}
                 sm={12}
                 md={6}
                 lg={4}

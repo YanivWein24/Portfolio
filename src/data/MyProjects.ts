@@ -2,7 +2,6 @@ import { Project } from "../types/Projects";
 
 const MyProjects: Project[] = [
   {
-    id: 0,
     name: "Similarity API ⚖️",
     description:
       "A Full-Stack Next.js project, containing a rate-limited API in the backend and a user dashboard with documentation in the frontend. The API receives 2 pieces of text and returns a number between 0-1, representing their similarity.",
@@ -17,7 +16,6 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 1,
     name: "Post It 🔥",
     description:
       "Full-Stack social media application built with Next.js. Users can sign up and authenticate with Google or GitHub to start sharing and commenting on posts.",
@@ -32,7 +30,6 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 2,
     name: "Get Jokes 😂",
     description:
       "Full-Stack application that provides custom jokes from Joke-API. Users can register (also using their Google / Meta accounts) and create their private collection of jokes.",
@@ -57,7 +54,6 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 3,
     name: "IP Tracker 🌎",
     description:
       "Tracking app that locates users by their IP address. Can locate any valid IPv4 address on the globe! Using 3 different APIs: to find the local IP (optional), track its location, and display it on a live map!",
@@ -78,7 +74,6 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 4,
     name: "Shortly 🔗",
     description: "Links shortener website. convert any valid URL to a short link, using shrtco.de API. A pixel-perfect implementation of the \"Shortly URL shortening API Challenge\" on frontend master.",
     image: [
@@ -92,7 +87,6 @@ const MyProjects: Project[] = [
     ],
   },
   {
-    id: 5,
     name: "Git Finderr 🔍",
     description:
       "Search engine for GitHub users. All data is coming from GitHub's REST-API. Also features light/dark themes. using localStorage to memorize the user's theme for the next visit!",

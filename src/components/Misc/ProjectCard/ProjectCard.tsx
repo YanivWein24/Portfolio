@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import useWindowSize from "../../../hooks/useWindowSize";
-import { CardProps } from "../../../types/CardProps";
+import { Project } from "../../../types/Projects";
 import "./ProjectCard.css";
 
-function ProjectCard({ project }: CardProps) {
+function ProjectCard({ project }: { project: Project }) {
   const [hover, setHover] = useState<boolean>(false);
   const { innerWidth } = useWindowSize();
 
@@ -13,7 +13,7 @@ function ProjectCard({ project }: CardProps) {
 
   return (
     <Card
-      className={`card-${project.id}`}
+      className={`card-${project.name}`}
       style={{
         width: smallScreen ? "95%" : tabletScreen ? "92%" : "21rem",
       }}
@@ -32,7 +32,7 @@ function ProjectCard({ project }: CardProps) {
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
           {project.tools.map((tool) => (
-            <div key={project.tools.indexOf(tool)} className="tool">
+            <div key={tool} className="tool">
               {tool}
             </div>
           ))}
